@@ -9,7 +9,7 @@
     <div
       class="module-video__wrapper"
     >
-      <vue-plyr>
+      <vue-plyr :settings="['quality']">
         <video poster="/assets/images/young-forest-grower/poster.jpg" src="/assets/video/young-forest-grower_1080.mp4">
           <source src="/assets/video/young-forest-grower_480.mp4" type="video/mp4" size="480">
           <source src="/assets/video/young-forest-grower_720.mp4" type="video/mp4" size="720">
