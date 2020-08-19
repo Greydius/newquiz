@@ -1,7 +1,7 @@
 <template>
   <a-layout-content class="layout">
     <a-layout class="layout__wrapper">
-    <slot />
+      <slot />
     </a-layout>
   </a-layout-content>
 </template>
@@ -16,19 +16,14 @@ export default {
 .layout {
   display: flex;
   flex-direction: column;
+  background-image: url(../../assets/images/background.jpg);
+  background-size: cover;
+  background-position-x: bottom;
+  padding: 15px;
   &__wrapper {
     flex: 1;
-    padding: 30px 15px;
-    background: #fff;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .layout {
-    padding: 50px;
-    &__wrapper {
-      padding: 24px;
-    }
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 </style>

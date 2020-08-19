@@ -5,9 +5,15 @@
         :to="{ name: 'home' }"
         class="logo"
       >
-        <span class="logo__text">Ecoforum40.ru</span>
+        <img
+          src="@/assets/logo.png"
+          class="logo__img"
+          alt=""
+        >
       </router-link>
     </div>
+
+    <HeaderButtons class="header__block" />
 
     <div class="header__block">
       <HeaderProfile v-if="isAuthorized" />
@@ -18,6 +24,7 @@
 <script>
 import { createNamespacedHelpers } from 'vuex'
 import HeaderProfile from '@/components/header/HeaderProfile'
+import HeaderButtons from '@/components/header/HeaderButtons'
 
 const { mapGetters: mapAuthGetters } = createNamespacedHelpers('auth')
 
@@ -26,6 +33,7 @@ export default {
 
   components: {
     HeaderProfile,
+    HeaderButtons
   },
 
   data() {
@@ -63,6 +71,9 @@ export default {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  &__img {
+    width: 45px;
+  }
   &__text {
     color: #fff;
     font-size: 28px;

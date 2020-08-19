@@ -10,7 +10,7 @@ import {
   ConfigProvider,
   Layout,
   Button, Icon,
-  Result,
+  Result, Modal,
   message,
 } from 'ant-design-vue';
 
@@ -19,9 +19,11 @@ Vue.use(ConfigProvider)
 
 Vue.use(Layout);
 Vue.use(Layout.Header);
+Vue.use(Layout.Footer);
 Vue.use(Layout.Content);
 
 Vue.use(Result);
+Vue.use(Modal);
 
 Vue.use(Button);
 Vue.use(Icon);

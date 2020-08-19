@@ -22,6 +22,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "modules" */ '../views/pages/Modules'),
     meta: {
       title: 'Выбор блоков тестирования',
+      requiredAuth: true,
     },
   },
   {
@@ -30,6 +31,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "module" */ '../views/pages/Module'),
     meta: {
       title: 'Выбор блоков тестирования',
+      requiredAuth: true,
     },
   },
   {
@@ -50,11 +52,28 @@ Vue.use(VueRouter)
         },
       },
       {
+        path: '/support',
+        name: 'support',
+        component: () => import(/* webpackChunkName: "support" */ '../views/pages/info/Support'),
+        meta: {
+          title: 'Поддержка',
+        },
+      },
+      {
+        path: '/documents',
+        name: 'documents',
+        component: () => import(/* webpackChunkName: "support" */ '../views/pages/info/Documents'),
+        meta: {
+          title: 'Документы',
+        },
+      },
+      {
         path: 'guide',
         name: 'guide',
         component: () => import(/* webpackChunkName: "guide" */ '../views/pages/info/Guide'),
         meta: {
           title: 'Инструкция по прохождению',
+          requiredAuth: true,
         },
         redirect: { name: 'guide-intro' },
         children: guideRoutes,
@@ -90,21 +109,11 @@ router.beforeEach((to, from, next) => {
   store.dispatch('auth/testRefresh');
   const isAuthorized = store.getters['auth/isAuthorized'];
 
-  if (isAuthorized) {
-    if(to.name === 'login') {
-      next({ name: 'home' });
-    } else {
-      document.title = `${to.meta.title} - Ecoforum40.ru`;
-      next();
-    }
-    next();
+  if (to.meta.requiredAuth && !isAuthorized) {
+    next({ name: 'login' });
   } else {
-    if(to.name === 'login') {
-      document.title = `${to.meta.title} - Ecoforum40.ru`;
-      next();
-    } else {
-      next({ name: 'login' });
-    }
+    document.title = `${to.meta.title} - Ecoforum40.ru`;
+    next();
   }
 });
 
