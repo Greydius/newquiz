@@ -18,7 +18,7 @@ export default {
   flex-direction: column;
   background-image: url(../../assets/images/background.jpg);
   background-size: cover;
-  background-position-x: bottom;
+  background-position-y: center;
   padding: 15px;
   &__wrapper {
     flex: 1;
