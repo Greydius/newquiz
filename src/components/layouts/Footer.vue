@@ -1,6 +1,14 @@
 <template>
-  <a-layout-footer>
-    Лучшее школьное лесничество калужской области
+  <a-layout-footer class="footer">
+    <div class="footer__block">
+      Лучшее школьное лесничество калужской области
+    </div>
+    
+    <div class="footer__block">
+      <img src="@/assets/images/footer-logo-1.png" class="footer__logo" alt="">
+      <img src="@/assets/images/footer-logo-2.png" class="footer__logo" alt="">
+      <img src="@/assets/images/footer-logo-3.png" class="footer__logo" alt="">
+    </div>
   </a-layout-footer>
 </template>
 
@@ -10,6 +18,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  &__block {
+
+  }
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__logo + &__logo {
+    margin-left: 30px;
+  }
+}
 </style>

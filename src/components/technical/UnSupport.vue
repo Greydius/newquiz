@@ -25,7 +25,7 @@ export default {
   align-items: center;
   justify-content: center;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 1024px) {
     display: none;
   }
 }
