@@ -1,13 +1,9 @@
 <template>
   <a-layout-footer class="footer">
     <div class="footer__block">
-      Лучшее школьное лесничество калужской области
-    </div>
-    
-    <div class="footer__block">
       <img src="@/assets/images/footer-logo-1.png" class="footer__logo" alt="">
       <img src="@/assets/images/footer-logo-2.png" class="footer__logo" alt="">
-      <img src="@/assets/images/footer-logo-3.png" class="footer__logo" alt="">
+      <!-- <img src="@/assets/images/footer-logo-3.png" class="footer__logo" alt=""> -->
     </div>
   </a-layout-footer>
 </template>
@@ -21,7 +17,7 @@ export default {
 <style lang="scss">
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   &__block {
@@ -29,7 +25,7 @@ export default {
   }
 
   &__logo {
-    height: 40px;
+    height: 50px;
   }
 
   &__logo + &__logo {

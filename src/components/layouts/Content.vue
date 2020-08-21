@@ -19,10 +19,10 @@ export default {
   background-image: url(../../assets/images/background.jpg);
   background-size: cover;
   background-position-y: center;
-  padding: 15px;
+  padding: 0px;
   &__wrapper {
     flex: 1;
-    padding: 0px;
+    padding: 30px;
     background: rgba(255, 255, 255, 0.75);
   }
 }

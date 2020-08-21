@@ -8,7 +8,7 @@
       <div class="welcome__wrapper">
         <p>Конкурс школьных лесничеств Калужской области состоится 18 сентября 2020 года в период с 8.00 до 13.00</p>
         <div class="welcome__inner-wrapper">
-          <img src="@/assets/images/logo.png" class="welcome__logo">  
+          <img src="@/assets/images/logo.svg" class="welcome__logo">  
           <div class="welcome__timer">
             <StatisticCoundown
               title="До старта"
@@ -57,6 +57,12 @@ export default {
 .welcome {
   padding: 24px 16px;
 
+  &__wrapper {
+    p {
+      font-weight: bold;
+    }
+  }
+
   &__inner-wrapper {
     position: relative;
   }
@@ -69,7 +75,7 @@ export default {
     align-items: center;
   }
   &__logo {
-    width: 250px;
+    width: 200px;
   }
 }
 </style>
