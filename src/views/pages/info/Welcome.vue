@@ -58,6 +58,9 @@ export default {
   padding: 24px 16px;
 
   &__wrapper {
+    font-weight: bold;
+    font-size: 24px;
+    max-width: 670px;
     p {
       font-weight: bold;
     }
