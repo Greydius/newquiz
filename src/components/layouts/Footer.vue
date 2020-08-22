@@ -1,17 +1,13 @@
 <template>
   <a-layout-footer class="footer">
     <div class="footer__block">
-      <a href="http://admoblkaluga.ru/sub/ecology/" class="footer__link">
-        <img src="@/assets/images/footer-logo-0.png" class="footer__logo" alt="">
-      </a>
-      
+      <img src="@/assets/images/footer-logo-4.svg" class="footer__logo" alt=""> 
     </div>
 
     <div class="footer__block">
       <img src="@/assets/images/footer-logo-1.png" class="footer__logo" alt="">
       <img src="@/assets/images/footer-logo-2.png" class="footer__logo" alt="">
       <img src="@/assets/images/footer-logo-3.svg" class="footer__logo" alt="">
-      <img src="@/assets/images/footer-logo-4.svg" class="footer__logo" alt="">
     </div>
 
     <div class="footer__block">

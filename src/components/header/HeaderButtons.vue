@@ -1,11 +1,41 @@
 <template>
   <div>
     <HeaderButtonWithModal
-      title="Тех. поддержка"
+      title="Обратная связь"
     >
-      <p>
-        Номер поддержки: +79036968168
-      </p>
+      <h2>По вопросам организации Конкурса:</h2>
+
+      <i>Ситникова Елена Викторовна</i>, начальник отдела организационно-контрольной работы министерства природных ресурсов и экологии Калужской области
+      <br>
+      <a href="tel:4842719989">(4842)71-99-89</a>
+      <br>
+      <a href="tel:89108639611">8-910-863-96-11</a>
+      <br>
+      <a href="mailto:ignatovaev@adm.kaluga.ru">ignatovaev@adm.kaluga.ru</a>
+
+      <br>
+      <br>
+
+      <i>Карпенко Виктория Сергеевна</i>, ведущий эксперт отдела организационно-контрольной работы министерства природных ресурсов и экологии Калужской области
+      <br>
+      <a href="tel:4842719975">(4842)71-99-75</a>
+      <br>
+      <a href="tel:89641498797">8-964-149-87-97</a>
+      <br>
+      <a href="mailto:karpenko_vs@adm.kaluga.ru">karpenko_vs@adm.kaluga.ru</a>
+
+      <br>
+      <br>
+      <br>
+
+      <h2>Техническое сопровождение:</h2>
+
+      <i>Ситников Сергей Александрович</i>
+      <br>
+      <a href="tel:89641498797">8-903-696-81-68</a>
+      <br>
+      <a href="mailto:karpenko_vs@adm.kaluga.ru">esmiralda2011@gmail.com</a>
+      
     </HeaderButtonWithModal>
     <HeaderButtonWithModal title="Документы">
       <p>
