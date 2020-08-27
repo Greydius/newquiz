@@ -1,6 +1,6 @@
 <template>
   <div class="header-profile">
-    <span class="header-profile__title">Тестовый пользователь</span>
+    <span class="header-profile__title">{{ user.name }}</span>
     <a-button 
       @click="logOut"
       @mouseenter="onHover"
@@ -14,7 +14,7 @@
 
 <script>
 import { createNamespacedHelpers } from 'vuex'
-const { mapActions: mapAuthActions } = createNamespacedHelpers('auth')
+const { mapGetters: mapAuthGetters, mapActions: mapAuthActions } = createNamespacedHelpers('auth')
 
 export default {
   name: 'HeaderProfile',
@@ -25,6 +25,10 @@ export default {
   },
 
   computed: {
+    ...mapAuthGetters({
+      user: 'getUser'
+    }),
+
     currentIcon() {
       return this.isHover ? 'logout' : 'user'
     }
@@ -32,7 +36,7 @@ export default {
 
   methods: {
     ...mapAuthActions({
-      logout: 'testLogout',
+      logout: 'logout',
     }),
 
     logOut() {

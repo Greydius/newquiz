@@ -14,10 +14,10 @@
       >
         <FormModelItem
           label="Email"
-          prop="username"
+          prop="email"
         >
           <Input
-            v-model="form.username"
+            v-model="form.email"
             placeholder="Введите e-mail..."
           />
         </FormModelItem>
@@ -57,11 +57,11 @@ export default {
   data() {
     return {
       form: {
-        username: undefined,
+        email: undefined,
         password: undefined,
       },
       rules: {
-        username: [
+        email: [
           {
             required: true,
             message: 'Обязательное поле',
@@ -78,8 +78,8 @@ export default {
   },
   methods: {
     ...mapAuthActions({
-      // login: 'login',
-      testLogin: 'testLogin'
+      login: 'login',
+      // testLogin: 'testLogin'
     }),
     handleSubmit(e) {
       e.preventDefault();
@@ -88,8 +88,8 @@ export default {
           console.log('error');
           return true;
         }
-        // this.login(this.form)
-        this.testLogin(this.form)
+        this.login(this.form)
+        // this.testLogin(this.form)
           .then(() => {
             this.$router.push({ name: 'home' });
           })

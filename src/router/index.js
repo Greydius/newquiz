@@ -105,16 +105,26 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  // store.dispatch('auth/refresh');
-  store.dispatch('auth/testRefresh');
-  const isAuthorized = store.getters['auth/isAuthorized'];
+  store.dispatch('auth/refresh')
+  .then(() => {
+    // store.dispatch('auth/testRefresh');
+    const isAuthorized = store.getters['auth/isAuthorized'];
 
-  if (to.meta.requiredAuth && !isAuthorized) {
-    next({ name: 'login' });
-  } else {
-    document.title = `${to.meta.title} - Ecoforum40.ru`;
-    next();
-  }
+    if (to.meta.requiredAuth && !isAuthorized) {
+      next({ name: 'login' });
+    } else {
+      document.title = `${to.meta.title} - Ecoforum40.ru`;
+      next();
+    }
+  })
+  .catch(() => {
+    if (to.meta.requiredAuth) {
+      next({ name: 'login' });
+    } else {
+      document.title = `${to.meta.title} - Ecoforum40.ru`;
+      next();
+    }
+  });
 });
 
 export default router;

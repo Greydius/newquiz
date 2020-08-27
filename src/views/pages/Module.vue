@@ -1,5 +1,5 @@
 <template>
-  <GalleryModule v-if="$route.name === 'young-botanist'" />
+  <GalleryModule v-if="$route.params.moduleId === 'young-botanist'" />
   <VideoModule v-else />
 </template>
 
