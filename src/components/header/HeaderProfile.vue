@@ -1,13 +1,14 @@
 <template>
   <div class="header-profile">
     <span class="header-profile__title">{{ user.name }}</span>
-    <a-button 
+    <a-avatar 
       @click="logOut"
       @mouseenter="onHover"
       @mouseleave="onUnhover"
       :icon="currentIcon"
+      :src="user.avatar"
       shape="circle"
-      class="header-profile__button"
+      class="header-profile__avatar"
     />
   </div>
 </template>
@@ -64,7 +65,11 @@ export default {
     color: #fff;
   }
 
-  &__title + &__button {
+  &__avatar {
+    cursor: pointer;
+  }
+
+  &__title + &__avatar {
     margin-left: 15px;
   }
 }

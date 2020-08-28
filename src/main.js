@@ -9,7 +9,7 @@ import App from './App.vue'
 import {
   ConfigProvider,
   Layout,
-  Button, Icon,
+  Button, Icon, Avatar,
   Result, Modal,
   message,
 } from 'ant-design-vue';
@@ -25,6 +25,7 @@ Vue.use(Layout.Content);
 Vue.use(Result);
 Vue.use(Modal);
 
+Vue.use(Avatar);
 Vue.use(Button);
 Vue.use(Icon);
 

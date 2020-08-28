@@ -1,6 +1,6 @@
 import apiRequest from '@/utils/apiRequest';
 
-import { IMAGES_URI } from '@/config/api';
+const STORAGE_URL = process.env.VUE_APP_STORAGE_URL;
 
 export default {
   namespaced: true,
@@ -13,7 +13,7 @@ export default {
     isAuthorized: (state) => state.isAuthorized === true,
     getUser: (state) => {
       const user = state.user
-      user.avatar = IMAGES_URI + user.avatar
+      user.avatar = STORAGE_URL + user.avatar
 
       return user;
     },
@@ -88,31 +88,6 @@ export default {
             reject(error);
           });
       })
-    },
-    testLogout({ commit }) {
-      return new Promise((resolve) => {
-        localStorage.removeItem('testToken');
-        commit('SET_AUTHORIZED_STATUS', false);
-        resolve()
-      })
-    },
-    testLogin({ commit }, formData) {
-      return new Promise((resolve, reject) => {
-        if(formData.username === 'guest1@ecoforum40.ru' && formData.password === 'Hardweb123!') {
-          localStorage.setItem('testToken', 'Hardweb123!-guest1');
-          commit('SET_AUTHORIZED_STATUS', true);
-          resolve();
-        } else {
-          reject();
-        }
-      });
-    },
-    testRefresh({ commit }) {
-      if(localStorage.getItem('testToken') === 'Hardweb123!-guest1') {
-        commit('SET_AUTHORIZED_STATUS', true);
-      } else {
-        commit('SET_AUTHORIZED_STATUS', false);
-      }
     },
   },
 };

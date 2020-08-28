@@ -107,7 +107,6 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   store.dispatch('auth/refresh')
   .then(() => {
-    // store.dispatch('auth/testRefresh');
     const isAuthorized = store.getters['auth/isAuthorized'];
 
     if (to.meta.requiredAuth && !isAuthorized) {

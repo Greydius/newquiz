@@ -1,6 +1,6 @@
 <template>
   <List
-    :grid="{ gutter: 16, column: 3 }"
+    :grid="{ gutter: 16, column: columnsCount }"
     :data-source="list"
     class="modules-list"
   >
@@ -27,6 +27,10 @@ export default {
 
   props: {
     list: Array,
+    columnsCount: {
+      type: Number,
+      default: 3,
+    },
   },
 
   components: {
