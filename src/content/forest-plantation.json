@@ -1,0 +1,228 @@
+[
+  {
+    "type": "Question",
+    "content": {
+      "title": "Продолжите предложение:",
+      "description": "Лучшим сроком посадки лесных культур является ..."
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, какая должна быть минимальная густота лесных культур на вырубках, создаваемых посадкой сеянцев:"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, какой должна быть высота стандартных сеянцев хвойных пород:"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите основное отличие сеянца от саженца:"
+    }
+  },
+  {
+    "type": "ImagesNames",
+    "content": {
+      "title": "Под соответствующими номерами рисунков впишите семена какой древесной породы изображены на фотографиях:",
+      "images": [
+        "/assets/images/modules/forest-plantation/5-1.jpg",
+        "/assets/images/modules/forest-plantation/5-2.jpg",
+        "/assets/images/modules/forest-plantation/5-3.jpg",
+        "/assets/images/modules/forest-plantation/5-4.jpg",
+        "/assets/images/modules/forest-plantation/5-5.jpg",
+        "/assets/images/modules/forest-plantation/5-6.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, семена какой хвойной породы, произрастающей в Калужской области, развиваются в шишках, которые созревают поздно осенью следующего года после цветения:"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, в каком месяце года созревают семена березы бородавчатой:"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, семена какой хвойной породы, произрастающей в Калужской области, развиваются в шишках, которые созревают в течение одного вегетационного периода и бывают готовы для сбора в октябре-ноябре месяце:"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, в каком месяце цветет липа:"
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию, на которой изображена мерная вилка:",
+      "images": [
+        "/assets/images/modules/forest-plantation/10-1.jpg",
+        "/assets/images/modules/forest-plantation/10-2.jpg",
+        "/assets/images/modules/forest-plantation/10-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите запись, указывающей состав насаждения:",
+      "answers": [
+        "3Б5Ос1Лп",
+        "6Б2Ос1Е1Олч",
+        "6Ос2Лп2С1Д",
+        "6Ю2С2Е"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите рисунок, на котором изображен чистый березняк:",
+      "images": [
+        "/assets/images/modules/forest-plantation/12-1.jpg",
+        "/assets/images/modules/forest-plantation/12-2.jpg",
+        "/assets/images/modules/forest-plantation/12-2.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберете породу дерева, из которого делают дёготь:",
+      "answers": [
+        "Сосна",
+        "Береза",
+        "Липа"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберете способ определения возраста дерева:",
+      "answers": [
+        "По годичным кольцам",
+        "По годичным кольцам и мутовкам",
+        "С помощью мерной вилки"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите название инструмента, изображенного на фотографии:",
+      "image": "/assets/images/modules/forest-plantation/10-1.jpg"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Что за вещество показано на фото и как им пользуются садоводы?",
+      "image": "/assets/images/modules/forest-plantation/10-1.jpg"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Укажите, какое хвойное дерево сбрасывает хвою?"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Это дерево - целая лесная аптека. От его цветов пахнет душистым мёдом. К нему обращаются при различных недугах: ангине, кашле, ожогах. У деревья своя слава: чай, лапти. О каком дереве идет речь?"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Что такое валежник?",
+      "answers": [
+        "Рухнувшие на землю стволы деревьев или их составляющие: сучья, ветви, свежие и гниющие",
+        "Лес, который валят лесники",
+        "Лес, используемый для строительства домов"
+      ]
+    }
+  },
+  {
+    "type": "ImagesCompare",
+    "content": {
+      "title": "Соотнеси ветку дерева (цифра) и его плод (буква):",
+      "images": [
+        [
+          "/assets/images/modules/forest-plantation/20-1-1.jpg",
+          "/assets/images/modules/forest-plantation/20-2-1.jpg",
+          "/assets/images/modules/forest-plantation/20-3-1.jpg",
+          "/assets/images/modules/forest-plantation/20-4-1.jpg"
+        ],
+        [
+          "/assets/images/modules/forest-plantation/20-1-2.jpg",
+          "/assets/images/modules/forest-plantation/20-2-2.jpg",
+          "/assets/images/modules/forest-plantation/20-3-2.jpg",
+          "/assets/images/modules/forest-plantation/20-4-2.jpg"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Как сильно за год подрастает дуб?",
+      "answers": [
+        "на несколько сантиметров",
+        "на один метр",
+        "на несколько метров"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Сколько углекислого газа в среднем перерабатывает одно дерево в течение своей жизни?",
+      "answers": [
+        "100 кг",
+        "500 кг",
+        "1 тонну"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "На сколько, по мнению ученых, леса уменьшают парниковый эффект Земли?",
+      "answers": [
+        "на 5%",
+        "на 10%",
+        "на 20%"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какого типа лесам принадлежит половина лесной зоны мира?",
+      "answers": [
+        "Березовым",
+        "Хвойным",
+        "Тропическим"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Впишите хвойное растение, шишки которого не свисают с веток, а подняты вверх:"
+    }
+  }
+]
