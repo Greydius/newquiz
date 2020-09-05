@@ -1,228 +1,207 @@
 [
   {
-    "type": "Question",
-    "content": {
-      "title": "Продолжите предложение:",
-      "description": "Лучшим сроком посадки лесных культур является ..."
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите, какая должна быть минимальная густота лесных культур на вырубках, создаваемых посадкой сеянцев:"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите, какой должна быть высота стандартных сеянцев хвойных пород:"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите основное отличие сеянца от саженца:"
-    }
-  },
-  {
-    "type": "ImagesNames",
-    "content": {
-      "title": "Под соответствующими номерами рисунков впишите семена какой древесной породы изображены на фотографиях:",
-      "images": [
-        "/assets/images/modules/forest-plantation/5-1.jpg",
-        "/assets/images/modules/forest-plantation/5-2.jpg",
-        "/assets/images/modules/forest-plantation/5-3.jpg",
-        "/assets/images/modules/forest-plantation/5-4.jpg",
-        "/assets/images/modules/forest-plantation/5-5.jpg",
-        "/assets/images/modules/forest-plantation/5-6.jpg"
-      ]
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите, семена какой хвойной породы, произрастающей в Калужской области, развиваются в шишках, которые созревают поздно осенью следующего года после цветения:"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите, в каком месяце года созревают семена березы бородавчатой:"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите, семена какой хвойной породы, произрастающей в Калужской области, развиваются в шишках, которые созревают в течение одного вегетационного периода и бывают готовы для сбора в октябре-ноябре месяце:"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите, в каком месяце цветет липа:"
-    }
-  },
-  {
-    "type": "ImagesSelect",
-    "content": {
-      "title": "Выберите фотографию, на которой изображена мерная вилка:",
-      "images": [
-        "/assets/images/modules/forest-plantation/10-1.jpg",
-        "/assets/images/modules/forest-plantation/10-2.jpg",
-        "/assets/images/modules/forest-plantation/10-3.jpg"
-      ]
-    }
-  },
-  {
     "type": "AnswersSelect",
     "content": {
-      "title": "Выберите запись, указывающей состав насаждения:",
+      "title": "Лесной пожар это…..",
       "answers": [
-        "3Б5Ос1Лп",
-        "6Б2Ос1Е1Олч",
-        "6Ос2Лп2С1Д",
-        "6Ю2С2Е"
+        "Стихийное распространение огня в лесном фонде;",
+        "Управляемое распространение огня в лесном фонде;",
+        "Стихийное распространение огня в природных ландшафтах"
       ]
     }
   },
   {
     "type": "ImagesSelect",
     "content": {
-      "title": "Выберите рисунок, на котором изображен чистый березняк:",
+      "title": "Выберите фотографию с изображением верхового пожара.",
       "images": [
-        "/assets/images/modules/forest-plantation/12-1.jpg",
-        "/assets/images/modules/forest-plantation/12-2.jpg",
-        "/assets/images/modules/forest-plantation/12-2.jpg"
+        "/assets/images/modules/forest-fire-security/2-1.jpg",
+        "/assets/images/modules/forest-fire-security/2-2.jpg",
+        "/assets/images/modules/forest-fire-security/2-3.jpg"
       ]
     }
   },
   {
     "type": "AnswersSelect",
     "content": {
-      "title": "Выберете породу дерева, из которого делают дёготь:",
+      "title": "Ширина минерализованной полосы должна соответствовать диапазону…",
       "answers": [
-        "Сосна",
-        "Береза",
-        "Липа"
+        "300-500см.;",
+        "50см-100см;",
+        "140см-300см"
       ]
     }
   },
   {
-    "type": "AnswersSelect",
+    "type": "ImagesSelect",
     "content": {
-      "title": "Выберете способ определения возраста дерева:",
-      "answers": [
-        "По годичным кольцам",
-        "По годичным кольцам и мутовкам",
-        "С помощью мерной вилки"
-      ]
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Напишите название инструмента, изображенного на фотографии:",
-      "image": "/assets/images/modules/forest-plantation/10-1.jpg"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Что за вещество показано на фото и как им пользуются садоводы?",
-      "image": "/assets/images/modules/forest-plantation/10-1.jpg"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Укажите, какое хвойное дерево сбрасывает хвою?"
-    }
-  },
-  {
-    "type": "Question",
-    "content": {
-      "title": "Это дерево - целая лесная аптека. От его цветов пахнет душистым мёдом. К нему обращаются при различных недугах: ангине, кашле, ожогах. У деревья своя слава: чай, лапти. О каком дереве идет речь?"
-    }
-  },
-  {
-    "type": "AnswersSelect",
-    "content": {
-      "title": "Что такое валежник?",
-      "answers": [
-        "Рухнувшие на землю стволы деревьев или их составляющие: сучья, ветви, свежие и гниющие",
-        "Лес, который валят лесники",
-        "Лес, используемый для строительства домов"
-      ]
-    }
-  },
-  {
-    "type": "ImagesCompare",
-    "content": {
-      "title": "Соотнеси ветку дерева (цифра) и его плод (буква):",
+      "title": "Выберите фотографию с изображением верхового пожара.",
       "images": [
-        [
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg"
-        ],
-        [
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg"
-        ]
-      ]
-    }
-  },
-  {
-    "type": "AnswersSelect",
-    "content": {
-      "title": "Как сильно за год подрастает дуб?",
-      "answers": [
-        "на несколько сантиметров",
-        "на один метр",
-        "на несколько метров"
-      ]
-    }
-  },
-  {
-    "type": "AnswersSelect",
-    "content": {
-      "title": "Сколько углекислого газа в среднем перерабатывает одно дерево в течение своей жизни?",
-      "answers": [
-        "100 кг",
-        "500 кг",
-        "1 тонну"
-      ]
-    }
-  },
-  {
-    "type": "AnswersSelect",
-    "content": {
-      "title": "На сколько, по мнению ученых, леса уменьшают парниковый эффект Земли?",
-      "answers": [
-        "на 5%",
-        "на 10%",
-        "на 20%"
-      ]
-    }
-  },
-  {
-    "type": "AnswersSelect",
-    "content": {
-      "title": "Какого типа лесам принадлежит половина лесной зоны мира?",
-      "answers": [
-        "Березовым",
-        "Хвойным",
-        "Тропическим"
+        "/assets/images/modules/forest-fire-security/4-1.jpg",
+        "/assets/images/modules/forest-fire-security/4-2.jpg",
+        "/assets/images/modules/forest-fire-security/4-3.jpg"
       ]
     }
   },
   {
     "type": "Question",
     "content": {
-      "title": "Впишите хвойное растение, шишки которого не свисают с веток, а подняты вверх:"
+      "title": "Расшифруйте аббревиатуру РЛО?"
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Укажите на представленных рисунках почвенный пожар",
+      "images": [
+        "/assets/images/modules/forest-fire-security/6-1.jpg",
+        "/assets/images/modules/forest-fire-security/6-2.jpg",
+        "/assets/images/modules/forest-fire-security/6-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Крупным лесным пожаром в зоне наземного применения сил и средств является пожар …",
+      "answers": [
+        "15 гектаров",
+        "25 гектаров;",
+        "более 25 гектаров"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Из представленных рисунков выберите основную причину пожаров на территории Калужской области",
+      "images": [
+        "/assets/images/modules/forest-fire-security/8-1.jpg",
+        "/assets/images/modules/forest-fire-security/8-2.jpg",
+        "/assets/images/modules/forest-fire-security/8-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Укажите фотографию с изображением транспортного средства, которое может быть использовано при тушении лесных пожаров в труднодоступных лесах",
+      "images": [
+        "/assets/images/modules/forest-fire-security/9-1.jpg",
+        "/assets/images/modules/forest-fire-security/9-2.jpg",
+        "/assets/images/modules/forest-fire-security/9-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Разведка лесного пожара нужна для……",
+      "answers": [
+        "Для ориентировки на местности;",
+        "Для уточнения характеристик пожара и прогноза по его развитию и тушению;",
+        "Для определения погодных условий на месте пожара"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "В какой период чаще всего возникают лесные пожары?",
+      "answers": [
+        "А) Апрель-май;",
+        "Б) Июнь-июль;",
+        "В) Сентябрь-октябрь"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Из предложенных вариантов выберите специализированный пожарный шанцевый инструмент, который используется в тушении лесных пожаров",
+      "images": [
+        "/assets/images/modules/forest-fire-security/12-1.jpg",
+        "/assets/images/modules/forest-fire-security/12-2.jpg",
+        "/assets/images/modules/forest-fire-security/12-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Возможно ли тушение лесного пожара огнём? (да/нет)"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Низовой пожар это …",
+      "answers": [
+        "Распространение огня по надпочвенному покрову;",
+        "Распространение огня по кронам древостоя;",
+        "Распространение огня по почвенному покрову"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Для каких целей необходимо прокладка минерализованной полосы?",
+      "answers": [
+        "Недопущения перехода пожара в лесной фонд;",
+        "Недопущения въезда техники в лесной фонд в период действия особого противопожарного режима;",
+        "Для заполнения полосы водой и создания водной преграды"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Каким средством необходимо воспользоваться для тушения следующего пожара: это лесной пожар, распространяющийся по нижним ярусам лесной растительности, лесной подстилке, опаду. В огне оказывается практически весь нижний ярус лесных территорий, который включает в себя также мох, лишайники и почвенную подстилку. ",
+      "images": [
+        "/assets/images/modules/forest-fire-security/16-1.jpg",
+        "/assets/images/modules/forest-fire-security/16-2.jpg",
+        "/assets/images/modules/forest-fire-security/16-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "К тушению лесных пожаров, не допускаются лица моложе ________ лет"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Опасными факторами пожара являются:",
+      "answers": [
+        "Пламя, искры и тепловой поток; снижение видимости в дыму",
+        "Снижение концентрации кислорода в воздухе; повышение температуры окружающей среды; вероятный взрыв",
+        "Повышенная концентрация отравляющих продуктов горения и термического разложения; пламя, искры и тепловой поток; снижение видимости в дыму; снижение концентрации кислорода в воздухе"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Укажите фотографию с изображением деревьев, чьи древесину лучше использовать для разведения костра? ",
+      "images": [
+        "/assets/images/modules/forest-fire-security/19-1.jpg",
+        "/assets/images/modules/forest-fire-security/19-2.jpg",
+        "/assets/images/modules/forest-fire-security/19-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Запрещено разводить костры в хвойных молодняках, на гарях, участках поврежденного леса, торфяниках, в местах рубок (на лесосеках), не очищенных от порубочных остатков и заготовленной древесины, в местах с подсохшей травой, под корнями деревьев:",
+      "answers": [
+        "с 1 мая до 1 октября;",
+        "в период засушливой погоды;",
+        "со дня схода снежного покрова до установления устойчивой дождливой погоды или образования снежного покрова."
+      ]
     }
   }
 ]

@@ -6,7 +6,7 @@
       @submit="handleSubmit"
     >
       <component
-        v-for="(input, i) in inputs"
+        v-for="(input, i) in routeInputs"
         :key="i"
         :is="input.type"
         :content="input.content"
@@ -34,7 +34,8 @@ import Question from '../questions/Question'
 
 import { Form } from 'ant-design-vue'
 
-import inputs from '@/content/forest-plantation'
+import forestPlantation from '@/content/forest-plantation'
+import forestFireSecurity from '@/content/forest-fire-security'
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -51,12 +52,23 @@ export default {
 
   data() {
     return {
-      inputs,
+      inputs: {
+        'forest-plantation': forestPlantation,
+        'forest-fire-protection': forestFireSecurity
+      },
     }
   },
 
   beforeCreate() {
     this.form = this.$form.createForm(this, { name: 'questions-module-form' });
+  },
+
+  computed: {
+    routeInputs() {
+      const route = this.$route.params.moduleId;
+      const data = this.inputs[route]
+      return data ? data : this.inputs['forest-plantation']
+    }
   },
 
   methods: {
