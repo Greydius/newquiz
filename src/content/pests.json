@@ -73,9 +73,9 @@
       "title": "Выберите насекомое, имеющее неполный цикл развития (яйцо – личинка- взрослое насекомое)",
       "images": [
         "/assets/images/modules/pests/7-1.jpg",
-        "/assets/images/modules/pests/7-1.jpg",
-        "/assets/images/modules/pests/7-1.jpg",
-        "/assets/images/modules/pests/7-1.jpg"
+        "/assets/images/modules/pests/7-2.jpg",
+        "/assets/images/modules/pests/7-3.jpg",
+        "/assets/images/modules/pests/7-4.jpg"
       ]
     }
   },
@@ -97,9 +97,9 @@
       "title": "Выберите гриб, который поражает только осину, вызывая центральную белую гниль ствола?",
       "images": [
         "/assets/images/modules/pests/9-1.jpg",
-        "/assets/images/modules/pests/9-1.jpg",
-        "/assets/images/modules/pests/9-1.jpg",
-        "/assets/images/modules/pests/9-1.jpg"
+        "/assets/images/modules/pests/9-2.jpg",
+        "/assets/images/modules/pests/9-3.jpg",
+        "/assets/images/modules/pests/9-4.jpeg"
       ]
     }
   },
@@ -109,21 +109,24 @@
       "title": "Выберите гриб, который поражает как хвойные, так и лиственные породы деревьев.",
       "images": [
         "/assets/images/modules/pests/10-1.jpg",
-        "/assets/images/modules/pests/10-1.jpg",
-        "/assets/images/modules/pests/10-1.jpg",
-        "/assets/images/modules/pests/10-1.jpg"
+        "/assets/images/modules/pests/10-2.jpg",
+        "/assets/images/modules/pests/10-3.jpg",
+        "/assets/images/modules/pests/10-4.jpg"
       ]
     }
   },
   {
-    "type": "ImagesSelect",
+    "type": "AnswerSelect",
     "content": {
       "title": "Выберите фотографию, на которой изображено дерево с категорией состояния «усыхающее»",
       "images": [
-        "/assets/images/modules/pests/11-1.jpg",
-        "/assets/images/modules/pests/11-1.jpg",
-        "/assets/images/modules/pests/11-1.jpg",
         "/assets/images/modules/pests/11-1.jpg"
+      ],
+      "answers": [
+        "I",
+        "II",
+        "III",
+        "IV"
       ]
     }
   },
@@ -156,7 +159,7 @@
     "content": {
       "title": "Выберите насекомое, которое относится к отряду Жуки? ",
       "images": [
-        "/assets/images/modules/pests/14-1.jpg",
+        "/assets/images/modules/pests/14-1.jpeg",
         "/assets/images/modules/pests/14-2.jpg",
         "/assets/images/modules/pests/14-3.jpg",
         "/assets/images/modules/pests/14-4.jpg"
@@ -198,10 +201,9 @@
     "content": {
       "title": "Выберите гриб, являющийся типичным полифагом, поражающим более 230 видов растений, в том числе многие древесные породы, кустарники, сельскохозяйственные и цветочные культуры?",
       "images": [
-        "/assets/images/modules/pests/18-1.jpg",
-        "/assets/images/modules/pests/18-2.jpg",
-        "/assets/images/modules/pests/18-3.jpg",
-        "/assets/images/modules/pests/18-4.jpg"
+        "/assets/images/modules/pests/18-1.jpeg",
+        "/assets/images/modules/pests/18-2.JPG",
+        "/assets/images/modules/pests/18-3.jpeg"
       ]
     }
   },
@@ -210,7 +212,7 @@
     "content": {
       "title": "Выберите дереворазрушающий гриб, который встречается только на мертвой (заготовленной) древесине?",
       "images": [
-        "/assets/images/modules/pests/19-1.jpg",
+        "/assets/images/modules/pests/19-1.jpeg",
         "/assets/images/modules/pests/19-2.jpg",
         "/assets/images/modules/pests/19-3.jpg",
         "/assets/images/modules/pests/19-4.jpg"
@@ -222,11 +224,11 @@
     "content": {
       "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
       "images": [
-        "/assets/images/modules/pests/6-1.jpg",
-        "/assets/images/modules/pests/6-1.jpg",
-        "/assets/images/modules/pests/6-1.jpg",
-        "/assets/images/modules/pests/6-1.jpg",
-        "/assets/images/modules/pests/6-1.jpg"
+        "/assets/images/modules/pests/6-1.png",
+        "/assets/images/modules/pests/6-1.png",
+        "/assets/images/modules/pests/6-1.png",
+        "/assets/images/modules/pests/6-1.png",
+        "/assets/images/modules/pests/6-1.png"
       ]
     }
   }
