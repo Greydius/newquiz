@@ -1,0 +1,233 @@
+[
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите какой болезнью поражено на фотографии дерево?",
+      "image": "/assets/images/modules/pests/1-1.jpg"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите правильный ответ. В каких из указанных насаждений чаще возникают верховые пожары?",
+      "answers": [
+        "в ельниках",
+        "в сосняках",
+        "в тополевниках",
+        "в дубняках"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": ". Выберите правильный ответ. Настоящий трутовик поражает…",
+      "answers": [
+        "хвойные породы",
+        "преимущественно хвойные, реже лиственные",
+        "различные лиственные породы",
+        "только березу"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите верный ответ. Большой сосновый лубоед зимует:",
+      "answers": [
+        "в толще коры у основания стволов",
+        "в подстилке",
+        "в трещинах коры",
+        "в кроне"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Защита растений от болезней, основанная на применении химических веществ, ядовитых грибов и бактерий - возбудителей болезней, относится к ……",
+      "answers": [
+        "лесохозяйственному методу борьбы",
+        "биологическому методу борьбы",
+        "химическому методу борьбы",
+        "механическому методу борьбы"
+      ]
+    }
+  },
+  {
+    "type": "ImagesNames",
+    "content": {
+      "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
+      "images": [
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите насекомое, имеющее неполный цикл развития (яйцо – личинка- взрослое насекомое)",
+      "images": [
+        "/assets/images/modules/pests/7-1.jpg",
+        "/assets/images/modules/pests/7-1.jpg",
+        "/assets/images/modules/pests/7-1.jpg",
+        "/assets/images/modules/pests/7-1.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "К какой группе вредных организмов относится сосновый вертун?",
+      "answers": [
+        "хвоелистогрызущие вредители",
+        "листогрызущие вредители",
+        "иные группы вредителей",
+        "болезни леса"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите гриб, который поражает только осину, вызывая центральную белую гниль ствола?",
+      "images": [
+        "/assets/images/modules/pests/9-1.jpg",
+        "/assets/images/modules/pests/9-1.jpg",
+        "/assets/images/modules/pests/9-1.jpg",
+        "/assets/images/modules/pests/9-1.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите гриб, который поражает как хвойные, так и лиственные породы деревьев.",
+      "images": [
+        "/assets/images/modules/pests/10-1.jpg",
+        "/assets/images/modules/pests/10-1.jpg",
+        "/assets/images/modules/pests/10-1.jpg",
+        "/assets/images/modules/pests/10-1.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию, на которой изображено дерево с категорией состояния «усыхающее»",
+      "images": [
+        "/assets/images/modules/pests/11-1.jpg",
+        "/assets/images/modules/pests/11-1.jpg",
+        "/assets/images/modules/pests/11-1.jpg",
+        "/assets/images/modules/pests/11-1.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите верный ответ. К абиотическим факторам, влияющим на насекомых, относят…",
+      "answers": [
+        "температуру и влажность",
+        "межвидовые отношения",
+        "пищу",
+        "антропогенные факторы"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите верный ответ. Пестициды, используемые для борьбы с насекомыми, называют…",
+      "answers": [
+        "инсектициды",
+        "акарициды",
+        "нематоциды",
+        "зооциды"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите насекомое, которое относится к отряду Жуки? ",
+      "images": [
+        "/assets/images/modules/pests/14-1.jpg",
+        "/assets/images/modules/pests/14-2.jpg",
+        "/assets/images/modules/pests/14-3.jpg",
+        "/assets/images/modules/pests/14-4.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Допишите название. Налипание льда на кронах при ледяном дожде, под воздействием которого ломаются ветви, стволы, вершины деревьев, называется …"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "К абиотическим факторам, в определенных случаях влияющих отрицательно на древесную растительность, относятся…",
+      "answers": [
+        "грибы",
+        "бактерии",
+        "заморозки",
+        "вирусы"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какие насекомые питаются тканями живых растений?",
+      "answers": [
+        "Плотоядные насекомые",
+        "Растительноядные насекомые",
+        "Сапрофаги",
+        "Копрофаги"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите гриб, являющийся типичным полифагом, поражающим более 230 видов растений, в том числе многие древесные породы, кустарники, сельскохозяйственные и цветочные культуры?",
+      "images": [
+        "/assets/images/modules/pests/18-1.jpg",
+        "/assets/images/modules/pests/18-2.jpg",
+        "/assets/images/modules/pests/18-3.jpg",
+        "/assets/images/modules/pests/18-4.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите дереворазрушающий гриб, который встречается только на мертвой (заготовленной) древесине?",
+      "images": [
+        "/assets/images/modules/pests/19-1.jpg",
+        "/assets/images/modules/pests/19-2.jpg",
+        "/assets/images/modules/pests/19-3.jpg",
+        "/assets/images/modules/pests/19-4.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesNames",
+    "content": {
+      "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
+      "images": [
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg",
+        "/assets/images/modules/pests/6-1.jpg"
+      ]
+    }
+  }
+]

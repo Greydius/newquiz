@@ -1,5 +1,21 @@
 <template>
   <div class="questions-module">
+    <div class="questions-module__steps-wrapper">
+      <a-steps
+        @change="changeStep"
+        progress-dot
+        :current="currentStep"
+        size="small"
+        class="questions-module__steps"
+      >
+        <a-step
+          v-for="(input, i) in routeInputs"
+          :key="i"
+          :title="i+1"
+        />
+      </a-steps>  
+    </div>
+    
     <a-form
       :form="form"
       class="questions-module"
@@ -7,14 +23,22 @@
     >
       <component
         v-for="(input, i) in routeInputs"
+        v-show="currentStep === i"
         :key="i"
         :is="input.type"
         :content="input.content"
         :index="i"
       />
+      <a-form-item v-if="currentStep < routeInputs.length-1" class="question-form-item">
+        <a-button
+          @click="nextStep"
+          type="primary"
+        >
+          Далее
+        </a-button>
+      </a-form-item>
       <a-form-item class="question-form-item">
         <a-button
-          :disabled="hasErrors(form.getFieldsError())"
           type="primary"
           html-type="submit"
         >
@@ -32,10 +56,12 @@ import ImagesNames from '../questions/ImagesNames'
 import ImagesSelect from '../questions/ImagesSelect'
 import Question from '../questions/Question'
 
-import { Form } from 'ant-design-vue'
+import { Form, Steps } from 'ant-design-vue'
 
 import forestPlantation from '@/content/forest-plantation'
 import forestFireSecurity from '@/content/forest-fire-security'
+import zoo from '@/content/zoo'
+import pests from '@/content/pests'
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -48,14 +74,19 @@ export default {
     AnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question,
     'a-form': Form,
     'a-form-item': Form.Item,
+    'a-steps': Steps,
+    'a-step': Steps.Step
   },
 
   data() {
     return {
       inputs: {
         'forest-plantation': forestPlantation,
-        'forest-fire-protection': forestFireSecurity
+        'forest-fire-protection': forestFireSecurity,
+        'forest-directions-and-zoology': zoo,
+        'forest-diseases-and-pests': pests
       },
+      currentStep: 0,
     }
   },
 
@@ -82,10 +113,26 @@ export default {
         }
       });
     },
+
+    nextStep(e) {
+      e.preventDefault();
+
+      this.currentStep++;
+    },
+
+    changeStep(current) {
+      this.currentStep = current;
+    }
   },
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.questions-module {
+  &__steps-wrapper {
+    overflow-x: auto;
+    padding-top: 15px;
+    margin-bottom: 60px;
+  }
+}
 </style>
