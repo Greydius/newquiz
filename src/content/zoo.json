@@ -30,7 +30,7 @@
     }
   },
   {
-    "type": "Question",
+    "type": "ImagesSelect",
     "content": {
       "title": "Укажите номер фотографии, на которой изображен квартальный столб.",
       "images": [
@@ -117,10 +117,10 @@
     "content": {
       "title": "Укажите на каких из изображённых на рисунках еловых шишек семена доставали, обитающие в Калужской области: клёст-еловик, белка, мышь и большой пёстрый дятел.",
       "images": [
-        "/assets/images/modules/zoom/12-1.jpg",
-        "/assets/images/modules/zoom/12-2.jpg",
-        "/assets/images/modules/zoom/12-2.jpg",
-        "/assets/images/modules/zoom/12-3.jpg"
+        "/assets/images/modules/zoo/12-1.jpg",
+        "/assets/images/modules/zoo/12-2.jpg",
+        "/assets/images/modules/zoo/12-2.jpg",
+        "/assets/images/modules/zoo/12-3.jpg"
       ]
     }
   },

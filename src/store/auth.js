@@ -55,23 +55,27 @@ export default {
           });
       });
     },
-    refresh({ commit }) {
+    refresh({ commit, getters }) {
       return new Promise((resolve, reject) => {
-        apiRequest
-          .post('/auth/refresh')
-          .then((result) => {
+        if(getters.isAuthorized) {
+          resolve();
+        } else {
+          apiRequest
+            .post('/auth/refresh')
+            .then((result) => {
 
-            const { access_token, user } = result.data;
+              const { access_token, user } = result.data;
 
-            commit('SET_TOKEN', access_token);
-            commit('SET_USER', user);
-            commit('SET_AUTHORIZED_STATUS', true);
+              commit('SET_TOKEN', access_token);
+              commit('SET_USER', user);
+              commit('SET_AUTHORIZED_STATUS', true);
 
-            resolve();
-          })
-          .catch((error) => {
-            reject(error);
-          });
+              resolve();
+            })
+            .catch((error) => {
+              reject(error);
+            });
+        }
       })
     },
     logout({ commit }) {
