@@ -15,9 +15,9 @@
     "content": {
       "title": "Выберите фотографию с изображением верхового пожара.",
       "images": [
-        "/assets/images/modules/forest-fire-security/2-1.jpg",
-        "/assets/images/modules/forest-fire-security/2-2.jpg",
-        "/assets/images/modules/forest-fire-security/2-3.jpg"
+        "/assets/images/modules/forest-fire/2-1.jpg",
+        "/assets/images/modules/forest-fire/2-2.jpg",
+        "/assets/images/modules/forest-fire/2-3.jpg"
       ]
     }
   },
@@ -35,11 +35,11 @@
   {
     "type": "ImagesSelect",
     "content": {
-      "title": "Выберите фотографию с изображением верхового пожара.",
+      "title": "Выберите фотографию с изображением оборудования, которое применяется для тушения горящей кромки при травяных и низовых лесных пожарах и для контролирования проведения отжигов от опорной полосы",
       "images": [
-        "/assets/images/modules/forest-fire-security/4-1.jpg",
-        "/assets/images/modules/forest-fire-security/4-2.jpg",
-        "/assets/images/modules/forest-fire-security/4-3.jpg"
+        "/assets/images/modules/forest-fire/4-1.jpg",
+        "/assets/images/modules/forest-fire/4-2.jpg",
+        "/assets/images/modules/forest-fire/4-3.jpg"
       ]
     }
   },
@@ -54,9 +54,9 @@
     "content": {
       "title": "Укажите на представленных рисунках почвенный пожар",
       "images": [
-        "/assets/images/modules/forest-fire-security/6-1.jpg",
-        "/assets/images/modules/forest-fire-security/6-2.jpg",
-        "/assets/images/modules/forest-fire-security/6-3.jpg"
+        "/assets/images/modules/forest-fire/6-1.jpg",
+        "/assets/images/modules/forest-fire/6-2.jpg",
+        "/assets/images/modules/forest-fire/6-3.jpg"
       ]
     }
   },
@@ -76,9 +76,9 @@
     "content": {
       "title": "Из представленных рисунков выберите основную причину пожаров на территории Калужской области",
       "images": [
-        "/assets/images/modules/forest-fire-security/8-1.jpg",
-        "/assets/images/modules/forest-fire-security/8-2.jpg",
-        "/assets/images/modules/forest-fire-security/8-3.jpg"
+        "/assets/images/modules/forest-fire/8-1.jpg",
+        "/assets/images/modules/forest-fire/8-2.jpg",
+        "/assets/images/modules/forest-fire/8-3.jpg"
       ]
     }
   },
@@ -87,9 +87,9 @@
     "content": {
       "title": "Укажите фотографию с изображением транспортного средства, которое может быть использовано при тушении лесных пожаров в труднодоступных лесах",
       "images": [
-        "/assets/images/modules/forest-fire-security/9-1.jpg",
-        "/assets/images/modules/forest-fire-security/9-2.jpg",
-        "/assets/images/modules/forest-fire-security/9-3.jpg"
+        "/assets/images/modules/forest-fire/9-1.jpg",
+        "/assets/images/modules/forest-fire/9-2.jpg",
+        "/assets/images/modules/forest-fire/9-3.jpg"
       ]
     }
   },
@@ -120,9 +120,9 @@
     "content": {
       "title": "Из предложенных вариантов выберите специализированный пожарный шанцевый инструмент, который используется в тушении лесных пожаров",
       "images": [
-        "/assets/images/modules/forest-fire-security/12-1.jpg",
-        "/assets/images/modules/forest-fire-security/12-2.jpg",
-        "/assets/images/modules/forest-fire-security/12-3.jpg"
+        "/assets/images/modules/forest-fire/12-1.jpg",
+        "/assets/images/modules/forest-fire/12-2.jpg",
+        "/assets/images/modules/forest-fire/12-3.jpg"
       ]
     }
   },
@@ -159,9 +159,9 @@
     "content": {
       "title": "Каким средством необходимо воспользоваться для тушения следующего пожара: это лесной пожар, распространяющийся по нижним ярусам лесной растительности, лесной подстилке, опаду. В огне оказывается практически весь нижний ярус лесных территорий, который включает в себя также мох, лишайники и почвенную подстилку. ",
       "images": [
-        "/assets/images/modules/forest-fire-security/16-1.jpg",
-        "/assets/images/modules/forest-fire-security/16-2.jpg",
-        "/assets/images/modules/forest-fire-security/16-3.jpg"
+        "/assets/images/modules/forest-fire/16-1.jpg",
+        "/assets/images/modules/forest-fire/16-2.jpg",
+        "/assets/images/modules/forest-fire/16-3.jpg"
       ]
     }
   },
@@ -187,9 +187,9 @@
     "content": {
       "title": "Укажите фотографию с изображением деревьев, чьи древесину лучше использовать для разведения костра? ",
       "images": [
-        "/assets/images/modules/forest-fire-security/19-1.jpg",
-        "/assets/images/modules/forest-fire-security/19-2.jpg",
-        "/assets/images/modules/forest-fire-security/19-3.jpg"
+        "/assets/images/modules/forest-fire/19-1.jpg",
+        "/assets/images/modules/forest-fire/19-2.jpg",
+        "/assets/images/modules/forest-fire/19-3.jpg"
       ]
     }
   },
