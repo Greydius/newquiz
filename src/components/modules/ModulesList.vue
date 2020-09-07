@@ -11,7 +11,7 @@
       :title="title"
       :description="description"
       :disabled="disabled"
-      :status="status"
+      :status="moduleStatus(name, status)"
       class="modules-list__item"
     />
   </List>
@@ -19,6 +19,10 @@
 
 <script>
 import { List } from 'ant-design-vue'
+
+import { createNamespacedHelpers } from 'vuex'
+
+const { mapState: mapTestsResultState } = createNamespacedHelpers('testsResult')
 
 import ModuleItem from './ModuleItem'
 
@@ -36,6 +40,20 @@ export default {
   components: {
     List, ModuleItem,
   },
+
+  computed: {
+    ...mapTestsResultState(['testsResults'])
+  },
+
+  methods: {
+    moduleStatus(name, status) {
+      if(status) {
+        return status
+      }
+
+      return this.testsResults[name]
+    }
+  }
 }
 </script>
 

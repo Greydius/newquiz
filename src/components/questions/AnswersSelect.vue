@@ -12,8 +12,8 @@
       class="answers-select-form-item__radio-group"
     >
       <a-radio-button
-        v-for="(answer) in content.answers"
-        :key="answer"
+        v-for="(answer, i) in content.answers"
+        :key="i"
         :value="answer"
         class="answers-select-form-item__radio-button"
       >

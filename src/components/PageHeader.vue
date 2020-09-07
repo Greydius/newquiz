@@ -12,7 +12,7 @@ import { PageHeader } from 'ant-design-vue'
 export default {
   props: {
     title: String,
-    subTitle: String,
+    subTitle: [String, undefined],
   },
 
   components: {

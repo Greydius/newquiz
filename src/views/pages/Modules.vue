@@ -11,8 +11,12 @@
 </template>
 
 <script>
+import { createNamespacedHelpers } from 'vuex'
+
 import PageHeader from '@/components/PageHeader'
 import ModulesList from '@/components/modules/ModulesList'
+
+const { mapMutations: mapTestsResultMutations } = createNamespacedHelpers('testsResult')
 
 const modules = [
   {
@@ -48,7 +52,14 @@ export default {
     }
   },
 
+  beforeMount() {
+    this.setTestsResults()
+  },
+
   methods: {
+    ...mapTestsResultMutations({
+      setTestsResults: 'SET_ARCHIVED_TESTS_RESULTS'
+    }),
     goToGuide() {
       this.$router.push({ name: 'guide' })
     }

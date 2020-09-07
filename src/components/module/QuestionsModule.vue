@@ -1,5 +1,11 @@
 <template>
   <div class="questions-module">
+    <PageHeader
+      :title="routeData.title"
+      :sub-title="routeData.description"
+      @back="goToGuide"
+      class="modules__header"
+    />
     <div class="questions-module__steps-wrapper">
       <a-steps
         @change="changeStep"
@@ -50,6 +56,8 @@
 </template>
 
 <script>
+import PageHeader from '@/components/PageHeader'
+
 import AnswersSelect from '../questions/AnswersSelect'
 import ImagesCompare from '../questions/ImagesCompare'
 import ImagesNames from '../questions/ImagesNames'
@@ -63,6 +71,12 @@ import forestFireSecurity from '@/content/forest-fire-security'
 import zoo from '@/content/zoo'
 import pests from '@/content/pests'
 
+import modulesData from './modulesData'
+
+import { createNamespacedHelpers } from 'vuex'
+
+const { mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
 }
@@ -70,6 +84,7 @@ function hasErrors(fieldsError) {
 export default {
   name: "QuestionsModule",
   components: {
+    PageHeader,
     // eslint-disable-next-line vue/no-unused-components
     AnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question,
     'a-form': Form,
@@ -87,6 +102,7 @@ export default {
         'forest-diseases-and-pests': pests
       },
       currentStep: 0,
+      modulesData
     }
   },
 
@@ -95,20 +111,37 @@ export default {
   },
 
   computed: {
-    routeInputs() {
+    currentRoute() {
       const route = this.$route.params.moduleId;
-      const data = this.inputs[route]
-      return data ? data : this.inputs['forest-plantation']
+      const hasRoute = this.modulesData[route] !== undefined;
+      return hasRoute ? route : 'forest-plantation'
+    },
+
+    routeInputs() {
+      return this.inputs[this.currentRoute]
+    },
+    routeData() {
+      return this.modulesData.find(({ name }) => name === this.currentRoute)
     }
   },
 
   methods: {
+    ...mapTestsResultActions({
+      setTestsResults: 'set',
+    }),
     hasErrors,
 
     handleSubmit(e) {
       e.preventDefault();
       this.form.validateFields((err, values) => {
         if (!err) {
+          this.setTestsResults({
+            test: this.$route.params.moduleId,
+            formData: values
+          })
+            .then(() => {
+              this.goToGuide()
+            })
           console.log('Received values of form: ', values);
         }
       });
@@ -122,6 +155,10 @@ export default {
 
     changeStep(current) {
       this.currentStep = current;
+    },
+
+    goToGuide() {
+      this.$router.push({ name: 'module', params: { moduleId: 'testing' } })
     }
   },
 }

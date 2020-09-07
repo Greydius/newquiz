@@ -12,8 +12,8 @@
       class="images-select-form-item__radio-group"
     >
       <a-radio-button
-        v-for="(image) in content.images"
-        :key="image"
+        v-for="(image, i) in content.images"
+        :key="i"
         :value="image"
         class="images-select-form-item__radio-button"
       >

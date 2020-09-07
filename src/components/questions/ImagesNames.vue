@@ -4,7 +4,7 @@
     <div class="images-names-form-item__inner-wrapper">
       <a-form-item
         v-for="(image, i) in content.images"
-        :key="image"
+        :key="i"
         class="images-names-form-item"
       >
         <div class="images-names-form-item__image-wrapper">

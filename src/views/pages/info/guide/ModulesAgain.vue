@@ -7,7 +7,7 @@
       Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
       Unde placeat eius obcaecati culpa eveniet?
     </p>
-    <ModulesList :list="modules" />
+    <ModulesList :list="modules" :columnsCount="3" />
   </div>
 </template>
 

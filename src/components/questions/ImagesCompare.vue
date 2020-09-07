@@ -6,7 +6,7 @@
         <div class="images-compare-form-item__images-inner-wrapper">
           <div
             v-for="(image, i) in content.images[0]"
-            :key="image"
+            :key="i"
             class="images-compare-form-item__image-wrapper"
           >
             <img
@@ -21,7 +21,7 @@
         <div class="images-compare-form-item__images-inner-wrapper">
           <div
             v-for="(image, i) in content.images[0]"
-            :key="image"
+            :key="i"
             class="images-compare-form-item__image-wrapper"
           >
             <img
@@ -36,7 +36,7 @@
       </div>
       <a-form-item
         v-for="(image, i) in content.images[0]"
-        :key="image"
+        :key="i"
         :label="`${ab[i]}`"
         class="images-compare-form-item"
       >
