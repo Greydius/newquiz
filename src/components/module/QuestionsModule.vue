@@ -63,6 +63,7 @@ import ImagesCompare from '../questions/ImagesCompare'
 import ImagesNames from '../questions/ImagesNames'
 import ImagesSelect from '../questions/ImagesSelect'
 import Question from '../questions/Question'
+import MultipleAnswers from '../questions/MultipleAnswers'
 
 import { Form, Steps } from 'ant-design-vue'
 
@@ -86,7 +87,7 @@ export default {
   components: {
     PageHeader,
     // eslint-disable-next-line vue/no-unused-components
-    AnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question,
+    AnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question, MultipleAnswers,
     'a-form': Form,
     'a-form-item': Form.Item,
     'a-steps': Steps,

@@ -7,14 +7,13 @@
     }
   },
   {
-    "type": "ImagesNames",
+    "type": "MultipleAnswers",
     "content": {
       "title": "Что означают обведенные красным цветом цифры?",
       "images": [
-        "/assets/images/modules/zoo/2-1.jpg",
-        "/assets/images/modules/zoo/2-2.jpg",
-        "/assets/images/modules/zoo/2-3.jpg"
-      ]
+        "/assets/images/modules/zoo/2-1.jpg"
+      ],
+      "count": 3
     }
   },
   {
