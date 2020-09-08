@@ -113,7 +113,7 @@ export default {
   computed: {
     currentRoute() {
       const route = this.$route.params.moduleId;
-      const hasRoute = this.modulesData[route] !== undefined;
+      const hasRoute = this.modulesData.find(({ name }) => name === route)
       return hasRoute ? route : 'forest-plantation'
     },
 
