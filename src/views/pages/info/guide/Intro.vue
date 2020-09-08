@@ -1,26 +1,10 @@
 <template>
   <div class="guide-intro">
-    <h2>Введение!</h2>
+    <h2>Добро пожаловать</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
+      Добро пожаловать на конкурс школьных лесничеств 
+      "Лучшее школьное лесничество Калужской области"
+
     </p>
   </div>
 </template>

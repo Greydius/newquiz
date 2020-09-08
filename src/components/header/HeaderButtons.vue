@@ -50,7 +50,16 @@
       <p>
         <a href="/assets/files/Положение о конкурсе ШЛ 2020.pdf" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Положение о конкурсе ШЛ 2020</a>
       </p>
+      <p>
+        <a href="/assets/files/Порядок проведения тестирования.doc" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Порядок проведения тестирования</a>
+      </p>
     </HeaderButtonWithModal>
+
+    <router-link :to="{ name: 'guide' }" class="header-to-guide">
+      <a-button type="submit">
+        К инструкции
+      </a-button>
+    </router-link>
   </div>
 </template>
 
@@ -65,3 +74,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.header-to-guide {
+  margin-left: 60px;
+}
+</style>

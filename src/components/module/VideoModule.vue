@@ -89,6 +89,10 @@ import VuePlyr from 'vue-plyr'
 
 import PageHeader from '@/components/PageHeader'
 
+import { createNamespacedHelpers } from 'vuex'
+
+const { mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
 }
@@ -111,6 +115,9 @@ export default {
   },
 
   methods: {
+    ...mapTestsResultActions({
+      setTestsResults: 'set',
+    }),
     goBack() {
       this.$router.push({ name: 'modules' })
     },
@@ -119,9 +126,14 @@ export default {
       e.preventDefault();
       this.form.validateFields((err, values) => {
         if (!err) {
-          console.log('Received values of form: ', values);
-          this.$router.push({ name: 'modules' })
-          this.$message.success('Успешно пройдено!')
+          this.setTestsResults({
+            test: this.$route.params.moduleId,
+            formData: values
+          })
+            .then(() => {
+              this.$router.push({ name: 'modules' })
+              this.$message.success('Завершено!')
+            })
         }
       });
     },

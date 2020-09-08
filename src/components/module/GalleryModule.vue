@@ -62,6 +62,10 @@ import PageHeader from '@/components/PageHeader'
 import Viewer from 'v-viewer'
 import Vue from 'vue'
 
+import { createNamespacedHelpers } from 'vuex'
+
+const { mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+
 Vue.use(Viewer)
 
 const images = [
@@ -96,6 +100,9 @@ export default {
   },
 
   methods: {
+    ...mapTestsResultActions({
+      setTestsResults: 'set',
+    }),
     goBack() {
       this.$router.push({ name: 'modules' })
     },
@@ -104,9 +111,14 @@ export default {
       e.preventDefault();
       this.form.validateFields((err, values) => {
         if (!err) {
-          console.log('Received values of form: ', values);
-          this.$router.push({ name: 'modules' })
-          this.$message.success('Успешно пройдено!')
+          this.setTestsResults({
+            test: this.$route.params.moduleId,
+            formData: values
+          })
+            .then(() => {
+              this.$router.push({ name: 'modules' })
+              this.$message.success('Завершено!')
+            })
         }
       });
     },

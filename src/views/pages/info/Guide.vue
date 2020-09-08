@@ -13,6 +13,9 @@
       <router-view></router-view>
     </div>
     <div class="guide__actions">
+      <a-button v-if="current > 0" style="margin-right: 8px" @click="prev">
+        Шаг назад
+      </a-button>
       <a-button v-if="current < steps.length - 1" type="primary" @click="next">
         Дальше
       </a-button>
@@ -22,9 +25,6 @@
         @click="guideDone"
       >
         Ага, понятно!
-      </a-button>
-      <a-button v-if="current > 0" style="margin-left: 8px" @click="prev">
-        Шаг назад
       </a-button>
     </div>
   </div>
@@ -118,7 +118,8 @@ export default {
   }
 
   &__actions {
-
+    display: flex;
+    justify-content: flex-end;
   }
 }
 </style>
