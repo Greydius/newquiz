@@ -9,7 +9,12 @@
       :hoverable="!disabled"
       class="module-item__card"
     >
-      {{ description }}
+      <div
+        class="module-item__card-content"
+        :style="{ backgroundImage: `url(/assets/images/modules/${name}.jpg` }"
+      >
+
+      </div>
     </Card>
     <div
       v-if="status"
@@ -68,6 +73,19 @@ export default {
 
   &__card {
     height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    .ant-card-body {
+      flex: 1;
+    }
+  }
+
+  &__card-content {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position-y: center;
   }
 
   &__overlay {
