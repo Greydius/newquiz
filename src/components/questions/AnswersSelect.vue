@@ -1,6 +1,6 @@
 <template>
   <div class="answers-select-form-item__wrapper">
-    <h4 class="answers-select-form-item__title">{{ content.title }}</h4>
+    <h4 class="answers-select-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
     <a-form-item
       class="answers-select-form-item"
     >

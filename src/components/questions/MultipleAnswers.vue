@@ -1,6 +1,6 @@
 <template>
   <div class="images-names-form-item__wrapper">
-    <h4 class="images-names-form-item__title">{{ content.title }}</h4>
+    <h4 class="images-names-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
     <div class="images-names-form-item__inner-wrapper">
       <div v-if="content.images" class="images-names-form-item__images-wrapper">
         <div

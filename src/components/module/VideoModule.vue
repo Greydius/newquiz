@@ -23,58 +23,62 @@
         :form="form"
         @submit="handleSubmit"
       >
-        <FormItem label="Ошибка №1">
+        <h2>Ответы:</h2>
+        <FormItem label="Ошибка №1" :colon="false">
           <a-input
-            placeholder="Опишите ошибку"
+            placeholder="Впишите ошибку"
             v-decorator="[
               'answer1',
               { rules: [{ required: true, message: 'Введите текст' }] },
             ]"
           />
         </FormItem>
-        <FormItem label="Ошибка №2">
+        <FormItem label="Ошибка №2" :colon="false">
           <a-input
-            placeholder="Опишите ошибку"
+            placeholder="Впишите ошибку"
             v-decorator="[
               'answer2',
               { rules: [{ required: true, message: 'Введите текст' }] },
             ]"
           />
         </FormItem>
-        <FormItem label="Ошибка №3">
+        <FormItem label="Ошибка №3" :colon="false">
           <a-input
-            placeholder="Опишите ошибку"
+            placeholder="Впишите ошибку"
             v-decorator="[
               'answer3',
               { rules: [{ required: true, message: 'Введите текст' }] },
             ]"
           />
         </FormItem>
-        <FormItem label="Ошибка №4">
+        <FormItem label="Ошибка №4" :colon="false">
           <a-input
-            placeholder="Опишите ошибку"
+            placeholder="Впишите ошибку"
             v-decorator="[
               'answer4',
               { rules: [{ required: true, message: 'Введите текст' }] },
             ]"
           />
         </FormItem>
-        <FormItem label="Ошибка №5">
+        <FormItem label="Ошибка №5" :colon="false">
           <a-input
-            placeholder="Опишите ошибку"
+            placeholder="Впишите ошибку"
             v-decorator="[
               'answer5',
               { rules: [{ required: true, message: 'Введите текст' }] },
             ]"
           />
         </FormItem>
-        <FormItem>
+        <FormItem
+          class="module-video__form-button"
+          :colon="false"
+        >
           <a-button
             :disabled="hasErrors(form.getFieldsError())"
             type="primary"
             html-type="submit"
           >
-            Готово!
+            Закончить
           </a-button>
         </FormItem>
       </Form>
@@ -148,6 +152,11 @@ export default {
 
   &__form-wrapper {
     margin-top: 30px;
+  }
+
+  &__form-button {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 </style>

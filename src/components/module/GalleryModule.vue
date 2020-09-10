@@ -25,27 +25,25 @@
         :form="form"
         @submit="handleSubmit"
       >
-        <FormItem label="Названия">
-          <Select
-            mode="tags"
-            maxTagPlaceholder="Достаточно!"
-            :maxTagCount="30"
+        <FormItem label="Ответ">
+          <Input
             style="width: 100%"
             placeholder="Введи названия"
             v-decorator="[
               'answers',
-              { rules: [{ required: true, message: 'Введи хотя бы один вариант!' }] },
+              { rules: [{ required: true, message: 'Обязательное поле!' }] },
             ]"
-          >
-          </Select>
+          />
         </FormItem>
-        <FormItem>
+        <FormItem
+          class="module-gallery__form-button"
+        >
           <a-button
             :disabled="hasErrors(form.getFieldsError())"
             type="primary"
             html-type="submit"
           >
-            Готово!
+            Завершить
           </a-button>
         </FormItem>
       </Form>
@@ -56,7 +54,7 @@
 <script>
 import 'viewerjs/dist/viewer.css'
 
-import { Form, Select } from 'ant-design-vue'
+import { Form, Input } from 'ant-design-vue'
 
 import PageHeader from '@/components/PageHeader'
 import Viewer from 'v-viewer'
@@ -88,7 +86,7 @@ export default {
   components: {
     PageHeader,
     Form, FormItem: Form.Item,
-    Select,
+    Input,
   },
 
   data() {
@@ -151,6 +149,11 @@ export default {
 
   &__form-wrapper {
     margin-top: 30px;
+  }
+
+  &__form-button {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 </style>

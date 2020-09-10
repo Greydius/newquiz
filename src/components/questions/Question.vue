@@ -1,6 +1,6 @@
 <template>
   <a-form-item class="question-form-item">
-    <h4 class="question-form-item__title">{{ content.title }}</h4>
+    <h4 class="question-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
     <p v-if="content.description" class="question-form-item__description">
       {{ content.description }}
     </p>

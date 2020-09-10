@@ -17,15 +17,14 @@
     }
   },
   {
-    "type": "ImagesNames",
+    "type": "MultipleAnswers",
     "content": {
       "title": "Определение сторон света по квартальному столбу. (Рисунок-1 и Рисунок-2)",
       "images": [
         "/assets/images/modules/zoo/3-1.jpg",
-        "/assets/images/modules/zoo/3-2.jpg",
-        "/assets/images/modules/zoo/3-1.jpg",
         "/assets/images/modules/zoo/3-2.jpg"
-      ]
+      ],
+      "count": 4
     }
   },
   {

@@ -1,6 +1,6 @@
 <template>
   <div class="images-compare-form-item__wrapper">
-    <h4 class="images-compare-form-item__title">{{ content.title }}</h4>
+    <h4 class="images-compare-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
     <div class="images-compare-form-item__inner-wrapper">
       <div class="images-compare-form-item__images-wrapper">
         <div class="images-compare-form-item__images-inner-wrapper">
