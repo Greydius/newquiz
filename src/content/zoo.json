@@ -30,7 +30,7 @@
   {
     "type": "ImagesSelect",
     "content": {
-      "title": "Укажите номер фотографии, на которой изображен квартальный столб.",
+      "title": "Выберите вариант, на которой изображен квартальный столб.",
       "images": [
         "/assets/images/modules/zoo/4-1.png",
         "/assets/images/modules/zoo/4-2.png",

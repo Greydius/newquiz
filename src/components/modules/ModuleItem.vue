@@ -89,7 +89,7 @@ export default {
   }
 
   &__overlay {
-
+    
   }
 
   &-overlay {
@@ -101,7 +101,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(158 158 158 / 15%);
+    background-color: rgb(82 196 26 / 10%);
     &__icon {
       font-size: 40px;
     }

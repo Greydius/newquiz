@@ -2,14 +2,28 @@
   <div class="images-names-form-item__wrapper">
     <h4 class="images-names-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
     <div class="images-names-form-item__inner-wrapper">
+      <div class="images-names-form-item__images-wrapper">
+        <div
+          v-for="(image, i) in content.images"
+          :key="i"
+          class="images-names-form-item__image-wrapper"
+        >
+          <div v-viewer.static class="images-names-form-item__image-inner-wrapper">
+            <img :src="image" alt="" class="images-names-form-item__image">  
+          </div>
+          <div class="images-names-form-item__image-number-wrapper">
+            {{ i+1 }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="images-names-form-item__inner-wrapper">
       <a-form-item
         v-for="(image, i) in content.images"
         :key="i"
+        :label="i+1"
         class="images-names-form-item"
       >
-        <div class="images-names-form-item__image-wrapper">
-          <img :src="image" alt="" class="images-names-form-item__image">
-        </div>
         <a-input
           v-decorator="[
             `question[${index}][${i}]`,
@@ -63,8 +77,24 @@ export default {
     width: 100%;
     margin-bottom: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #fff;
+  }
+
+  &__image-inner-wrapper {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image-number-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
   }
 
   &__image {

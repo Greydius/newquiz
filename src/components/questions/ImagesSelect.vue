@@ -18,6 +18,9 @@
         class="images-select-form-item__radio-button"
       >
         <img :src="image" alt="" class="images-select-form-item__image">
+        <div class="images-select-form-item__overlay">
+          <a-icon class="images-select-form-item__overlay-icon" type="check-circle" />
+        </div>
       </a-radio-button>
     </a-radio-group>
     </a-form-item>   
@@ -46,7 +49,7 @@ export default {
 .images-select-form-item {
   &__radio-group {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   &__radio-button {
@@ -60,6 +63,23 @@ export default {
     width: 100%;
   }
 
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(82 196 26 / 10%);
+
+    &-icon {
+      font-size: 30px;
+      color: #457d45;
+    }
+  }
+
   &__title {
     line-height: 1;
     font-size: 16px;
@@ -70,6 +90,12 @@ export default {
   &__description {
     line-height: 1;
     margin-bottom: 10px;
+  }
+
+  .ant-radio-button-wrapper-checked .images-select-form-item {
+    &__overlay {
+      display: flex;
+    }
   }
 }
 </style>

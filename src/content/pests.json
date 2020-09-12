@@ -55,16 +55,13 @@
     }
   },
   {
-    "type": "ImagesNames",
+    "type": "MultipleAnswers",
     "content": {
       "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
       "images": [
-        "/assets/images/modules/pests/6-1.png",
-        "/assets/images/modules/pests/6-1.png",
-        "/assets/images/modules/pests/6-1.png",
-        "/assets/images/modules/pests/6-1.png",
         "/assets/images/modules/pests/6-1.png"
-      ]
+      ],
+      "count": 11
     }
   },
   {
@@ -220,16 +217,13 @@
     }
   },
   {
-    "type": "ImagesNames",
+    "type": "MultipleAnswers",
     "content": {
       "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
       "images": [
-        "/assets/images/modules/pests/6-1.png",
-        "/assets/images/modules/pests/6-1.png",
-        "/assets/images/modules/pests/6-1.png",
-        "/assets/images/modules/pests/6-1.png",
         "/assets/images/modules/pests/6-1.png"
-      ]
+      ],
+      "count": 11
     }
   }
 ]
