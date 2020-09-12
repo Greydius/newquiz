@@ -10,11 +10,17 @@
       class="module-item__card"
     >
       <div
-        class="module-item__card-content"
+        v-if="!textContent"
+        class="module-item__card-image-content"
         :style="{ backgroundImage: `url(/assets/images/modules/${name}.jpg` }"
       >
 
       </div>
+      <p
+        v-else
+      >
+        {{ textContent }}
+      </p>
     </Card>
     <div
       v-if="status"
@@ -40,9 +46,10 @@ export default {
   props: {
     name: [String, undefined],
     title: String,
-    description: String,
+    description: [String, undefined],
     disabled: [Boolean, undefined],
-    status: [String, undefined]
+    status: [String, undefined],
+    textContent: [String, undefined]
   },
 
   components: {
@@ -73,7 +80,6 @@ export default {
 
   &__card {
     height: 100%;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     .ant-card-body {
@@ -81,11 +87,12 @@ export default {
     }
   }
 
-  &__card-content {
+  &__card-image-content {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position-y: center;
+    min-height: 300px;
   }
 
   &__overlay {

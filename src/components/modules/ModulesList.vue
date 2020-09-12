@@ -6,12 +6,13 @@
   >
     <ModuleItem
       slot="renderItem"
-      slot-scope="{ name, title, description, disabled, status }"
+      slot-scope="{ name, title, description, disabled, status, textContent }"
       :name="name"
       :title="title"
       :description="description"
       :disabled="disabled"
       :status="moduleStatus(name, status)"
+      :textContent="textContent"
       class="modules-list__item"
     />
   </List>

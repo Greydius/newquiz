@@ -1,31 +1,16 @@
 <template>
   <div class="guide-modules">
-    <h2></h2>
+    <h2>Этапы</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
+      Дистанционный конкурс состоит из 3 этапов.
+      Последовательность прохождения этапов Вы выбираете сами.
+      <br>
+      Для начала работы с этапом нажмите на него.
+      После выполнения заданий одного из этапов Вы вернетесь на эту страницу, чтобы приступить к заданиям следующего этапа. 
+      <br>
+      После завершения этапа на кнопке соответствующего этапа появится отметка «Завершено»
     </p>
     <ModulesList :list="modules" :columnsCount="3" />
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
-    </p>
   </div>
 </template>
 
@@ -34,18 +19,18 @@ import ModulesList from '@/components/modules/ModulesList'
 
 const modules = [
   {
-    title: 'Юный ботаник',
-    description: 'Найди как можно больше видов растений на фотографиях',
+    title: '1 Этап',
+    textContent: 'Тестирование',
     disabled: false,
   },
   {
-    title: 'Лесопосадка',
-    description: 'Тебе предстоит доказать свои знания, ответив на вопросы',
+    title: '2 Этап',
+    textContent: 'Юный лесокультурник',
     disabled: false,
   },
   {
-    title: 'Юный лесокультурник',
-    description: 'Посмотри видео и ответь на вопросы',
+    title: '3 Этап',
+    textContent: 'Юный ботаник',
     disabled: false,
   }
 ]

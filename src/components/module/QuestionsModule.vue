@@ -6,52 +6,57 @@
       @back="goToGuide"
       class="modules__header"
     />
-    <div class="questions-module__steps-wrapper">
-      <a-steps
-        @change="changeStep"
-        progress-dot
-        :current="currentStep"
-        size="small"
-        class="questions-module__steps"
-      >
-        <a-step
-          v-for="(input, i) in routeInputs"
-          :key="i"
-          :title="i+1"
-        />
-      </a-steps>  
-    </div>
     
-    <a-form
-      :form="form"
-      class="questions-module"
-      @submit="handleSubmit"
-    >
-      <component
-        v-for="(input, i) in routeInputs"
-        v-show="currentStep === i"
-        :key="i"
-        :is="input.type"
-        :content="input.content"
-        :index="i"
-      />
-      <a-form-item v-if="currentStep < routeInputs.length-1" class="question-form-item">
-        <a-button
-          @click="nextStep"
-          type="primary"
+    <Guide v-if="testDates.start === undefined"  />
+
+    <template v-else >
+      <div class="questions-module__steps-wrapper">
+        <a-steps
+          @change="changeStep"
+          progress-dot
+          :current="currentStep"
+          size="small"
+          class="questions-module__steps"
         >
-          Далее
-        </a-button>
-      </a-form-item>
-      <a-form-item class="question-form-item">
-        <a-button
-          type="primary"
-          html-type="submit"
-        >
-          Готово!
-        </a-button>
-      </a-form-item>
-    </a-form>
+          <a-step
+            v-for="(input, i) in routeInputs"
+            :key="i"
+            :title="i+1"
+          />
+        </a-steps>  
+      </div>
+      
+      <a-form
+        :form="form"
+        class="questions-module"
+        @submit="handleSubmit"
+      >
+        <component
+          v-for="(input, i) in routeInputs"
+          v-show="currentStep === i"
+          :key="i"
+          :is="input.type"
+          :content="input.content"
+          :index="i"
+        />
+        <a-form-item v-if="currentStep < routeInputs.length-1" class="question-form-item">
+          <a-button
+            @click="nextStep"
+            type="primary"
+          >
+            Далее
+          </a-button>
+        </a-form-item>
+        <a-form-item class="question-form-item">
+          <a-button
+            type="primary"
+            html-type="submit"
+          >
+            Готово!
+          </a-button>
+        </a-form-item>
+      </a-form>  
+    </template>
   </div>
 </template>
 
@@ -65,6 +70,8 @@ import ImagesSelect from '../questions/ImagesSelect'
 import Question from '../questions/Question'
 import MultipleAnswers from '../questions/MultipleAnswers'
 
+import Guide from './Guide'
+
 import { Form, Steps } from 'ant-design-vue'
 
 import forestPlantation from '@/content/forest-plantation'
@@ -76,7 +83,7 @@ import modulesData from './modulesData'
 
 import { createNamespacedHelpers } from 'vuex'
 
-const { mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+const { mapState: mapTRState, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -88,6 +95,7 @@ export default {
     PageHeader,
     // eslint-disable-next-line vue/no-unused-components
     AnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question, MultipleAnswers,
+    Guide,
     'a-form': Form,
     'a-form-item': Form.Item,
     'a-steps': Steps,
@@ -112,6 +120,10 @@ export default {
   },
 
   computed: {
+    ...mapTRState(['testsDates']),
+    testDates() {
+      return this.testsDates[this.$route.params.moduleId]
+    },
     currentRoute() {
       const route = this.$route.params.moduleId;
       const hasRoute = this.modulesData.find(({ name }) => name === route)

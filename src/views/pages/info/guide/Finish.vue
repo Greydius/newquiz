@@ -2,25 +2,10 @@
   <div class="guide-finish">
     <h2>С успешным завершением!</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
+      СПАСИБО ЗА УЧАСТИЕ!
+      <br>
+      КОНКУРС ЗАВЕРШЕН
+
     </p>
   </div>
 </template>

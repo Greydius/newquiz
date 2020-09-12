@@ -2,12 +2,12 @@
   <div class="guide-modules-again">
     <h2></h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
+      После завершения всех этапов тестирования появится кнопка "Завершить"
     </p>
     <ModulesList :list="modules" :columnsCount="3" />
+    <div class="guide-modules-again__button-wrapper">
+      <a-button type="primary">Завершить</a-button>
+    </div>
   </div>
 </template>
 
@@ -16,17 +16,20 @@ import ModulesList from '@/components/modules/ModulesList'
 
 const modules = [
   {
+    name: 'testing',
     title: 'Юный ботаник',
     description: 'Найди как можно больше видов растений на фотографиях',
     status: 'done',
   },
   {
-    title: 'Лесопосадка',
+    name: 'young-forest-grower',
+    title: 'Юный лесокультурник',
     description: 'Тебе предстоит доказать свои знания, ответив на вопросы',
     status: 'done',
   },
   {
-    title: 'Юный лесокультурник',
+    name: 'young-botanist',
+    title: 'Юный ботаник',
     description: 'Посмотри видео и ответь на вопросы',
     status: 'done',
   }
@@ -48,9 +51,15 @@ export default {
 </script>
 
 <style lang="scss">
-.guide-intro {
+.guide-modules-again {
   &__modules-list {
     margin-bottom: 16px;
+  }
+
+  &__button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 </style>

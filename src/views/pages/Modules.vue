@@ -7,6 +7,9 @@
       class="modules__header"
     />
     <ModulesList :list="modules" :columnsCount="3" class="modules__list" />
+    <div v-if="isTestingComplete" class="modules__complete-wrapper">
+      <a-button type="primary">Завершить</a-button>
+    </div>
   </div>
 </template>
 
@@ -16,7 +19,7 @@ import { createNamespacedHelpers } from 'vuex'
 import PageHeader from '@/components/PageHeader'
 import ModulesList from '@/components/modules/ModulesList'
 
-const { mapMutations: mapTestsResultMutations } = createNamespacedHelpers('testsResult')
+const { mapGetters: mapTRGetters, mapMutations: mapTestsResultMutations } = createNamespacedHelpers('testsResult')
 
 const modules = [
   {
@@ -56,6 +59,10 @@ export default {
     this.setTestsResults()
   },
 
+  computed: {
+    ...mapTRGetters(['isTestingComplete'])
+  },
+
   methods: {
     ...mapTestsResultMutations({
       setTestsResults: 'SET_ARCHIVED_TESTS_RESULTS'
@@ -66,3 +73,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.modules {
+  &__complete-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+</style>

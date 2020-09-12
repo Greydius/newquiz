@@ -1,26 +1,22 @@
 <template>
   <div class="guide-module">
-    <h2>Задача!</h2>
+    <h2>Подобрее о этапах!</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
+      1 этап «Тестирование» состоит из 4 блоков:
+      <ul>
+        <li>блок: «Лесопосадка. Характеристика леса. Ботаника» состоят из 25 вопросов</li>
+        <li>блок: «Лесное ориентирование. Зоология» состоит из 20 вопросов</li>
+        <li>блок: «Болезни и вредители леса» состоит из 20 вопросов</li>
+        <li>блок: «Охрана лесов от пожаров» состоит из 20 вопросов</li>
+      </ul>
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
+      Вопросы блоков предполагают одиночный или множественный ответ, включают фото- и графические ответы, а также текстовые ответы.
+      Последовательность выполнения блоков Вы можете выбрать самостоятельно.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Magni cum tenetur ducimus architecto veritatis.
-      Sed alias ea eveniet officia deserunt consequuntur soluta facilis est?
-      Unde placeat eius obcaecati culpa eveniet?
+      Для начала работы с блоком нажмите на него. После выполнения заданий одного из блоков Вы вернетесь на эту страницу, чтобы приступить к заданиям следующего блока.
+      После завершения блоков на кнопке соответствующего блока появится отметка «Завершено»
     </p>
   </div>
 </template>
