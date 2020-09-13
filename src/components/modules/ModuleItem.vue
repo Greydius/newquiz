@@ -59,7 +59,9 @@ export default {
   methods: {
     goToModule() {
       const moduleId = this.name
-      !this.disabled && this.status !== 'done' && this.name ? this.$router.push({ name: 'module', params: { moduleId } }) : undefined
+      !this.disabled && 
+      // this.status !== 'done' && 
+      this.name ? this.$router.push({ name: 'module', params: { moduleId } }) : undefined
     }
   },
 }
@@ -92,7 +94,7 @@ export default {
     height: 100%;
     background-size: cover;
     background-position-y: center;
-    min-height: 300px;
+    min-height: 250px;
   }
 
   &__overlay {
@@ -108,9 +110,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(82 196 26 / 10%);
+    background-color: rgba(82,196,26,0.3);
+    cursor: pointer;
     &__icon {
       font-size: 40px;
+      color: #fff;
     }
   }
 }

@@ -1,17 +1,17 @@
 <template>
-  <div class="images-names-form-item__wrapper">
-    <h4 class="images-names-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
-    <div class="images-names-form-item__inner-wrapper">
-      <div v-viewer.static v-if="content.images" class="images-names-form-item__images-wrapper">
+  <div class="multiple-answers-form-item__wrapper">
+    <h4 class="multiple-answers-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
+    <div class="multiple-answers-form-item__inner-wrapper">
+      <div v-viewer.static v-if="content.images" class="multiple-answers-form-item__images-wrapper">
         <div
           v-for="(image, i) in content.images"
           :key="i"
-          class="images-names-form-item__image-outer-wrapper"
+          class="multiple-answers-form-item__image-outer-wrapper"
         >
-          <div class="images-names-form-item__image-wrapper">
-            <img :src="image" alt="" class="images-names-form-item__image">
+          <div class="multiple-answers-form-item__image-wrapper">
+            <img :src="image" alt="" class="multiple-answers-form-item__image">
           </div>
-          <div class="images-names-form-item__number-wrapper">
+          <div class="multiple-answers-form-item__number-wrapper">
             {{ i }}
           </div>
         </div>
@@ -20,7 +20,7 @@
         v-for="i in content.count"
         :key="i"
         :label="i"
-        class="images-names-form-item"
+        class="multiple-answers-form-item"
       >
         <a-input
           v-decorator="[
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss">
-.images-names-form-item {
+.multiple-answers-form-item {
   margin-bottom: 0;
   &:last-child {
     margin-bottom: 30px;
@@ -85,13 +85,13 @@ export default {
     max-width: 300px;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
   }
 
   &__image-wrapper {
     flex: 1;
     display: flex;
     align-items: center;
-    background-color: #fff;
   }
 
   &__number-wrapper {
@@ -100,6 +100,7 @@ export default {
     justify-content: center;
     align-items: center;
     border: 1px solid gray;
+    font-weight: bold;
   }
 
   &__image {

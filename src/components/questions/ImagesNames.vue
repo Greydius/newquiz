@@ -95,6 +95,8 @@ export default {
     align-items: center;
     justify-content: center;
     border: 1px solid gray;
+    padding: 10px;
+    font-weight: bold;
   }
 
   &__image {

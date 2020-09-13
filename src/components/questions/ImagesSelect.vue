@@ -72,11 +72,11 @@ export default {
     display: none;
     align-items: center;
     justify-content: center;
-    background-color: rgb(82 196 26 / 10%);
+    background-color: rgba(82,196,26,0.3);
 
     &-icon {
       font-size: 30px;
-      color: #457d45;
+      color: #fff;
     }
   }
 

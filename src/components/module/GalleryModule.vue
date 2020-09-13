@@ -6,48 +6,52 @@
       @back="goBack"
       class="module-gallery__header"
     />
-    <div
-      ref="viewer"
-      class="module-gallery__wrapper"
-      v-viewer.static
-    >
+    <Guide v-if="testDates.start === undefined"  />
+    <template v-else>
       <div
-        v-for="src of images"
-        :key="src"
-        class="module-gallery__item"
+        ref="viewer"
+        class="module-gallery__wrapper"
+        v-viewer.static
       >
-        <img :src="src" class="module-gallery__image" alt="">
-      </div>
-    </div>
-
-    <div class="module-gallery__form-wrapper">
-      <Form
-        :form="form"
-        @submit="handleSubmit"
-      >
-        <FormItem label="Ответ">
-          <Input
-            style="width: 100%"
-            placeholder="Введи названия"
-            v-decorator="[
-              'answers',
-              { rules: [{ required: true, message: 'Обязательное поле!' }] },
-            ]"
-          />
-        </FormItem>
-        <FormItem
-          class="module-gallery__form-button"
+        <div
+          v-for="src of images"
+          :key="src"
+          class="module-gallery__item"
         >
-          <a-button
-            :disabled="hasErrors(form.getFieldsError())"
-            type="primary"
-            html-type="submit"
+          <img :src="src" class="module-gallery__image" alt="">
+        </div>
+      </div>
+
+      <div class="module-gallery__form-wrapper">
+        <Form
+          :form="form"
+          @submit="handleSubmit"
+        >
+          <FormItem label="Ответ">
+            <Input
+              style="width: 100%"
+              placeholder="Введи названия"
+              v-decorator="[
+                'answers',
+                { rules: [{ required: true, message: 'Обязательное поле!' }] },
+              ]"
+            />
+          </FormItem>
+          <FormItem
+            class="module-gallery__form-button"
           >
-            Завершить
-          </a-button>
-        </FormItem>
-      </Form>
-    </div>
+            <a-button
+              :disabled="hasErrors(form.getFieldsError())"
+              type="primary"
+              html-type="submit"
+            >
+              Завершить
+            </a-button>
+          </FormItem>
+        </Form>
+      </div>  
+    </template>
+    
   </div>
 </template>
 
@@ -57,12 +61,14 @@ import 'viewerjs/dist/viewer.css'
 import { Form, Input } from 'ant-design-vue'
 
 import PageHeader from '@/components/PageHeader'
+import Guide from './Guide'
+
 import Viewer from 'v-viewer'
 import Vue from 'vue'
 
 import { createNamespacedHelpers } from 'vuex'
 
-const { mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+const { mapState: mapTRState, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
 
 Vue.use(Viewer)
 
@@ -84,7 +90,7 @@ export default {
   name: 'GalleryModule',
 
   components: {
-    PageHeader,
+    PageHeader, Guide,
     Form, FormItem: Form.Item,
     Input,
   },
@@ -95,6 +101,13 @@ export default {
       hasErrors,
       form: this.$form.createForm(this, { name: 'answers' }),
     }
+  },
+
+  computed: {
+    ...mapTRState(['testsDates']),
+    testDates() {
+      return this.testsDates[this.$route.params.moduleId]
+    },
   },
 
   methods: {
