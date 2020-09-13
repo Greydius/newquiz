@@ -209,5 +209,28 @@ export default {
     padding-top: 15px;
     margin-bottom: 60px;
   }
+
+  .ant-steps-dot .ant-steps-item-tail, .ant-steps-dot.ant-steps-small .ant-steps-item-tail {
+    margin: 0 0 0 4px;
+  }
+
+  .ant-steps-dot .ant-steps-item-icon, 
+  .ant-steps-dot.ant-steps-small .ant-steps-item-icon {
+    margin-left: 6px;
+  }
+
+  .ant-steps-dot .ant-steps-item-content,
+  .ant-steps-dot.ant-steps-small .ant-steps-item-content {
+    width: 20px;
+  }
+
+  .ant-steps-dot .ant-steps-item-tail::after, .ant-steps-dot.ant-steps-small .ant-steps-item-tail::after {
+    width: 100%;
+    margin-left: 4px;
+  }
+
+  .ant-steps-label-vertical .ant-steps-item {
+    max-width: 50px;
+  }
 }
 </style>
