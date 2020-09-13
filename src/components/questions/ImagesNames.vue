@@ -66,8 +66,12 @@ export default {
     justify-content: space-between;
   }
   &__inner-wrapper {
+    
+  }
+
+  &__images-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
   }

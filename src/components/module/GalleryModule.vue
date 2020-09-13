@@ -2,7 +2,7 @@
   <div class="module-gallery">
     <PageHeader
       title="Юный ботаник"
-      sub-title="Найди как можно больше видов растений на фотографиях"
+      sub-title="Найди как можно больше видов растений на фотографиях. Ответы вводи через запятую в поле внизу"
       @back="goBack"
       class="module-gallery__header"
     />

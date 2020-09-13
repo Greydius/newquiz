@@ -64,14 +64,30 @@
           :content="input.content"
           :index="i"
         />
-        <a-form-item v-if="currentStep < routeInputs.length-1" class="question-form-item">
-          <a-button
-            @click="nextStep"
-            type="primary"
-          >
-            Далее
-          </a-button>
-        </a-form-item>
+        <div class="questions-module__form-wrapper">
+          <a-form-item v-if="currentStep > 0" class="question-form-item">
+            <a-button
+              @click="prevStep"
+              type="primary"
+            >
+              Назад
+            </a-button>
+          </a-form-item>
+          <div class="questions-module__form-timer">
+            <StatisticCountdown
+              :value="deadline"
+              format="mm:ss"
+            />
+          </div>
+          <a-form-item v-if="currentStep < routeInputs.length-1" class="question-form-item">
+            <a-button
+              @click="nextStep"
+              type="primary"
+            >
+              Далее
+            </a-button>
+          </a-form-item>
+        </div>
         <a-form-item class="question-form-item">
           <a-button
             type="primary"
@@ -97,7 +113,7 @@ import MultipleAnswers from '../questions/MultipleAnswers'
 
 import Guide from './Guide'
 
-import { Form, Steps } from 'ant-design-vue'
+import { Form, Steps, Statistic } from 'ant-design-vue'
 
 import forestPlantation from '@/content/forest-plantation'
 import forestFireSecurity from '@/content/forest-fire-security'
@@ -108,7 +124,7 @@ import modulesData from './modulesData'
 
 import { createNamespacedHelpers } from 'vuex'
 
-const { mapState: mapTRState, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+const { mapState: mapTRState, mapMutations: mapTRMutations, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -120,6 +136,7 @@ export default {
     PageHeader,
     // eslint-disable-next-line vue/no-unused-components
     AnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question, MultipleAnswers,
+    StatisticCountdown: Statistic.Countdown,
     Guide,
     'a-form': Form,
     'a-form-item': Form.Item,
@@ -142,12 +159,26 @@ export default {
 
   beforeCreate() {
     this.form = this.$form.createForm(this, { name: 'questions-module-form' });
+    
+  },
+
+  beforeMount(){
+    this.setATR()
   },
 
   computed: {
     ...mapTRState(['testsDates']),
     testDates() {
       return this.testsDates[this.$route.params.moduleId]
+    },
+    deadline() {
+      const dates = {
+        'forest-plantation': 38,
+        'forest-fire-protection': 30,
+        'forest-directions-and-zoology': 30,
+        'forest-diseases-and-pests': 30
+      }
+      return this.testDates.start + (dates[this.$route.params.moduleId] * 60 * 1000 )
     },
     currentRoute() {
       const route = this.$route.params.moduleId;
@@ -164,6 +195,9 @@ export default {
   },
 
   methods: {
+    ...mapTRMutations({
+      setATR: 'SET_ARCHIVED_TESTS_RESULTS'
+    }),
     ...mapTestsResultActions({
       setTestsResults: 'set',
     }),
@@ -183,6 +217,12 @@ export default {
           console.log('Received values of form: ', values);
         }
       });
+    },
+
+    prevStep(e) {
+      e.preventDefault();
+
+      this.currentStep--;
     },
 
     nextStep(e) {
@@ -208,6 +248,20 @@ export default {
     overflow-x: auto;
     padding-top: 15px;
     margin-bottom: 60px;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .question-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form-timer {
+    margin: 0 60px;
   }
 
   .ant-steps-dot .ant-steps-item-tail, .ant-steps-dot.ant-steps-small .ant-steps-item-tail {

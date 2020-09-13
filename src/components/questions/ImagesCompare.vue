@@ -9,27 +9,32 @@
             :key="i"
             class="images-compare-form-item__image-wrapper"
           >
-            <img
-              :src="image"
-              alt=""
-              class="images-compare-form-item__image"
-            >
-            <div class="images-compare-form-item__image-title">{{ ab[i] }}</div>
+            <div class="images-compare-form-item__image-inner-wrapper">
+              <img
+                :src="image"
+                alt=""
+                class="images-compare-form-item__image"
+              >  
+            </div>
+            
+            <div class="images-compare-form-item__image-title">{{ i + 1 }}</div>
           </div>
           
         </div>
         <div class="images-compare-form-item__images-inner-wrapper">
           <div
-            v-for="(image, i) in content.images[0]"
+            v-for="(image, i) in content.images[1]"
             :key="i"
             class="images-compare-form-item__image-wrapper"
           >
-            <img
-              :src="image"
-              alt=""
-              class="images-compare-form-item__image"
-            >
-            <div class="images-compare-form-item__image-title">{{ i + 1 }}</div>   
+            <div class="images-compare-form-item__image-inner-wrapper">
+              <img
+                :src="image"
+                alt=""
+                class="images-compare-form-item__image"
+              >  
+            </div>
+            <div class="images-compare-form-item__image-title">{{ ab[i] }}</div>   
           </div>
         </div>
         
@@ -99,6 +104,14 @@ export default {
 
   &__image-wrapper {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image-inner-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   &__image {

@@ -93,7 +93,7 @@
       "images": [
         "/assets/images/modules/forest-plantation/12-1.jpg",
         "/assets/images/modules/forest-plantation/12-2.jpg",
-        "/assets/images/modules/forest-plantation/12-2.jpg"
+        "/assets/images/modules/forest-plantation/12-3.jpg"
       ]
     }
   },
@@ -123,14 +123,14 @@
     "type": "Question",
     "content": {
       "title": "Напишите название инструмента, изображенного на фотографии:",
-      "image": "/assets/images/modules/forest-plantation/10-1.jpg"
+      "image": "/assets/images/modules/forest-plantation/15.jpg"
     }
   },
   {
     "type": "Question",
     "content": {
       "title": "Что за вещество показано на изображении?Для чего его используют садоводы?",
-      "image": "/assets/images/modules/forest-plantation/10-1.jpg"
+      "image": "/assets/images/modules/forest-plantation/16.jpg"
     }
   },
   {
@@ -162,16 +162,16 @@
       "title": "Соотнеси ветку дерева (цифра) и его плод (буква):",
       "images": [
         [
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg"
+          "/assets/images/modules/forest-plantation/20-1.jpg",
+          "/assets/images/modules/forest-plantation/20-2.jpg",
+          "/assets/images/modules/forest-plantation/20-3.jpg",
+          "/assets/images/modules/forest-plantation/20-4.jpg"
         ],
         [
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg",
-          "/assets/images/modules/forest-plantation/10-1.jpg"
+          "/assets/images/modules/forest-plantation/20-A.jpg",
+          "/assets/images/modules/forest-plantation/20-B.jpg",
+          "/assets/images/modules/forest-plantation/20-C.jpg",
+          "/assets/images/modules/forest-plantation/20-D.jpg"
         ]
       ]
     }

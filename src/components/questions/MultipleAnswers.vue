@@ -12,12 +12,12 @@
             <img :src="image" alt="" class="multiple-answers-form-item__image">
           </div>
           <div class="multiple-answers-form-item__number-wrapper">
-            {{ i }}
+            {{ i+1 }}
           </div>
         </div>
       </div>
       <a-form-item
-        v-for="i in content.count"
+        v-for="i in content.questions || content.count"
         :key="i"
         :label="i"
         class="multiple-answers-form-item"
