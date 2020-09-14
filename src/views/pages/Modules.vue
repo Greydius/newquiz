@@ -8,7 +8,10 @@
     />
     <ModulesList :list="modules" :columnsCount="3" class="modules__list" />
     <div v-if="isTestingComplete" class="modules__complete-wrapper">
-      <a-button type="primary">Завершить</a-button>
+      <router-link :to="{ name: 'goodbye' }">
+        <a-button type="primary">Завершить</a-button>
+      </router-link>
+      
     </div>
   </div>
 </template>

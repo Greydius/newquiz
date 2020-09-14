@@ -89,6 +89,7 @@
             <StatisticCountdown
               :value="deadline"
               format="mm:ss"
+              @finish="handleSubmit"
             />
           </div>
           <a-form-item v-if="currentStep < routeInputs.length-1" class="question-form-item">
@@ -182,11 +183,15 @@ export default {
 
   beforeCreate() {
     this.form = this.$form.createForm(this, { name: 'questions-module-form' });
-    
   },
 
   beforeMount(){
     this.setATR()
+
+    console.log(this.deadline, Date.now(), this.deadline <= Date.now())
+    if(this.deadline <= Date.now()) {
+      // this.goToGuide()
+    }
   },
 
   computed: {
@@ -228,7 +233,10 @@ export default {
     hasErrors,
 
     handleSubmit(e) {
-      e.preventDefault();
+      if(e) {
+        e.preventDefault();
+      }
+      
       this.form.validateFields((err, values) => {
         if (!err) {
           this.setTestsResults({

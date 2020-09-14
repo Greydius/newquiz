@@ -17,7 +17,7 @@
         </div>
       </div>
       <a-form-item
-        v-for="i in content.questions || content.count"
+        v-for="i in questions"
         :key="i"
         :label="i"
         class="multiple-answers-form-item"
@@ -47,6 +47,13 @@ export default {
   components: {
     'a-form-item': Form.Item,
     'a-input': Input
+  },
+
+  computed: {
+    questions() {
+      console.log(this.content.questions, this.content.count, this.index)
+      return this.content.questions !== undefined ? this.content.questions : this.content.count
+    }
   }
 }
 </script>

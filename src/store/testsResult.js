@@ -101,10 +101,28 @@ export default {
     }
   },
   actions: {
-    set({ commit }, {test, formData}) {
+    set({ state, commit }, {test, formData}) {
       return new Promise((resolve, reject) => {
+        commit('SET_TEST_START', {
+          date: Date.now(),
+          test,
+          type: 'end'
+        })
+        const startDate = state.testsDates[test].start;
+        const endDate = state.testsDates[test].end;
+
+        let time = 'Не пройдено';
+
+        if(startDate !== undefined && endDate !== undefined) {
+          time = Math.round((endDate - startDate) / 1000);
+        }
         apiRequest
-          .post('/tests', { [testTypes[test]]: JSON.stringify(formData) })
+          .post('/tests', { 
+            [testTypes[test]]: JSON.stringify({
+              ...formData,
+              time
+            }),
+          })
           .then(() => {
             commit('SET_TEST_RESULTS', { 
               test: test,
