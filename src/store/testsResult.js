@@ -88,8 +88,8 @@ export default {
       for(let testDateName in state.testsDates) {
         const start = localStorage.getItem(`testDates.${testDateName}.start`)
         const end = localStorage.getItem(`testDates.${testDateName}.end`)
-        state.testsDates[testDateName].start = start === undefined ? undefined : Number(start)
-        state.testsDates[testDateName].end = end === undefined ? undefined : Number(end)
+        state.testsDates[testDateName].start = start === null ? undefined : Number(start)
+        state.testsDates[testDateName].end = end === null ? undefined : Number(end)
       }
     }
   },
