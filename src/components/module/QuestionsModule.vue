@@ -20,6 +20,18 @@
 
         </p>
       </template>
+      <template v-else-if="'testting-test'">
+        <p>
+          В текущем блоке Вам необходимо ответить на 4 вопроса.
+          <br>
+          Для ответов на все вопросы у Вас будет 10 минут.
+          <br>
+          Для начала выполнения заданий Вам нужно нажать кнопку «Начать», для перехода к следующему вопросу Вам нужно нажать кнопку «Далее», для возврата к предыдущему вопросу Вам нужно нажать кнопку «Назад» либо кнопку с указанием номера вопроса. 
+          <br>
+          Чтобы завершить задание, Вам нужно нажать кнопку «Завершить».
+
+        </p>
+      </template>
       <template v-else>
         <p>
           В текущем блоке Вам необходимо ответить на 20 вопросов.
@@ -88,12 +100,13 @@
             </a-button>
           </a-form-item>
         </div>
-        <a-form-item class="question-form-item">
+        <a-form-item class="question-form-item question-form-item__submit">
           <a-button
             type="primary"
             html-type="submit"
+            class="question-form-item__submit-button"
           >
-            Готово!
+            Завершить тест!
           </a-button>
         </a-form-item>
       </a-form>  
@@ -119,6 +132,7 @@ import forestPlantation from '@/content/forest-plantation'
 import forestFireSecurity from '@/content/forest-fire-security'
 import zoo from '@/content/zoo'
 import pests from '@/content/pests'
+import testingTest from '@/content/testing-test'
 
 import modulesData from './modulesData'
 
@@ -150,10 +164,19 @@ export default {
         'forest-plantation': forestPlantation,
         'forest-fire-protection': forestFireSecurity,
         'forest-directions-and-zoology': zoo,
-        'forest-diseases-and-pests': pests
+        'forest-diseases-and-pests': pests,
+        'testing-test': testingTest
       },
       currentStep: 0,
-      modulesData
+      modulesData: [
+        ...modulesData,
+        {
+          "name": "testing-test",
+          "title": "Пробный тест",
+          "description": "Для проверки",
+          "disabled": false
+        }
+      ]
     }
   },
 
@@ -176,7 +199,8 @@ export default {
         'forest-plantation': 38,
         'forest-fire-protection': 30,
         'forest-directions-and-zoology': 30,
-        'forest-diseases-and-pests': 30
+        'forest-diseases-and-pests': 30,
+        'testing-test': 10
       }
       return this.testDates.start + (dates[this.$route.params.moduleId] * 60 * 1000 )
     },
@@ -236,7 +260,12 @@ export default {
     },
 
     goToGuide() {
-      this.$router.push({ name: 'module', params: { moduleId: 'testing' } })
+      if(this.$route.params.moduleId === 'testing-test'){
+        this.$router.push({ name: 'guide-test' })
+      } else {
+        this.$router.push({ name: 'module', params: { moduleId: 'testing' } })
+      }
+      
     }
   },
 }
@@ -285,6 +314,19 @@ export default {
 
   .ant-steps-label-vertical .ant-steps-item {
     max-width: 50px;
+  }
+}
+
+.question-form-item {
+  &__submit {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    &-button {
+      font-size: 24px;
+      height: auto;
+    }
   }
 }
 </style>

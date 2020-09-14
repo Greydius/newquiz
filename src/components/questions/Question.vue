@@ -9,7 +9,6 @@
       class="question-form-item__input"
       v-decorator="[
         `question[${index}]`,
-        { rules: [{ required: true, message: 'Обязательное поле!' }] },
       ]"
       placeholder="Введите ответ..."
     >

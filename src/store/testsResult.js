@@ -7,6 +7,7 @@ const testTypes = {
   'forest-plantation': 'forest_plantation',
   'forest-directions-and-zoology': 'forest_directions_and_zoology',
   'forest-diseases-and-pests': 'forest_diseases_and_pests',
+  'testing-test': 'testing_test'
 }
 
 export default {
@@ -19,7 +20,8 @@ export default {
       'forest-plantation': undefined,
       'forest-directions-and-zoology': undefined,
       'forest-diseases-and-pests': undefined,
-      'testing': undefined
+      'testing': undefined,
+      'testing-test': undefined
     },
     testsDates: {
       'young-botanist': {
@@ -46,6 +48,10 @@ export default {
         start: undefined,
         end: undefined
       },
+      'testing-test': {
+        start: undefined,
+        end: undefined
+      }
     }
   },
   getters: {
@@ -60,7 +66,8 @@ export default {
         'forest-fire-protection',
         'forest-plantation',
         'forest-directions-and-zoology',
-        'forest-diseases-and-pests'
+        'forest-diseases-and-pests',
+        'testing-test'
       ];
 
       localStorage.setItem(`test.${test}`, status);

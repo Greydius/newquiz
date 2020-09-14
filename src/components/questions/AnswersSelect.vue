@@ -18,7 +18,6 @@
     <a-radio-group
       v-decorator="[
         `question[${index}]`,
-        { rules: [{ required: true, message: 'Обязательное поле!' }] },
       ]"
       class="answers-select-form-item__radio-group"
     >

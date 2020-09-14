@@ -10,7 +10,9 @@
       </a-step>
     </a-steps>
     <div class="guide__content">
-      <router-view></router-view>
+      <router-view
+        @next="next"
+      ></router-view>
     </div>
     <div class="guide__actions">
       <a-button v-if="current > 0" style="margin-right: 8px" @click="prev">
@@ -59,6 +61,11 @@ export default {
         {
           title: 'Этапы, снова',
           route: 'modules-again',
+          icon: 'interaction',
+        },
+        {
+          title: 'Тест',
+          route: 'test',
           icon: 'interaction',
         },
         {

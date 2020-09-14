@@ -6,7 +6,7 @@
     </p>
     <ModulesList :list="modules" :columnsCount="3" />
     <div class="guide-modules-again__button-wrapper">
-      <a-button type="primary">Завершить</a-button>
+      <a-button @click="$emit('next')" type="primary">Завершить</a-button>
     </div>
   </div>
 </template>
@@ -19,18 +19,21 @@ const modules = [
     name: 'testing',
     title: 'Юный ботаник',
     description: 'Найди как можно больше видов растений на фотографиях',
+    disabled: true,
     status: 'done',
   },
   {
     name: 'young-forest-grower',
     title: 'Юный лесокультурник',
     description: 'Тебе предстоит доказать свои знания, ответив на вопросы',
+    disabled: true,
     status: 'done',
   },
   {
     name: 'young-botanist',
     title: 'Юный ботаник',
     description: 'Посмотри видео и ответь на вопросы',
+    disabled: true,
     status: 'done',
   }
 ]

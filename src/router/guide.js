@@ -36,6 +36,15 @@ export default [
     },
   },
   {
+    path: 'test',
+    name: 'guide-test',
+    component: () => import(/* webpackChunkName: "guide-test" */ '../views/pages/info/guide/Test'),
+    meta: {
+      title: 'Проба тестов - Инструкция по прохождению',
+      requiredAuth: true,
+    },
+  },
+  {
     path: 'finish',
     name: 'guide-finish',
     component: () => import(/* webpackChunkName: "guide-finish" */ '../views/pages/info/guide/Finish'),

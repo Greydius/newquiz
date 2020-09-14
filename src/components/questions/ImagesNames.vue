@@ -27,7 +27,6 @@
         <a-input
           v-decorator="[
             `question[${index}][${i}]`,
-            { rules: [{ required: true, message: 'Обязательное поле!' }] },
           ]"
           placeholder="Введите ответ..."
         >

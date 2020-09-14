@@ -7,14 +7,13 @@
     <a-radio-group
       v-decorator="[
         `question[${index}]`,
-        { rules: [{ required: true, message: 'Обязательное поле!' }] },
       ]"
       class="images-select-form-item__radio-group"
     >
       <a-radio-button
         v-for="(image, i) in content.images"
         :key="i"
-        :value="image"
+        :value="i+1"
         class="images-select-form-item__radio-button"
       >
         <img :src="image" alt="" class="images-select-form-item__image">

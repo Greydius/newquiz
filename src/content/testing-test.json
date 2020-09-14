@@ -1,0 +1,41 @@
+[
+  {
+    "type": "Question",
+    "content": {
+      "title": "Как называется ручной инструмент для посадки саженцев?"
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию с изображением низового пожара.",
+      "images": [
+        "/assets/images/modules/testting-test/2-1.jpg",
+        "/assets/images/modules/testting-test/2-2.jpg",
+        "/assets/images/modules/testting-test/2-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Что за вредитель представлен на фотографии?",
+      "image": [
+        "/assets/images/modules/testting-test/3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Кто из мультипликационных персонажей жил в лесу?",
+      "answers": [
+        "Лунтик",
+        "Фунтик",
+        "Маугли",
+        "Кот Леопольд",
+        "Винни Пух"
+      ]
+    }
+  }
+]
