@@ -20,7 +20,7 @@
 
         </p>
       </template>
-      <template v-else-if="'testting-test'">
+      <template v-else-if="currentRoute === 'testing-test'">
         <p>
           В текущем блоке Вам необходимо ответить на 4 вопроса.
           <br>

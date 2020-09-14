@@ -51,6 +51,10 @@ export default {
       'testing-test': {
         start: undefined,
         end: undefined
+      },
+      'testing': {
+        start: undefined,
+        end: undefined
       }
     }
   },
