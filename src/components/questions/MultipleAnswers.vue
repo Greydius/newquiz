@@ -2,7 +2,7 @@
   <div class="multiple-answers-form-item__wrapper">
     <h4 class="multiple-answers-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
     <div class="multiple-answers-form-item__inner-wrapper">
-      <div v-viewer.static v-if="content.images" class="multiple-answers-form-item__images-wrapper">
+      <div v-viewer.static v-if="content.images && !content.single" class="multiple-answers-form-item__images-wrapper">
         <div
           v-for="(image, i) in content.images"
           :key="i"
@@ -16,10 +16,14 @@
           </div>
         </div>
       </div>
+      <div v-if="content.images && content.single" class="multiple-answers-form-item__main-image-wrapper">
+        <img :src="content.images[0]" alt="" class="multiple-answers-form-item__image">
+      </div>
       <a-form-item
         v-for="i in questions"
         :key="i"
         :label="i"
+        :colon="false"
         class="multiple-answers-form-item"
       >
         <a-input

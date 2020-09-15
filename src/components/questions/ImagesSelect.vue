@@ -47,11 +47,11 @@ export default {
 <style lang="scss">
 .images-select-form-item {
   &__radio-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
   }
 
   &__radio-button {
+    flex: 1;
     height: auto;
     display: flex;
     align-items: center;

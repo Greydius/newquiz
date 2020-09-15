@@ -15,28 +15,28 @@
     <a-form-item
       class="answers-select-form-item"
     >
-    <a-radio-group
+    <a-checkbox-group
       v-decorator="[
         `question[${index}]`,
       ]"
-      class="answers-select-form-item__radio-group"
+      class="answers-select-form-item__checkbox-group"
     >
-      <a-radio-button
+      <a-checkbox
         v-for="(answer, i) in content.answers"
         :key="i"
         :value="answer"
-        class="answers-select-form-item__radio-button"
+        class="answers-select-form-item__checkbox-button"
       >
         {{ answer }}
-      </a-radio-button>
-    </a-radio-group>
+      </a-checkbox>
+    </a-checkbox-group>
     </a-form-item>   
   </div>
   
 </template>
 
 <script>
-import { Form, Radio } from 'ant-design-vue'
+import { Form, Checkbox } from 'ant-design-vue'
 
 export default {
   props: {
@@ -46,17 +46,14 @@ export default {
 
   components: {
     'a-form-item': Form.Item,
-    'a-radio-group': Radio.Group,
-    'a-radio-button': Radio.Button,
+    'a-checkbox-group': Checkbox.Group,
+    'a-checkbox': Checkbox,
   }
 }
 </script>
 
 <style lang="scss">
 .answers-select-form-item {
-  .ant-radio-button-wrapper {
-    height: auto;
-  }
   &__images-wrapper {
     width: 100%;
     margin-bottom: 10px;

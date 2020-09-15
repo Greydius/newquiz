@@ -119,6 +119,7 @@
 import PageHeader from '@/components/PageHeader'
 
 import AnswersSelect from '../questions/AnswersSelect'
+import MultipleAnswersSelect from '../questions/MultipleAnswersSelect'
 import ImagesCompare from '../questions/ImagesCompare'
 import ImagesNames from '../questions/ImagesNames'
 import ImagesSelect from '../questions/ImagesSelect'
@@ -150,7 +151,7 @@ export default {
   components: {
     PageHeader,
     // eslint-disable-next-line vue/no-unused-components
-    AnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question, MultipleAnswers,
+    AnswersSelect, MultipleAnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question, MultipleAnswers,
     StatisticCountdown: Statistic.Countdown,
     Guide,
     'a-form': Form,
