@@ -111,7 +111,7 @@
     }
   },
   {
-    "type": "ImagesSelect",
+    "type": "MultipleAnswers",
     "content": {
       "title": "Укажите на каких из изображённых на рисунках еловых шишек семена доставали обитающие в Калужской области: клёст-еловик, белка, мышь и большой пёстрый дятел.",
       "images": [
@@ -119,7 +119,8 @@
         "/assets/images/modules/zoo/12-2.png",
         "/assets/images/modules/zoo/12-3.png",
         "/assets/images/modules/zoo/12-4.png"
-      ]
+      ],
+      "count": 4
     }
   },
   {
