@@ -94,7 +94,7 @@ export default {
     guideDone() {
       this.$message.success('Удачного прохождения!');
 
-      this.$router.push({ name: `home` });
+      this.$router.push({ name: `modules` });
     }
   },
 

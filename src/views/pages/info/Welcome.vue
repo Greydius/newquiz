@@ -22,7 +22,7 @@
     </template>
     <template #extra>
       <router-link :to="{ name: 'guide' }">
-        <a-button type="primary" disabled>
+        <a-button type="primary">
           Начать!
         </a-button>  
       </router-link>
