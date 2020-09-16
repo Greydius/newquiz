@@ -18,6 +18,22 @@
       </p>
     </Guide>
     <template v-else>
+      <a-collapse
+        style="margin-bottom: 20px"
+      >
+        <a-collapse-panel key="help" header="Инструкция">
+          <p>
+            На данном этапе Вам необходимо выполнить видеозадание.
+            <br>
+            Внимательно просмотрите видеоролик, в котором будет задан вопрос.
+            Видеоролик можно просмотреть только один раз.
+            <br>
+            После просмотра видеоролика в течение 20 минут запишите 5 ответов на поставленный вопрос в соответствующих окнах под названием «Ответы:».
+            <br>
+            После нажатия кнопки «Закончить» работа с заданием завершается. 
+          </p>
+        </a-collapse-panel>
+      </a-collapse>
       <div
         class="module-video__wrapper"
       >
@@ -110,7 +126,7 @@
 
 <script>
 
-import { Form, Input, Statistic } from 'ant-design-vue'
+import { Form, Input, Statistic, Collapse } from 'ant-design-vue'
 import VuePlyr from 'vue-plyr'
 
 import PageHeader from '@/components/PageHeader'
@@ -118,7 +134,7 @@ import Guide from './Guide'
 
 import { createNamespacedHelpers } from 'vuex'
 
-const { mapState: mapTRState, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+const { mapState: mapTRState, mapMutations: mapTestsResultMutations, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -129,6 +145,7 @@ export default {
 
   components: {
     PageHeader, Guide, StatisticCountdown: Statistic.Countdown,
+    'a-collapse': Collapse, 'a-collapse-panel': Collapse.Panel,
     Form, FormItem: Form.Item,
     'a-input': Input,
     VuePlyr,
@@ -139,6 +156,10 @@ export default {
       hasErrors,
       form: this.$form.createForm(this, { name: 'answers' }),
     }
+  },
+
+  beforeMount() {
+    this.setATR()
   },
 
   computed: {
@@ -152,6 +173,9 @@ export default {
   },
 
   methods: {
+    ...mapTestsResultMutations({
+      setATR: 'SET_ARCHIVED_TESTS_RESULTS'
+    }),
     ...mapTestsResultActions({
       setTestsResults: 'set',
     }),

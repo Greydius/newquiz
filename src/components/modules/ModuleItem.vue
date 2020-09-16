@@ -87,6 +87,11 @@ export default {
     .ant-card-body {
       flex: 1;
     }
+
+    .ant-card-head-title {
+      font-size: 17px;
+      white-space: initial;
+    }
   }
 
   &__card-image-content {
