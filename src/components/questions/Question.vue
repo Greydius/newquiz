@@ -47,6 +47,8 @@ export default {
   &__description {
     line-height: 1;
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
   }
 
   &__image-wrapper {

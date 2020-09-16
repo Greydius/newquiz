@@ -283,7 +283,7 @@ export default {
 <style lang="scss">
 .questions-module {
   h4 {
-    font-size: 22px;
+    font-size: 26px;
     text-align: center;
   }
   &__steps-wrapper {
