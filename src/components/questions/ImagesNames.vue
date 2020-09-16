@@ -2,7 +2,7 @@
   <div class="images-names-form-item__wrapper">
     <h4 class="images-names-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
     <div class="images-names-form-item__inner-wrapper">
-      <div class="images-names-form-item__images-wrapper">
+      <div class="images-names-form-item__images-wrapper" :class="[ `col-${content.images.length}` ]">
         <div
           v-for="(image, i) in content.images"
           :key="i"
@@ -73,6 +73,9 @@ export default {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    &.col-3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   &__image-wrapper {

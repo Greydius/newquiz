@@ -49,17 +49,26 @@
               ]"
             />
           </FormItem>
-          <FormItem
-            class="module-gallery__form-button"
-          >
-            <a-button
-              :disabled="hasErrors(form.getFieldsError())"
-              type="primary"
-              html-type="submit"
+          <div class="module-gallery__form-inner-wrapper">
+            <StatisticCountdown
+              class="module-gallery__timer"
+              :value="deadline"
+              format="mm:ss"
+              @finish="handleSubmit"
+            />
+
+            <FormItem
+              class="module-gallery__form-button"
             >
-              Завершить
-            </a-button>
-          </FormItem>
+              <a-button
+                :disabled="hasErrors(form.getFieldsError())"
+                type="primary"
+                html-type="submit"
+              >
+                Завершить
+              </a-button>
+            </FormItem>  
+          </div>
         </Form>
       </div>  
     </template>
@@ -70,7 +79,7 @@
 <script>
 import 'viewerjs/dist/viewer.css'
 
-import { Form, Input } from 'ant-design-vue'
+import { Form, Input, Statistic } from 'ant-design-vue'
 
 import PageHeader from '@/components/PageHeader'
 import Guide from './Guide'
@@ -102,7 +111,7 @@ export default {
   name: 'GalleryModule',
 
   components: {
-    PageHeader, Guide,
+    PageHeader, Guide, StatisticCountdown: Statistic.Countdown,
     Form, FormItem: Form.Item,
     Input,
   },
@@ -119,6 +128,9 @@ export default {
     ...mapTRState(['testsDates']),
     testDates() {
       return this.testsDates[this.$route.params.moduleId]
+    },
+    deadline() {
+      return this.testDates.start + (30 * 60 * 1000 )
     },
   },
 
@@ -176,9 +188,19 @@ export default {
     margin-top: 30px;
   }
 
+  &__form-inner-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   &__form-button {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__timer {
+    margin-right: 60px;
   }
 }
 </style>

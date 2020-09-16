@@ -31,7 +31,10 @@ export default {
 </script>
 
 <style lang="scss">
-.ant-page-header-heading-sub-title {
-  font-size: 18px;
+.layout {
+  .ant-page-header-heading-sub-title {
+    font-size: 18px;
+  }  
 }
+
 </style>

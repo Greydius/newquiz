@@ -2,7 +2,6 @@
   <div class="module-video">
     <PageHeader
       title="Юный лесокультурник"
-      sub-title="Посмотри видео и ответь на вопросы"
       @back="goBack"
       class="module-video__header"
     />
@@ -82,18 +81,26 @@
               ]"
             />
           </FormItem>
-          <FormItem
-            class="module-video__form-button"
-            :colon="false"
-          >
-            <a-button
-              :disabled="hasErrors(form.getFieldsError())"
-              type="primary"
-              html-type="submit"
+          <div class="module-video__form-inner-wrapper">
+            <StatisticCountdown
+              class="module-video__timer"
+              :value="deadline"
+              format="mm:ss"
+              @finish="handleSubmit"
+            />
+
+            <FormItem
+              class="module-video__form-button"
             >
-              Закончить
-            </a-button>
-          </FormItem>
+              <a-button
+                :disabled="hasErrors(form.getFieldsError())"
+                type="primary"
+                html-type="submit"
+              >
+                Завершить
+              </a-button>
+            </FormItem>  
+          </div>
         </Form>
       </div>  
     </template>
@@ -103,7 +110,7 @@
 
 <script>
 
-import { Form, Input } from 'ant-design-vue'
+import { Form, Input, Statistic } from 'ant-design-vue'
 import VuePlyr from 'vue-plyr'
 
 import PageHeader from '@/components/PageHeader'
@@ -121,7 +128,7 @@ export default {
   name: 'VideoModule',
 
   components: {
-    PageHeader, Guide,
+    PageHeader, Guide, StatisticCountdown: Statistic.Countdown,
     Form, FormItem: Form.Item,
     'a-input': Input,
     VuePlyr,
@@ -138,6 +145,9 @@ export default {
     ...mapTRState(['testsDates']),
     testDates() {
       return this.testsDates[this.$route.params.moduleId]
+    },
+    deadline() {
+      return this.testDates.start + (20 * 60 * 1000 )
     },
   },
 
@@ -180,6 +190,15 @@ export default {
   &__form-button {
     display: flex;
     justify-content: flex-end;
+  }
+
+  &__form-inner-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__timer {
+    margin-right: 60px;
   }
 }
 </style>

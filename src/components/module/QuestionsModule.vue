@@ -282,6 +282,10 @@ export default {
 
 <style lang="scss">
 .questions-module {
+  h4 {
+    font-size: 22px;
+    text-align: center;
+  }
   &__steps-wrapper {
     overflow-x: auto;
     padding-top: 15px;

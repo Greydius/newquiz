@@ -4,7 +4,10 @@
     <p v-if="content.description" class="question-form-item__description">
       {{ content.description }}
     </p>
-    <img v-if="content.image" :src="content.image" alt="" class="question-form-item__image">
+    <div class="question-form-item__image-wrapper">
+      <img v-if="content.image" :src="content.image" alt="" class="question-form-item__image">
+    </div>
+    
     <a-input
       class="question-form-item__input"
       v-decorator="[
@@ -44,6 +47,11 @@ export default {
   &__description {
     line-height: 1;
     margin-bottom: 10px;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
   }
 
   &__image {

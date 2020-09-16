@@ -1,7 +1,7 @@
 <template>
   <div class="answers-select-form-item__wrapper">
     <h4 class="answers-select-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
-    <div v-viewer.static v-if="content.images" class="answers-select-form-item__images-wrapper">
+    <div v-viewer.static v-if="content.images && !content.single" class="answers-select-form-item__images-wrapper">
       <div
         v-for="(image, i) in content.images"
         :key="i"
@@ -12,8 +12,12 @@
         </div>
       </div>
     </div>
+    <div v-if="content.single" class="answers-select-form-item__single-image-wrapper">
+      <img :src="content.images[0]" alt="" class="answers-select-form-item__image">
+    </div>
     <a-form-item
       class="answers-select-form-item"
+      :class="{ breaks: content.breaks}"
     >
     <a-radio-group
       v-decorator="[
@@ -101,6 +105,20 @@ export default {
   &__description {
     line-height: 1;
     margin-bottom: 10px;
+  }
+
+  &.breaks {
+    .answers-select-form-item {
+      &__radio-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &__radio-button {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 </style>

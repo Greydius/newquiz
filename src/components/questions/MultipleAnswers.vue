@@ -87,7 +87,7 @@ export default {
     width: 100%;
     margin-bottom: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   &__image-outer-wrapper {
