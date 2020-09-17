@@ -47,48 +47,6 @@
     </Guide>
 
     <template v-else >
-      <a-collapse
-        style="margin-bottom: 20px"
-      >
-        <a-collapse-panel key="help" header="Инструкция">
-          <template v-if="currentRoute === 'forest-plantation'">
-            <p>
-              В текущем блоке Вам необходимо ответить на 25 вопросов.
-              <br>
-              Для ответов на все вопросы у Вас будет 38 минут.
-              <br>
-              Для начала выполнения заданий нажмите кнопку «Начать», для перехода к следующему вопросу нажмите кнопку «Далее», для возврата к предыдущему вопросу нажмите кнопку «Назад» либо кнопку с указанием номера вопроса.
-              <br>
-              Чтобы завершить задание, нажмите кнопку «Завершить».
-
-            </p>
-          </template>
-          <template v-else-if="currentRoute === 'testing-test'">
-            <p>
-              В текущем блоке Вам необходимо ответить на 4 вопроса.
-              <br>
-              Для ответов на все вопросы у Вас будет 10 минут.
-              <br>
-              Для начала выполнения заданий Вам нужно нажать кнопку «Начать», для перехода к следующему вопросу Вам нужно нажать кнопку «Далее», для возврата к предыдущему вопросу Вам нужно нажать кнопку «Назад» либо кнопку с указанием номера вопроса. 
-              <br>
-              Чтобы завершить задание, Вам нужно нажать кнопку «Завершить».
-
-            </p>
-          </template>
-          <template v-else>
-            <p>
-              В текущем блоке Вам необходимо ответить на 20 вопросов.
-              <br>
-              Для ответов на все вопросы у Вас будет 30 минут.
-              <br>
-              Для начала выполнения заданий Вам нужно нажать кнопку «Начать», для перехода к следующему вопросу Вам нужно нажать кнопку «Далее», для возврата к предыдущему вопросу Вам нужно нажать кнопку «Назад» либо кнопку с указанием номера вопроса. 
-              <br>
-              Чтобы завершить задание, Вам нужно нажать кнопку «Завершить».
-
-            </p>
-          </template>
-        </a-collapse-panel>
-      </a-collapse>
       <div class="questions-module__steps-wrapper">
         <a-steps
           @change="changeStep"
@@ -170,7 +128,7 @@ import MultipleAnswers from '../questions/MultipleAnswers'
 
 import Guide from './Guide'
 
-import { Form, Steps, Statistic, Collapse } from 'ant-design-vue'
+import { Form, Steps, Statistic } from 'ant-design-vue'
 
 import forestPlantation from '@/content/forest-plantation'
 import forestFireSecurity from '@/content/forest-fire-security'
@@ -194,7 +152,6 @@ export default {
     PageHeader,
     // eslint-disable-next-line vue/no-unused-components
     AnswersSelect, MultipleAnswersSelect, ImagesCompare, ImagesNames, ImagesSelect, Question, MultipleAnswers,
-    'a-collapse': Collapse, 'a-collapse-panel': Collapse.Panel,
     StatisticCountdown: Statistic.Countdown,
     Guide,
     'a-form': Form,
@@ -324,12 +281,6 @@ export default {
 </script>
 
 <style lang="scss">
-.modules__header {
-  .ant-page-header-heading {
-    display: flex;
-    justify-content: center;
-  }
-}
 .questions-module {
   h4 {
     font-size: 26px;

@@ -33,8 +33,16 @@ export default {
 <style lang="scss">
 .layout {
   .ant-page-header-heading-sub-title {
-    font-size: 18px;
+    font-size: 20px;
   }  
+}
+
+.modules__header {
+  .ant-page-header-heading {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 </style>

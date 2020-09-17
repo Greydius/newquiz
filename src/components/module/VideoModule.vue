@@ -193,7 +193,11 @@ export default {
           })
             .then(() => {
               this.$router.push({ name: 'modules' })
-              this.$message.success('Завершено!')
+              this.$notification.success({
+                message: 'Завершено!',
+                description: 'Этап завершен',
+                duration: 30
+              })
             })
         }
       });

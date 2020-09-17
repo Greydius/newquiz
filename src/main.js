@@ -11,7 +11,7 @@ import {
   Layout,
   Button, Icon, Avatar,
   Result, Modal,
-  message,
+  message, notification
 } from 'ant-design-vue';
 
 // Ant Design Vue UI component's
@@ -30,6 +30,7 @@ Vue.use(Button);
 Vue.use(Icon);
 
 Vue.prototype.$message = message;
+Vue.prototype.$notification = notification;
 Vue.config.productionTip = false;
 
 new Vue({

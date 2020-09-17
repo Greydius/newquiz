@@ -60,7 +60,7 @@ export default {
     goToModule() {
       const moduleId = this.name
       !this.disabled && 
-      // this.status !== 'done' && 
+      this.status !== 'done' && 
       this.name ? this.$router.push({ name: 'module', params: { moduleId } }) : undefined
     }
   },

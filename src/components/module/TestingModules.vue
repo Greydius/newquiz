@@ -25,13 +25,40 @@
       </p>
     </Guide>
     <template v-else>
-    <ModulesList :list="modulesData" :columnsCount="4" class="modules__list" />
+      <a-collapse
+        style="margin-bottom: 20px"
+      >
+        <a-collapse-panel key="help" header="Инструкция">
+          <p>
+            Последовательность выполнения блоков Вы можете выбрать самостоятельно.
+            <br>
+            Для начала работы с блоком нажмите на него. После выполнения заданий одного из блоков Вы вернетесь на эту страницу, чтобы приступить к заданиям следующего блока.
+            <br>
+            После завершения блоков на кнопке соответствующего блока появится отметка «Завершено»
+          </p>
+        </a-collapse-panel>
+      </a-collapse>
+
+      <ModulesList :list="modulesData" :columnsCount="4" class="modules__list" />
+
+      <div class="testing-modules__finish">
+        <a-button
+          style="font-size: 30px; height: auto;"
+          type="primary"
+          html-type="submit"
+          @click="handleSubmit"
+        >
+          Завершить
+        </a-button>
+      </div>
     </template>
   </div>
 </template>
 
 <script>
 import { createNamespacedHelpers } from 'vuex'
+
+import { Collapse } from 'ant-design-vue'
 
 import PageHeader from '@/components/PageHeader'
 import ModulesList from '@/components/modules/ModulesList'
@@ -47,6 +74,7 @@ export default {
 
   components: {
     PageHeader, ModulesList, Guide,
+    'a-collapse': Collapse, 'a-collapse-panel': Collapse.Panel,
   },
 
   data() {
@@ -73,7 +101,25 @@ export default {
 
     goToGuide() {
       this.$router.push({ name: 'modules' })
+    },
+
+    handleSubmit() {
+      this.$router.push({ name: 'modules' })
+      this.$notification.success({
+        message: 'Успех!',
+        description: 'Блок тестирования завершен',
+        duration: 30
+      })
     }
   }
 }
 </script>
+
+<style lang="scss">
+.testing-modules {
+  &__finish {
+    display: flex;
+    justify-content: center;
+  }
+}
+</style>

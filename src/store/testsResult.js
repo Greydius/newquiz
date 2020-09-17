@@ -71,7 +71,6 @@ export default {
         'forest-plantation',
         'forest-directions-and-zoology',
         'forest-diseases-and-pests',
-        'testing-test'
       ];
 
       localStorage.setItem(`test.${test}`, status);
