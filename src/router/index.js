@@ -40,6 +40,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "home" */ '../views/pages/Info'),
     meta: {
       title: 'Главная',
+      requiredAuth: true,
     },
     redirect: { name: 'welcome' },
     children: [
@@ -49,6 +50,7 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "welcome" */ '../views/pages/info/Welcome'),
         meta: {
           title: 'Добро пожаловать!',
+          requiredAuth: true,
         },
       },
       {

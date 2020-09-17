@@ -91,7 +91,7 @@ export default {
         this.login(this.form)
         // this.testLogin(this.form)
           .then(() => {
-            this.$router.push({ name: 'guide' });
+            this.$router.push({ name: 'home' });
           })
           .catch(() => {
             this.form.password = '';
