@@ -9,7 +9,10 @@
     <ModulesList :list="modules" :columnsCount="3" class="modules__list" />
     <div v-if="isTestingComplete" class="modules__complete-wrapper">
       <router-link :to="{ name: 'goodbye' }">
-        <a-button type="primary">Завершить конкурс</a-button>
+        <a-button
+          style="font-size: 30px; height: auto;"
+          type="primary"
+        >Завершить конкурс</a-button>
       </router-link>
       
     </div>
