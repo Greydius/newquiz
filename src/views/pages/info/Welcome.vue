@@ -39,7 +39,7 @@ export default {
 
   data() {
     return {
-      deadline: Date.parse('2020-09-18T05:00:00')
+      deadline: Date.parse("Fry, 18 Sep 2020 08:00:00 GMT+0300")
     }
   }
 }
