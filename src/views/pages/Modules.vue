@@ -9,7 +9,7 @@
     <ModulesList :list="modules" :columnsCount="3" class="modules__list" />
     <div v-if="isTestingComplete" class="modules__complete-wrapper">
       <router-link :to="{ name: 'goodbye' }">
-        <a-button type="primary">Завершить</a-button>
+        <a-button type="primary">Завершить конкурс</a-button>
       </router-link>
       
     </div>
@@ -82,7 +82,7 @@ export default {
   &__complete-wrapper {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 </style>
