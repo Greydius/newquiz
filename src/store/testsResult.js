@@ -60,8 +60,12 @@ export default {
   },
   getters: {
     isTestingComplete(state) {
-      const keys = Object.keys(state.testsResults)
-      return keys.every(module => state.testsResults[module] == 'done')
+      const tests = [
+        'testing',
+        'young-botanist',
+        'young-forest-grower',
+      ]
+      return tests.every(module => state.testsResults[module] == 'done')
     }
   },
   mutations: {
