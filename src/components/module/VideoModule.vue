@@ -37,7 +37,7 @@
       <div
         class="module-video__wrapper"
       >
-        <vue-plyr :settings="['quality']">
+        <vue-plyr v-if="!videoEnded" :settings="['quality']" :emit="['ended']" @ended="videoDone">
           <video poster="/assets/images/young-forest-grower/poster.jpg" src="/assets/video/young-forest-grower_1080.mp4">
             <source src="/assets/video/young-forest-grower_480.mp4" type="video/mp4" size="480">
             <source src="/assets/video/young-forest-grower_720.mp4" type="video/mp4" size="720">
@@ -155,11 +155,19 @@ export default {
     return {
       hasErrors,
       form: this.$form.createForm(this, { name: 'answers' }),
+      videoEnded: false,
     }
   },
 
   beforeMount() {
     this.setATR()
+  },
+
+  mounted() {
+    const videoEnded = localStorage.getItem('videoended');
+    if(videoEnded) {
+      this.videoEnded = true;
+    }
   },
 
   computed: {
@@ -181,6 +189,11 @@ export default {
     }),
     goBack() {
       this.$router.push({ name: 'modules' })
+    },
+
+    videoDone() {
+      this.videoEnded = true;
+      localStorage.setItem('videoended', true)
     },
 
     handleSubmit(e) {
