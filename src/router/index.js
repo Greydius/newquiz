@@ -79,6 +79,15 @@ Vue.use(VueRouter)
         children: guideRoutes,
       },
       {
+        path: 'lite-guide',
+        name: 'lite-guide',
+        component: () => import(/* webpackChunkName: "lite-guide" */ '../views/pages/info/LiteGuide'),
+        meta: {
+          title: 'Инструкция по прохождению',
+          requiredAuth: true,
+        },
+      },
+      {
         path: 'goodbye',
         name: 'goodbye',
         component: () => import(/* webpackChunkName: "goodbye" */ '../views/pages/info/Goodbye'),

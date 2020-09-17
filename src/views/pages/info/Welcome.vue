@@ -21,7 +21,7 @@
       </div>
     </template>
     <template #extra>
-      <router-link :to="{ name: 'guide' }">
+      <router-link :to="{ name: 'lite-guide' }">
         <a-button type="primary">
           Начать!
         </a-button>  
