@@ -55,8 +55,8 @@
       </p>
     </HeaderButtonWithModal>
 
-    <router-link :to="{ name: 'guide' }" class="header-to-guide">
-      <a-button type="submit">
+    <router-link :to="{ name: 'home' }" class="header-to-guide">
+      <a-button type="submit" disabled>
         К инструкции
       </a-button>
     </router-link>

@@ -16,14 +16,12 @@
     <HeaderButtons class="header__block" />
 
     <div class="header__block">
-      <HeaderProfile v-if="isAuthorized" />
     </div>
   </a-layout-header>
 </template>
 
 <script>
 import { createNamespacedHelpers } from 'vuex'
-import HeaderProfile from '@/components/header/HeaderProfile'
 import HeaderButtons from '@/components/header/HeaderButtons'
 
 const { mapGetters: mapAuthGetters } = createNamespacedHelpers('auth')
@@ -32,7 +30,6 @@ export default {
   name: 'Header',
 
   components: {
-    HeaderProfile,
     HeaderButtons
   },
 

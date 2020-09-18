@@ -6,7 +6,7 @@
   >
     <template #icon>
       <div class="welcome__wrapper">
-        <p>Конкурс школьных лесничеств Калужской области состоится 18 сентября 2020 года в период с 8.00 до 13.00</p>
+        <p>Конкурс школьных лесничеств Калужской области успешно завершен</p>
         <div class="welcome__inner-wrapper">
           <img src="@/assets/images/logo.svg" class="welcome__logo">  
         </div>
@@ -15,8 +15,8 @@
     </template>
     <template #extra>
       <router-link :to="{ name: 'lite-guide' }">
-        <a-button type="primary">
-          Начать!
+        <a-button type="primary" disabled>
+          Завершено
         </a-button>  
       </router-link>
     </template>
@@ -25,14 +25,7 @@
 
 <script>
 export default {
-  components: {
-  },
 
-  data() {
-    return {
-      deadline: Date.parse("Fry, 18 Sep 2020 08:00:00 GMT+0300")
-    }
-  }
 }
 </script>
 
@@ -51,7 +44,9 @@ export default {
   &__wrapper {
     font-weight: bold;
     font-size: 24px;
-    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     p {
       font-weight: bold;
     }
@@ -59,14 +54,6 @@ export default {
 
   &__inner-wrapper {
     position: relative;
-  }
-  &__timer {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 100%;
-    display: flex;
-    align-items: center;
   }
   &__logo {
     width: 200px;
