@@ -9,20 +9,13 @@
         <p>Конкурс школьных лесничеств Калужской области состоится 18 сентября 2020 года в период с 8.00 до 13.00</p>
         <div class="welcome__inner-wrapper">
           <img src="@/assets/images/logo.svg" class="welcome__logo">  
-          <div class="welcome__timer">
-            <StatisticCoundown
-              title="До старта"
-              :value="deadline"
-              format="DD:HH:mm:ss"
-            />
-          </div>  
         </div>
         
       </div>
     </template>
     <template #extra>
       <router-link :to="{ name: 'lite-guide' }">
-        <a-button type="primary" disabled>
+        <a-button type="primary">
           Начать!
         </a-button>  
       </router-link>
@@ -31,10 +24,8 @@
 </template>
 
 <script>
-import { Statistic } from 'ant-design-vue'
 export default {
   components: {
-    StatisticCoundown: Statistic.Countdown
   },
 
   data() {
