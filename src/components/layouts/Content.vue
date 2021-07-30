@@ -20,6 +20,7 @@ export default {
   background-size: cover;
   background-position-y: center;
   padding: 0px;
+  margin-top: 64px;
   &__wrapper {
     display: flex;
     justify-content: center;
