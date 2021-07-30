@@ -2,7 +2,7 @@
   <div class="button-with-modal">
     <a-button
       @click="handleOpen"
-      type="dashed"
+      type="primary"
     >
       {{ title }}
     </a-button>

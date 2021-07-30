@@ -54,12 +54,12 @@
         <a href="/assets/files/Порядок проведения тестирования.doc" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Порядок проведения тестирования</a>
       </p>
     </HeaderButtonWithModal>
-
+<!-- 
     <router-link :to="{ name: 'test-guide' }" class="header-to-guide">
       <a-button type="submit">
         К инструкции
       </a-button>
-    </router-link>
+    </router-link> -->
   </div>
 </template>
 

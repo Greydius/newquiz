@@ -60,6 +60,7 @@ export default {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  background-image: linear-gradient(to right, #08783e 0%, rgba(8, 120, 62, 0.7) 21%, rgba(8, 120, 62, 0.69) 40%, rgba(107, 183, 123, 0.68) 50%, rgba(2, 115, 60, 0.69) 64%, rgba(2, 115, 60, 0.7) 81%, #02733c 100%);
 
   &__block {
     display: flex;
