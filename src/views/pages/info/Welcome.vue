@@ -74,10 +74,8 @@ export default {
   height: 100%;
 
   &__background {
-    position: absolute;
-    top: 0;
-    left: 7.5%;
     width: 85%;
+    margin: 0 auto -40px;
   }
 }
 
