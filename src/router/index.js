@@ -31,7 +31,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "module" */ '../views/pages/Module'),
     meta: {
       title: 'Выбор блоков тестирования',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {
@@ -50,7 +50,7 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "welcome" */ '../views/pages/info/Welcome'),
         meta: {
           title: 'Добро пожаловать!',
-          requiredAuth: true,
+          requiredAuth: false,
         },
       },
       {
@@ -75,10 +75,31 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "guide" */ '../views/pages/info/Guide'),
         meta: {
           title: 'Инструкция по прохождению',
-          requiredAuth: true,
+          requiredAuth: false,
         },
         redirect: { name: 'guide-intro' },
         children: guideRoutes,
+      },
+      {
+        path: 'test-guide',
+        name: 'test-guide',
+        component: () => import(/* webpackChunkName: "test-guide" */ '../views/pages/info/TestGuide'),
+        meta: {
+          title: 'Инструкция по прохождению',
+          requiredAuth: false,
+        },
+        redirect: { name: 'test-guide-intro' },
+        children: [
+          {
+            path: '',
+            name: 'test-guide-intro',
+            component: () => import(/* webpackChunkName: "test-guide-intro" */ '../views/pages/info/guide/TestIntro'),
+            meta: {
+              title: 'Введение - Инструкция по прохождению',
+              requiredAuth: false,
+            },
+          },
+        ],
       },
       {
         path: 'lite-guide',
@@ -93,6 +114,14 @@ Vue.use(VueRouter)
         path: 'goodbye',
         name: 'goodbye',
         component: () => import(/* webpackChunkName: "goodbye" */ '../views/pages/info/Goodbye'),
+        meta: {
+          title: 'С завершением!',
+        },
+      },
+      {
+        path: 'test-goodbye',
+        name: 'test-goodbye',
+        component: () => import(/* webpackChunkName: "test-goodbye" */ '../views/pages/info/TestGoodbye'),
         meta: {
           title: 'С завершением!',
         },

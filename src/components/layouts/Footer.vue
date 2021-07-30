@@ -1,16 +1,9 @@
 <template>
   <a-layout-footer class="footer">
+
     <div class="footer__block">
       <img src="@/assets/images/footer-logo-4.svg" class="footer__logo" alt=""> 
-    </div>
-
-    <div class="footer__block">
-      <img src="@/assets/images/footer-logo-1.png" class="footer__logo" alt="">
       <img src="@/assets/images/footer-logo-2.png" class="footer__logo" alt="">
-      <img src="@/assets/images/footer-logo-3.svg" class="footer__logo" alt="">
-    </div>
-
-    <div class="footer__block">
       <img src="@/assets/images/footer-logo-5.jpg" class="footer__logo" alt="">
     </div>
   </a-layout-footer>
@@ -25,7 +18,7 @@ export default {
 <style lang="scss">
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   &__block {
@@ -33,14 +26,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    &:first-child {
-      justify-content: flex-start;
-    }
-
-    &:last-child {
-      justify-content: flex-end;
-    }
   }
 
   &__logo {

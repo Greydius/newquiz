@@ -21,6 +21,9 @@ export default {
   background-position-y: center;
   padding: 0px;
   &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     flex: 1;
     padding: 30px;
     background: rgba(255, 255, 255, 0.75);

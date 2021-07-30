@@ -189,6 +189,14 @@ export default {
   beforeMount(){
     this.setATR()
 
+    if(this.$route.params.moduleId === 'testing-test') {
+      this.setTestStart({
+        date: Date.now(),
+        test: this.$route.params.moduleId,
+        type: 'start'
+      })
+    }
+
     console.log(this.deadline, Date.now(), this.deadline <= Date.now())
     if(this.deadline <= Date.now()) {
       // this.goToGuide()
@@ -206,7 +214,7 @@ export default {
         'forest-fire-protection': 30,
         'forest-directions-and-zoology': 30,
         'forest-diseases-and-pests': 30,
-        'testing-test': 10
+        'testing-test': 6
       }
       return this.testDates.start + (dates[this.$route.params.moduleId] * 60 * 1000 )
     },
@@ -226,7 +234,8 @@ export default {
 
   methods: {
     ...mapTRMutations({
-      setATR: 'SET_ARCHIVED_TESTS_RESULTS'
+      setATR: 'SET_ARCHIVED_TESTS_RESULTS',
+      setTestStart:'SET_TEST_START',
     }),
     ...mapTestsResultActions({
       setTestsResults: 'set',
@@ -240,14 +249,19 @@ export default {
       
       this.form.validateFields((err, values) => {
         if (!err) {
-          this.setTestsResults({
-            test: this.$route.params.moduleId,
-            formData: values
-          })
-            .then(() => {
-              this.goToGuide()
+          if(this.$route.params.moduleId === 'testing-test'){
+            this.$router.push({ name: 'test-goodbye' })
+          } else {
+            this.setTestsResults({
+              test: this.$route.params.moduleId,
+              formData: values
             })
-          console.log('Received values of form: ', values);
+              .then(() => {
+                this.goToGuide()
+              })
+            console.log('Received values of form: ', values);  
+          }
+          
         }
       });
     },
@@ -282,6 +296,7 @@ export default {
 
 <style lang="scss">
 .questions-module {
+  width: 1200px;
   h4 {
     font-size: 26px;
     text-align: center;

@@ -1,5 +1,5 @@
 <template>
-  <a-result
+  <!-- <a-result
     title="Добро пожаловать"
     sub-title='на конкурс школьных лесничеств "Лучшее школьное лесничество Калужской области"'
     class="welcome"
@@ -20,7 +20,16 @@
         </a-button>  
       </router-link>
     </template>
-  </a-result>
+  </a-result> -->
+  <div class="info-welcome">
+    <img class="info-welcome__background" src="@/assets/images/logos.png" alt="">
+    <router-link :to="{ name: 'module', params: { moduleId: 'testing-test'} }">
+      <a-button type="primary">
+        ПРОБНЫЙ ТЕСТ
+      </a-button>  
+    </router-link>
+  </div>
+  
 </template>
 
 <script>
@@ -43,6 +52,16 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 7.5%;
+    width: 85%;
+  }
 }
 
 .welcome {
