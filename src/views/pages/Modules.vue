@@ -29,7 +29,7 @@ const { mapGetters: mapTRGetters, mapMutations: mapTestsResultMutations } = crea
 
 const modules = [
   {
-    name: 'testing',
+    name: 'testing-test',
     title: 'Тестирование',
     description: '4 блока вопросов, на которые предстоит ответить',
     disabled: false,

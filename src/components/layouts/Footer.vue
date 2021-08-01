@@ -2,8 +2,8 @@
   <a-layout-footer class="footer">
 
     <div class="footer__block">
-      <img src="@/assets/images/footer-logo-4.svg" class="footer__logo" alt=""> 
       <img src="@/assets/images/footer-logo-2.png" class="footer__logo" alt="">
+      <img src="@/assets/images/footer-logo-4.svg" class="footer__logo" alt=""> 
       <img src="@/assets/images/footer-logo-5.jpg" class="footer__logo" alt="">
     </div>
   </a-layout-footer>
