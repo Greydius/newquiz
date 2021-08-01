@@ -40,7 +40,7 @@
       </p>  
     </div>
  
-    <router-link :to="{ name: 'module', params: { moduleId: 'testing-test'} }">
+    <router-link :to="{ name: 'modules' }">
       <a-button type="primary">
         ПРОБНЫЙ ТЕСТ
       </a-button>  

@@ -22,7 +22,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "modules" */ '../views/pages/Modules'),
     meta: {
       title: 'Выбор блоков тестирования',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {
