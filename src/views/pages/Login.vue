@@ -1,5 +1,6 @@
 <template>
-  <div class="login">
+  <div class="info-welcome login">
+    <img class="info-welcome__background" src="@/assets/images/logos.png" alt="">
     <Card
       title="Вход"
       class="login__card card"
@@ -117,6 +118,53 @@ export default {
   &__card {
     max-width: 500px;
     width: 100%;
+  }
+}
+
+.info-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__background {
+    width: 85%;
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+}
+
+.welcome {
+  padding: 24px 16px;
+
+  &__wrapper {
+    font-weight: bold;
+    font-size: 24px;
+    max-width: 670px;
+    p {
+      font-weight: bold;
+    }
+  }
+
+  &__inner-wrapper {
+    position: relative;
+  }
+  &__timer {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: 200px;
   }
 }
 </style>

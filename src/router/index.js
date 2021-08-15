@@ -22,7 +22,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "modules" */ '../views/pages/Modules'),
     meta: {
       title: 'Выбор блоков тестирования',
-      requiredAuth: false,
+      requiredAuth: true,
     },
   },
   {
@@ -31,7 +31,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "module" */ '../views/pages/Module'),
     meta: {
       title: 'Выбор блоков тестирования',
-      requiredAuth: false,
+      requiredAuth: true,
     },
   },
   {
@@ -50,7 +50,7 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "welcome" */ '../views/pages/info/Welcome'),
         meta: {
           title: 'Добро пожаловать!',
-          requiredAuth: false,
+          requiredAuth: true,
         },
       },
       {
@@ -75,7 +75,7 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "guide" */ '../views/pages/info/Guide'),
         meta: {
           title: 'Инструкция по прохождению',
-          requiredAuth: false,
+          requiredAuth: true,
         },
         redirect: { name: 'guide-intro' },
         children: guideRoutes,
@@ -86,7 +86,7 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "test-guide" */ '../views/pages/info/TestGuide'),
         meta: {
           title: 'Инструкция по прохождению',
-          requiredAuth: false,
+          requiredAuth: true,
         },
         redirect: { name: 'test-guide-intro' },
         children: [
@@ -96,7 +96,7 @@ Vue.use(VueRouter)
             component: () => import(/* webpackChunkName: "test-guide-intro" */ '../views/pages/info/guide/TestIntro'),
             meta: {
               title: 'Введение - Инструкция по прохождению',
-              requiredAuth: false,
+              requiredAuth: true,
             },
           },
         ],
