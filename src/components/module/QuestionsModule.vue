@@ -250,15 +250,9 @@ export default {
       this.form.validateFields((err, values) => {
         if (!err) {
           if(this.$route.params.moduleId === 'testing-test'){
-            this.$router.push({ name: 'test-goodbye' })
+            this.$router.push({ name: 'modules' })
           } else {
-            this.setTestsResults({
-              test: this.$route.params.moduleId,
-              formData: values
-            })
-              .then(() => {
-                this.goToGuide()
-              })
+            this.goToGuide()
             console.log('Received values of form: ', values);  
           }
           
@@ -284,7 +278,7 @@ export default {
 
     goToGuide() {
       if(this.$route.params.moduleId === 'testing-test'){
-        this.$router.push({ name: 'guide-test' })
+        this.$router.push({ name: 'modules' })
       } else {
         this.$router.push({ name: 'module', params: { moduleId: 'testing' } })
       }

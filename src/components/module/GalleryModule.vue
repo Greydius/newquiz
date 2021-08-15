@@ -171,20 +171,14 @@ export default {
 
     handleSubmit(e) {
       e.preventDefault();
-      this.form.validateFields((err, values) => {
+      this.form.validateFields((err) => {
         if (!err) {
-          this.setTestsResults({
-            test: this.$route.params.moduleId,
-            formData: values
+          this.$router.push({ name: 'modules' })
+          this.$notification.success({
+            message: 'Завершено!',
+            description: 'Этап завершен',
+            duration: 30
           })
-            .then(() => {
-              this.$router.push({ name: 'modules' })
-              this.$notification.success({
-                message: 'Завершено!',
-                description: 'Этап завершен',
-                duration: 30
-              })
-            })
         }
       });
     },
