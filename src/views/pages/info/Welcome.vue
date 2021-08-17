@@ -24,37 +24,29 @@
   <div class="info-welcome">
     <img class="info-welcome__background" src="@/assets/images/logos.png" alt="">
     <div class="info-welcome__text">
-      <h2>Дорогие участники конкурса!</h2>
-      <p>
-        Предлагаем Вам пройти пробный тест для ознакомления с особенностями работы с вопросами в он-лайн режиме.
-      </p>
-      <p>
-        Дистанционный конкурс состоит из 3 этапов. Последовательность прохождения этапов Вы выберете сами.
-        Для начала работы с пробным тестом нажмите на него.
-        Для ответов на все вопросы у Вас будет 6 минут.
-        Для начала выполнения заданий нажмите кнопку «Начать», для перехода к следующему вопросу нажмите кнопку «Далее»,
-        для возврата к предыдущему вопросу нажмите кнопку «Назад» либо кнопку с указанием номера вопроса.
-        Чтобы завершить задание, нажмите кнопку «Завершить».
-      </p>  
+      <div class="info-welcome">
+        <h1>Добро пожаловать!</h1>
+        <StatisticCoundown
+          title="До старта"
+          :value="deadline"
+          format="DD:HH:mm:ss"
+        />
+      </div>
     </div>
- 
-    <router-link :to="{ name: 'modules' }">
-      <a-button type="primary">
-        ПРОБНЫЙ ТЕСТ
-      </a-button>  
-    </router-link>
   </div>
-  
+
 </template>
 
 <script>
+import { Statistic } from 'ant-design-vue'
 export default {
   components: {
+    StatisticCoundown: Statistic.Countdown
   },
 
   data() {
     return {
-      deadline: Date.parse("Fry, 18 Sep 2020 08:00:00 GMT+0300")
+      deadline: Date.parse("Wed, 01 Sep 2021 08:00:00 GMT+0300")
     }
   }
 }
@@ -73,7 +65,10 @@ export default {
 
   &__background {
     width: 85%;
-    margin: 0 auto -40px;
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
   }
 }
 
