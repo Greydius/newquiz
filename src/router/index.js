@@ -22,7 +22,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "modules" */ '../views/pages/Modules'),
     meta: {
       title: 'Выбор блоков тестирования',
-      requiredAuth: false,
+      requiredAuth: true,
     },
   },
   {
@@ -31,7 +31,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "module" */ '../views/pages/Module'),
     meta: {
       title: 'Выбор блоков тестирования',
-      requiredAuth: false,
+      requiredAuth: true,
     },
   },
   {
@@ -40,7 +40,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "home" */ '../views/pages/Info'),
     meta: {
       title: 'Главная',
-      requiredAuth: false,
+      requiredAuth: true,
     },
     redirect: { name: 'welcome' },
     children: [
@@ -50,7 +50,7 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "welcome" */ '../views/pages/info/Welcome'),
         meta: {
           title: 'Добро пожаловать!',
-          requiredAuth: false,
+          requiredAuth: true,
         },
       },
       {
