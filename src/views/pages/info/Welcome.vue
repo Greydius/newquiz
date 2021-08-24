@@ -25,12 +25,12 @@
     <img class="info-welcome__background" src="@/assets/images/logos.png" alt="">
     <div class="info-welcome__text">
       <div class="info-welcome">
-        <h1>Добро пожаловать!</h1>
-        <StatisticCoundown
-          title="До старта"
-          :value="deadline"
-          format="DD:HH:mm:ss"
-        />
+        <h1>Конкурс школьных лесничеств Калужской области</h1>
+        <router-link :to="{ name: 'modules' }">
+          <a-button type="primary">
+            Начать!
+          </a-button>  
+        </router-link>
       </div>
     </div>
   </div>
@@ -38,10 +38,9 @@
 </template>
 
 <script>
-import { Statistic } from 'ant-design-vue'
 export default {
   components: {
-    StatisticCoundown: Statistic.Countdown
+
   },
 
   data() {

@@ -44,7 +44,7 @@
         v-viewer.static
       >
         <div
-          v-for="src of images"
+          v-for="src of images[user.variant - 1]"
           :key="src"
           class="module-gallery__item"
         >
@@ -109,16 +109,25 @@ import { createNamespacedHelpers } from 'vuex'
 
 const { mapState: mapTRState, mapMutations: mapTestsResultMutations, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
 
+const { mapGetters: mapAuthGetters } = createNamespacedHelpers('auth')
 Vue.use(Viewer)
 
 const images = [
-  '/assets/images/young-botanist/6.jpg',
-  '/assets/images/young-botanist/1.jpg',
-  '/assets/images/young-botanist/2.jpg',
-  '/assets/images/young-botanist/3.jpg',
-  '/assets/images/young-botanist/4.jpg',
-  '/assets/images/young-botanist/5.jpg',
-  '/assets/images/young-botanist/7.jpg'
+  [
+    '/assets/images/young-botanist/1-1.jpg',
+    '/assets/images/young-botanist/1-2.jpg',
+    '/assets/images/young-botanist/1-3.jpg',
+  ],
+  [
+    '/assets/images/young-botanist/2-1.jpg',
+    '/assets/images/young-botanist/2-2.jpg',
+    '/assets/images/young-botanist/2-3.jpg',
+  ],
+  [
+    '/assets/images/young-botanist/3-1.jpg',
+    '/assets/images/young-botanist/3-2.jpg',
+    '/assets/images/young-botanist/3-3.jpg',
+  ]
 ]
 
 function hasErrors(fieldsError) {
@@ -150,6 +159,9 @@ export default {
 
   computed: {
     ...mapTRState(['testsDates']),
+    ...mapAuthGetters({
+      user: 'getUser'
+    }),
     testDates() {
       return this.testsDates[this.$route.params.moduleId]
     },
@@ -191,17 +203,11 @@ export default {
   &__wrapper {
     display: grid;
     grid-gap: 16px;
-    grid-template-areas: 
-      "double"
-      "double";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   &__item {
     display: flex;
-    &:first-child {
-      grid-area: double;
-    }
   }
   &__image {
     display: flex;

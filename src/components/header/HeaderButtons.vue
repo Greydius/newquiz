@@ -1,10 +1,5 @@
 <template>
   <div>
-    <router-link :to="{ name: 'modules' }" class="button-with-modal">
-      <a-button  type="primary">
-        Пробный тест
-      </a-button>
-    </router-link>
 
     <HeaderButtonWithModal
       title="Обратная связь"
