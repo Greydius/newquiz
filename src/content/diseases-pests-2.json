@@ -1,0 +1,178 @@
+[  
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
+      "images": [
+        "/assets/images/modules/pests/2/vopros-1.jpg"
+      ],
+      "count": 11,
+      "questions": [
+        "2", "4", "6", "8", "10"
+      ],
+      "single": true
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Настоящий трутовик поражает……",
+      "answers": [
+        "Хвойные породы",
+        "Преимущественно хвойные, изредка – лиственные",
+        "Различные лиственные породы"
+      ]
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Выберите гриб, являющийся типичным полифагом, поражающим более 230 видов растений, в том числе многие древесные породы, кустарники, сельскохозяйственные и цветочные культуры?",
+      "images": [
+        "/assets/images/modules/pests/2/vopros-3-1.jpg",
+        "/assets/images/modules/pests/2/vopros-3-2.jpg",
+        "/assets/images/modules/pests/2/vopros-3-3.jpg"
+      ],
+      "count": 3
+    }
+  },  
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какие насекомые питаются тканями живых растений?",
+      "answers": [
+        "Плотоядные насекомые",
+        "Растительноядные насекомые",
+        "Сапрофаги"
+      ]
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Выберите дереворазрушающий гриб, который встречается только на мертвой (заготовленной) древесине?",
+      "images": [
+        "/assets/images/modules/pests/2/vopros-5-1.jpg",
+        "/assets/images/modules/pests/2/vopros-5-2.jpg",
+        "/assets/images/modules/pests/2/vopros-5-3.jpg",
+        "/assets/images/modules/pests/2/vopros-5-4.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какие растения являются олиготрофными (произрастают на сравнительно малоплодородных почвах)?",
+      "answers": [
+        "Ясень, клен, вяз",
+        "Липа, осина, ель",
+        "Сосна, береза, можжевельник"
+      ]
+    }
+  },  
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите верный ответ. Большой сосновый лубоед зимует:",
+      "answers": [
+        "в толще коры у основания стволов",
+        "в подстилке",
+        "в трещинах коры",
+        "в кроне"
+      ]
+    }
+  },  
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Что способствует  распространению грибницы по субстрату?",
+      "answers": [
+        "Склероции",
+        "Ризоморфы",
+        "Споры"
+      ]
+    }
+  },  
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Выберите насекомое, которое относится к отряду Жуки?",
+      "images": [
+        "/assets/images/modules/pests/2/vopros-9-1.jpg",
+        "/assets/images/modules/pests/2/vopros-9-2.jpg",
+        "/assets/images/modules/pests/2/vopros-9-3.jpg",
+        "/assets/images/modules/pests/2/vopros-9-4.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какой экологический фактор является наиболее важным в размножении насекомых?",
+      "answers": [
+        "Тепло и влажность",
+        "Осадки и свет",
+        "Почва и питание"
+      ]
+    }
+  }, 
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какой тип болезни относится к деформации (изменение формы органов растений)?",
+      "answers": [
+        "Мумификация плодов и семян",
+        "Ведьмины метла",
+        "Мучнистая роса"
+      ]
+    }
+  },   
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Какой вредитель зимует в фазе куколки?",
+      "images": [
+        "/assets/images/modules/pests/2/vopros-12-1.jpg",
+        "/assets/images/modules/pests/2/vopros-12-2.jpg",
+        "/assets/images/modules/pests/2/vopros-12-3.jpg",
+        "/assets/images/modules/pests/2/vopros-12-4.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Защита растений от болезней, основанная на применение химических веществ, ядовитых для грибов и бактерий – возбудителей болезней, относится к ……..методу борьбы с болезнями растений",
+      "answers": [
+        "Лесохозяйственному",
+        "Биологическому",
+        "Химическому"
+      ]
+    }
+  }, 
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "К абиотическим факторам, в определенных случаях влияющих отрицательно на древесную растительность, относятся….",
+      "answers": [
+        "грибы",
+        "заморозки",
+        "вирусы"
+      ]
+    }
+  }, 
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Короед - типограф относится к отряду….  ",
+      "answers": [
+        "Двукрылые",
+        "Чешуекрылые",
+        "Жуки"
+      ]
+    }
+  }
+]

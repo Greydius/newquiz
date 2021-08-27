@@ -130,10 +130,20 @@ import Guide from './Guide'
 
 import { Form, Steps, Statistic } from 'ant-design-vue'
 
-import forestPlantation from '@/content/forest-plantation'
-import forestFireSecurity from '@/content/forest-fire-security'
+import forestPlantation1 from '@/content/forest-plantation-1'
+import forestPlantation2 from '@/content/forest-plantation-2'
+import forestPlantation3 from '@/content/forest-plantation-3'
+
+import forestFireSecurity1 from '@/content/forest-guardian-1'
+import forestFireSecurity2 from '@/content/forest-guardian-2'
+import forestFireSecurity3 from '@/content/forest-guardian-3'
+
 import zoo from '@/content/zoo'
-import pests from '@/content/pests'
+
+import pests1 from '@/content/diseases-pests-1'
+import pests2 from '@/content/diseases-pests-2'
+import pests3 from '@/content/diseases-pests-3'
+
 import testingTest from '@/content/testing-test'
 
 import modulesData from './modulesData'
@@ -141,6 +151,7 @@ import modulesData from './modulesData'
 import { createNamespacedHelpers } from 'vuex'
 
 const { mapState: mapTRState, mapMutations: mapTRMutations, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+const { mapGetters: mapAuthGetters } = createNamespacedHelpers('auth')
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -163,11 +174,11 @@ export default {
   data() {
     return {
       inputs: {
-        'forest-plantation': forestPlantation,
-        'forest-fire-protection': forestFireSecurity,
-        'forest-directions-and-zoology': zoo,
-        'forest-diseases-and-pests': pests,
-        'testing-test': testingTest
+        'forest-plantation': [forestPlantation1, forestPlantation2, forestPlantation3],
+        'forest-fire-protection': [forestFireSecurity1, forestFireSecurity2, forestFireSecurity3],
+        'forest-directions-and-zoology': [zoo, zoo, zoo],
+        'forest-diseases-and-pests': [pests1, pests2, pests3],
+        'testing-test': [testingTest, testingTest, testingTest]
       },
       currentStep: 0,
       modulesData: [
@@ -205,6 +216,9 @@ export default {
 
   computed: {
     ...mapTRState(['testsDates']),
+    ...mapAuthGetters({
+      'user': 'getUser'
+    }),
     testDates() {
       return this.testsDates[this.$route.params.moduleId]
     },
@@ -225,7 +239,7 @@ export default {
     },
 
     routeInputs() {
-      return this.inputs[this.currentRoute]
+      return this.inputs[this.currentRoute][this.user.variant - 1]
     },
     routeData() {
       return this.modulesData.find(({ name }) => name === this.currentRoute)

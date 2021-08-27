@@ -1,0 +1,171 @@
+[  
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Какой дереворазрушающий гриб относится к сапрофитам (поселяется только на мертвой древесине)?",
+      "images": [
+        "/assets/images/modules/pests/3/Vopros-1-1.jpg",
+        "/assets/images/modules/pests/3/Vopros-1-2.jpg",
+        "/assets/images/modules/pests/3/Vopros-1-3.jpg",
+        "/assets/images/modules/pests/3/Vopros-1-4.jpg"
+      ],
+      "count": 4
+    }
+  }, 
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите название инструмента, изображенного на фотографии:",
+      "image": "/assets/images/modules/forest-plantation/Vopros-2.jpg"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какой вид вредителя способен давать двойную генерацию?",
+      "answers": [
+        "Большой сосновый лубоед",
+        "Обыкновенный сосновый пилильщик",
+        "Сосновый шелкопряд"
+      ]
+    }
+  }, 
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Проникновение новых видов за пределы их естественных ареалов называется:",
+      "answers": [
+        "Инвазией",
+        "Интродукцией",
+        "Акклиматизация"
+      ]
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Какой гриб является типичным полифагом, поражает более 230 видов растений, в том числе многие древесные породы, кустарники, сельскохозяйственные и цветочные культуры?",
+      "images": [
+        "/assets/images/modules/pests/3/Vopros-5-1.jpg",
+        "/assets/images/modules/pests/3/Vopros-5-2.jpg",
+        "/assets/images/modules/pests/3/Vopros-5-3.jpg",
+        "/assets/images/modules/pests/3/Vopros-5-4.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Форма болезни, характеризующаяся медленным развитием с неясно выраженными, иногда малозаметными признаками, называется…..",
+      "answers": [
+        "Хронической",
+        "Острой",
+        "Стихийной"
+      ]
+    }
+  },  
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Укажите гриб с однолетними плодовыми телами",
+      "images": [
+        "/assets/images/modules/pests/3/Vopros-7-1.jpg",
+        "/assets/images/modules/pests/3/Vopros-7-2.jpg",
+        "/assets/images/modules/pests/3/Vopros-7-3.jpg",
+        "/assets/images/modules/pests/3/Vopros-7-4.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "К абиотическим факторам, в определенных случаях, влияющих отрицательно на древесную растительность, относятся…….",
+      "answers": [
+        "Грибы",
+        "Заморозки",
+        "Вирусы"
+      ]
+    }
+  },    
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Выберите гриб, который поражает как хвойные, так и лиственные породы деревьев.",
+      "images": [
+        "/assets/images/modules/pests/3/Vopros-9-1.jpg",
+        "/assets/images/modules/pests/3/Vopros-9-2.jpg",
+        "/assets/images/modules/pests/3/Vopros-9-3.jpg",
+        "/assets/images/modules/pests/3/Vopros-9-4.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Листовые галлы образуются при повреждении листьев:",
+      "answers": [
+        "Орехотворками",
+        "Хрущами",
+        "Тлями"
+      ]
+    }
+  },  
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Какой вредитель относится к лубоедам?",
+      "images": [
+        "/assets/images/modules/pests/3/Vopros-11-1.jpg",
+        "/assets/images/modules/pests/3/Vopros-11-2.jpg",
+        "/assets/images/modules/pests/3/Vopros-11-3.jpg",
+        "/assets/images/modules/pests/3/Vopros-11-4.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Пестициды, используемые для борьбы с насекомыми, называются….",
+      "answers": [
+        "Инсектициды",
+        "Акарициды",
+        "Нематоциды",
+        "Зооциды"
+      ]
+    }
+  }, 
+  {
+    "type": "Question",
+    "content": {
+      "title": "Допишите название. Налипание льда на кронах при ледяном дожде, под воздействием которого ломаются ветви, стволы, вершины деревьев, называется …."
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Защита растений от болезней, основанная на применении химических веществ, ядовитых грибов и бактерий - возбудителей болезней, относится к ……",
+      "answers": [
+        "лесохозяйственному методу борьбы",
+        "биологическому методу борьбы",
+        "химическому методу борьбы",
+        "механическому методу борьбы"
+      ]
+    }
+  },   
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите верный ответ. К абиотическим факторам, влияющим на насекомых, относят…. ",
+      "answers": [
+        "oтемпературу и влажность",
+        "oмежвидовые отношения",
+        "пищу",
+        "oантропогенные факторы"
+      ]
+    }
+  }
+]

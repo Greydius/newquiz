@@ -1,0 +1,145 @@
+[
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, какой должна быть высота стандартных сеянцев хвойных пород деревьев?"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите основное отличие сеянца от саженца? "
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Напишите основное отличие сеянца от саженца?",
+      "images": [
+        "/assets/images/modules/forest-plantation/2/vopros-3-1.jpg",
+        "/assets/images/modules/forest-plantation/2/vopros-3-2.jpg",
+        "/assets/images/modules/forest-plantation/2/vopros-3-3.jpg",
+        "/assets/images/modules/forest-plantation/2/vopros-3-4.jpg",
+        "/assets/images/modules/forest-plantation/2/vopros-3-5.jpg",
+        "/assets/images/modules/forest-plantation/2/vopros-3-6.jpg"
+      ],
+      "count": 6
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, семена какой хвойной породы, произрастающей в Калужской области, развиваются в шишках, которые созревают в течение одного вегетационного периода и бывают готовы для сбора в октябре-ноябре месяце?"
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Укажите номер фотографии, на которой изображена мерная вилка ",
+      "images": [
+        "/assets/images/modules/forest-plantation/2/vopros-5-1.jpg",
+        "/assets/images/modules/forest-plantation/2/vopros-5-2.jpg",
+        "/assets/images/modules/forest-plantation/2/vopros-5-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Укажите номер записи, указывающей состав насаждения:",
+      "answers": [
+        "3Е5Ос1Лп",
+        "6С3Б1Е+Олч",
+        "6Ос2Лп2С1Д",
+        "6Ю2С2Е"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Определите и напишите состав насаждения по представленному фото: ",
+      "image": "/assets/images/modules/forest-plantation/2/vopros-7.jpg"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберете породу дерева, из которого делают дёготь?",
+      "answers": [
+        "Сосна",
+        "Береза",
+        "Липа"
+      ]
+    }
+  },  
+  {
+    "type": "Question",
+    "content": {
+      "title": "Что за вещество показано на фото и как им пользуются садоводы? ",
+      "image": "/assets/images/modules/forest-plantation/2/vopros-9.jpg"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Что является валежником?",
+      "answers": [
+        "сухостойное дерево с листочками",
+        "упавшие на землю сучья, ветки",
+        "oкомлевые части буреломных деревьев",
+        "сломленные ветром, навалом снега деревья"
+      ]
+    }
+  },
+  {
+    "type": "ImagesCompare",
+    "content": {
+      "title": "Соотнеси ветку дерева (цифра) и его плод (буква):",
+      "images": [
+        [
+          "/assets/images/modules/forest-plantation/2/vopros-11-1.jpg",
+          "/assets/images/modules/forest-plantation/2/vopros-11-2.jpg",
+          "/assets/images/modules/forest-plantation/2/vopros-11-3.jpg",
+          "/assets/images/modules/forest-plantation/2/vopros-11-4.jpg"
+        ],
+        [
+          "/assets/images/modules/forest-plantation/2/vopros-11-A.jpg",
+          "/assets/images/modules/forest-plantation/2/vopros-11-B.jpg",
+          "/assets/images/modules/forest-plantation/2/vopros-11-C.jpg",
+          "/assets/images/modules/forest-plantation/2/vopros-11-D.jpg"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Это дерево - целая лесная аптека. От его цветов пахнет душистым мёдом. К нему обращаются при различных недугах: ангине, кашле, ожогах. У деревья своя слава: чай, лапти. О каком дереве идет речь?"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Земли, занятые лесом или предназначенные для его выращивания, а также для ведения лесного хозяйства, называют "
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Какой вид леса является хвойным, но отличается от подобных способностью сбрасывать хвою в зимний период?"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какие растения образуют верхний ярус в лесу?",
+      "answers": [
+        "Травы",
+        "Кустарники ",
+        "Деревья",
+        "Мхи, лишайники"
+      ]
+    }
+  }
+]

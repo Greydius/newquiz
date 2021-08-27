@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, семена какой хвойной породы, произрастающей в Калужской области, развиваются в шишках, которые созревают поздно осенью следующего года после цветения?"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите название инструмента, изображенного на фотографии",
+      "image": "/assets/images/modules/forest-plantation/3/vopros-2.jpg"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, в каком месяце цветет липа?"
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Укажите номер фотографии, на которой изображена мерная вилка ",
+      "images": [
+        "/assets/images/modules/forest-plantation/3/vopros-4-1.jpg",
+        "/assets/images/modules/forest-plantation/3/vopros-4-2.jpg",
+        "/assets/images/modules/forest-plantation/3/vopros-4-3.jpg"
+      ],
+      "count": 3
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Под соответствующими номерами рисунков впишите семена какой древесной породы изображены на фотографиях: ",
+      "images": [
+        "/assets/images/modules/forest-plantation/3/vopros-5-1.jpg",
+        "/assets/images/modules/forest-plantation/3/vopros-5-2.jpg",
+        "/assets/images/modules/forest-plantation/3/vopros-5-3.jpg",
+        "/assets/images/modules/forest-plantation/3/vopros-5-4.jpg",
+        "/assets/images/modules/forest-plantation/3/vopros-5-5.jpg",
+        "/assets/images/modules/forest-plantation/3/vopros-5-6.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Укажите номер записи, указывающей состав насаждения:",
+      "answers": [
+        "3Е5Ос1Лп",
+        "6Б2Ос4Е+Олч",
+        "7С2Б1Лп+Дн",
+        "6Ю2С2Е"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Определите и напишите состав насаждения по представленному фото: ",
+      "image": "/assets/images/modules/forest-plantation/3/vopros-7.jpg"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "8.Что за вещество показано на фото и как им пользуются садоводы?",
+      "image": "/assets/images/modules/forest-plantation/3/vopros-8.jpg"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Что является валежником?",
+      "answers": [
+        "упавшие на землю сучья, ветки",
+        "сухостойное дерево с листочками",
+        "oпорубочные остатки на местах заготовки древесины",
+        "лес срубленный и полуобработанный, но не вывезенный и брошенный"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Укажите, какое хвойное дерево сбрасывает хвою?"
+    }
+  },
+  {
+    "type": "ImagesCompare",
+    "content": {
+      "title": "Соотнеси ветку дерева (цифра) и его плод (буква):",
+      "images": [
+        [
+          "/assets/images/modules/forest-plantation/3/vopros-11-1.jpg",
+          "/assets/images/modules/forest-plantation/3/vopros-11-2.jpg",
+          "/assets/images/modules/forest-plantation/3/vopros-11-3.jpg",
+          "/assets/images/modules/forest-plantation/3/vopros-11-4.jpg"
+        ],
+        [
+          "/assets/images/modules/forest-plantation/3/vopros-11-A.jpg",
+          "/assets/images/modules/forest-plantation/3/vopros-11-B.jpg",
+          "/assets/images/modules/forest-plantation/3/vopros-11-C.jpg",
+          "/assets/images/modules/forest-plantation/3/vopros-11-D.jpg"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Что такое лес?",
+      "answers": [
+        "целостная совокупность лесных древесных и иных растений, земли, животных, микроорганизмов и других природных компонентов, находящихся во взаимосвязи с внутренней и с внешней средой",
+        "земли, покрытые лесной растительностью и не покрытые ею, но предназначенные для ее восстановления (вырубки, гари, погибшие древостои, редины, пустыри, прогалины, площади, занятые питомниками, несомкнувшимися лесными культурами, и иные)",
+        "земли, предназначенные для нужд лесного хозяйства (земли, занятые просеками, дорогами, сельскохозяйственными угодьями, и другие земли), а также иные земли, расположенные в границах лесного фонда (земли, занятые болотами, каменистыми россыпями, и другие неудобные для использования земли)"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Из каких древесных пород добывают живицу, что из неё вырабатывают?"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Как называется вид леса, в котором преобладают виде деревьев с узкими листовыми пластинками "
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какие растения образуют подлесок",
+      "answers": [
+        "Травы",
+        "Мхи, лишайники",
+        "Кустарники ",
+        "Деревья"
+      ]
+    }
+  }
+]
