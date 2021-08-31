@@ -7,14 +7,15 @@
     />
     <Guide v-if="testDates.start === undefined">
       <p>
-        На данном этапе Вам необходимо выполнить видеозадание.
+        На данном этапе Вам необходимо выполнить видеозадание, которое состоит из 5 видеороликов.
         <br>
-        Внимательно просмотрите видеоролик, в котором будет задан вопрос.
-        Видеоролик можно просмотреть только один раз.
+        Каждому видеоролику соответствует 1 ответ. 
         <br>
-        После просмотра видеоролика в течение 20 минут запишите 5 ответов на поставленный вопрос в соответствующих окнах под названием «Ответы:».
+        Видеоролики можно просмотреть только один раз. 
         <br>
-        После нажатия кнопки «Закончить» работа с заданием завершается. 
+        Внимательно просмотрите видеоролик и запишите ответ на поставленный ниже вопрос в соответствующем окне под названием «Ответы:».
+        <br>
+        После нажатия кнопки «Закончить» работа с заданием завершается. Общее время для выполнения видеозадания – 20 минут.
       </p>
     </Guide>
     <template v-else>
@@ -23,28 +24,24 @@
       >
         <a-collapse-panel key="help" header="Инструкция">
           <p>
-            На данном этапе Вам необходимо выполнить видеозадание.
+            На данном этапе Вам необходимо выполнить видеозадание, которое состоит из 5 видеороликов.
             <br>
-            Внимательно просмотрите видеоролик, в котором будет задан вопрос.
-            Видеоролик можно просмотреть только один раз.
+            Каждому видеоролику соответствует 1 ответ. 
             <br>
-            После просмотра видеоролика в течение 20 минут запишите 5 ответов на поставленный вопрос в соответствующих окнах под названием «Ответы:».
+            Видеоролики можно просмотреть только один раз. 
             <br>
-            После нажатия кнопки «Закончить» работа с заданием завершается. 
+            Внимательно просмотрите видеоролик и запишите ответ на поставленный ниже вопрос в соответствующем окне под названием «Ответы:».
+            <br>
+            После нажатия кнопки «Закончить» работа с заданием завершается. Общее время для выполнения видеозадания – 20 минут.
           </p>
         </a-collapse-panel>
       </a-collapse>
-      <div
-        class="module-video__wrapper"
-      >
-        <vue-plyr v-if="!videoEnded" :settings="['quality']" :emit="['ended']" @ended="videoDone">
-          <video poster="/assets/images/young-forest-grower/poster.jpg" src="/assets/video/young-forest-grower_1080.mp4">
-            <source src="/assets/video/young-forest-grower_480.mp4" type="video/mp4" size="480">
-            <source src="/assets/video/young-forest-grower_720.mp4" type="video/mp4" size="720">
-            <source src="/assets/video/young-forest-grower_1080.mp4" type="video/mp4" size="1080">
-          </video>
-        </vue-plyr>
-      </div>
+
+      <h1>
+        По представленным видеороликам определите 
+        <br>
+        причину повреждения и поражения деревьев.
+      </h1>
 
       <div class="module-video__form-wrapper">
         <Form
@@ -52,51 +49,30 @@
           @submit="handleSubmit"
         >
           <h2>Ответы:</h2>
-          <FormItem label="Ошибка №1" :colon="false">
-            <a-input
-              placeholder="Впишите ошибку"
-              v-decorator="[
-                'answer1',
-                { rules: [{ required: true, message: 'Введите текст' }] },
-              ]"
-            />
-          </FormItem>
-          <FormItem label="Ошибка №2" :colon="false">
-            <a-input
-              placeholder="Впишите ошибку"
-              v-decorator="[
-                'answer2',
-                { rules: [{ required: true, message: 'Введите текст' }] },
-              ]"
-            />
-          </FormItem>
-          <FormItem label="Ошибка №3" :colon="false">
-            <a-input
-              placeholder="Впишите ошибку"
-              v-decorator="[
-                'answer3',
-                { rules: [{ required: true, message: 'Введите текст' }] },
-              ]"
-            />
-          </FormItem>
-          <FormItem label="Ошибка №4" :colon="false">
-            <a-input
-              placeholder="Впишите ошибку"
-              v-decorator="[
-                'answer4',
-                { rules: [{ required: true, message: 'Введите текст' }] },
-              ]"
-            />
-          </FormItem>
-          <FormItem label="Ошибка №5" :colon="false">
-            <a-input
-              placeholder="Впишите ошибку"
-              v-decorator="[
-                'answer5',
-                { rules: [{ required: true, message: 'Введите текст' }] },
-              ]"
-            />
-          </FormItem>
+          <div class="module-video__videos-block">
+            <div
+              v-for="i in 5"
+              :key="i"
+              class="module-video__video-block"
+            >
+              <vue-plyr v-if="!videoEnded(i)" :emit="['ended']" @ended="videoDone(i)">
+                <video :src="`https://api.ecoforum40.ru/storage/videos/${i}.mp4`">
+                </video>
+              </vue-plyr>
+              <img v-else :src="`/assets/images/young-forest-grower/video-${i}.jpg`" alt="">
+              <FormItem :label="`Ответ №${i}`" :colon="false">
+                <a-input
+                  placeholder="Впишите ответ"
+                  v-decorator="[
+                    `answer${i}`,
+                    { rules: [{ required: true, message: 'Введите текст' }] },
+                  ]"
+                />
+              </FormItem>  
+            </div>  
+          </div>
+          
+          
           <div class="module-video__form-inner-wrapper">
             <StatisticCountdown
               class="module-video__timer"
@@ -155,7 +131,13 @@ export default {
     return {
       hasErrors,
       form: this.$form.createForm(this, { name: 'answers' }),
-      videoEnded: false,
+      videosDone: {
+        1: false,
+        2: false,
+        3: false,
+        4: false,
+        5: false
+      }
     }
   },
 
@@ -164,9 +146,9 @@ export default {
   },
 
   mounted() {
-    const videoEnded = localStorage.getItem('videoended');
-    if(videoEnded) {
-      this.videoEnded = true;
+    const videosDone = localStorage.getItem('videosdone');
+    if(videosDone) {
+      this.videosDone = JSON.parse(videosDone);
     }
   },
 
@@ -191,9 +173,15 @@ export default {
       this.$router.push({ name: 'modules' })
     },
 
-    videoDone() {
-      this.videoEnded = true;
-      localStorage.setItem('videoended', true)
+    videoDone(i) {
+      this.videosDone[i] = true
+      localStorage.setItem('videosdone', JSON.stringify(this.videosDone))
+      
+    },
+
+    videoEnded(i) {
+      return this.videosDone[i]
+      
     },
 
     handleSubmit(e) {
@@ -234,6 +222,24 @@ export default {
 
   &__timer {
     margin-right: 60px;
+  }
+
+  &__videos-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a b c d" ". f f .";
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  &__video-block {
+    img {
+      width: 100%;
+    }
+
+    &:last-child {
+      grid-area: f;
+    }
   }
 }
 </style>
