@@ -25,8 +25,22 @@
     <img class="info-welcome__background" src="@/assets/images/logos.png" alt="">
     <div class="info-welcome__text">
       <div class="info-welcome">
-        <h1>Конкурс школьных лесничеств Калужской области</h1>
-        <router-link :to="{ name: 'modules' }">
+        <h1>
+          Конкурс школьных лесничеств Калужской области
+          <br>
+          состоится 10 сентября 2021 года в период с 11.00 до 13.00
+        </h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Добро пожаловать</h2>
+        <h3>
+          на конкурс школьных лесничеств 
+          <br>
+          "Лучшее школьное лесничество Калужской области"
+        </h3>
+        <router-link :to="{ name: 'lite-guide' }">
           <a-button type="primary">
             Начать!
           </a-button>  

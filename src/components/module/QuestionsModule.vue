@@ -10,9 +10,9 @@
     <Guide v-if="testDates.start === undefined">
       <template v-if="currentRoute === 'forest-plantation'">
         <p>
-          В текущем блоке Вам необходимо ответить на 25 вопросов.
+          В текущем блоке Вам необходимо ответить на 15 вопросов.
           <br>
-          Для ответов на все вопросы у Вас будет 38 минут.
+          Для ответов на все вопросы у Вас будет 20 минут.
           <br>
           Для начала выполнения заданий нажмите кнопку «Начать», для перехода к следующему вопросу нажмите кнопку «Далее», для возврата к предыдущему вопросу нажмите кнопку «Назад» либо кнопку с указанием номера вопроса.
           <br>
@@ -34,9 +34,9 @@
       </template>
       <template v-else>
         <p>
-          В текущем блоке Вам необходимо ответить на 20 вопросов.
+          В текущем блоке Вам необходимо ответить на 15 вопросов.
           <br>
-          Для ответов на все вопросы у Вас будет 30 минут.
+          Для ответов на все вопросы у Вас будет 20 минут.
           <br>
           Для начала выполнения заданий Вам нужно нажать кнопку «Начать», для перехода к следующему вопросу Вам нужно нажать кнопку «Далее», для возврата к предыдущему вопросу Вам нужно нажать кнопку «Назад» либо кнопку с указанием номера вопроса. 
           <br>
@@ -224,10 +224,10 @@ export default {
     },
     deadline() {
       const dates = {
-        'forest-plantation': 38,
-        'forest-fire-protection': 30,
-        'forest-directions-and-zoology': 30,
-        'forest-diseases-and-pests': 30,
+        'forest-plantation': 20,
+        'forest-fire-protection': 20,
+        'forest-directions-and-zoology': 20,
+        'forest-diseases-and-pests': 20,
         'testing-test': 6
       }
       return this.testDates.start + (dates[this.$route.params.moduleId] * 60 * 1000 )
@@ -266,8 +266,18 @@ export default {
           if(this.$route.params.moduleId === 'testing-test'){
             this.$router.push({ name: 'modules' })
           } else {
-            this.goToGuide()
-            console.log('Received values of form: ', values);  
+            this.setTestsResults({
+              test: this.$route.params.moduleId,
+              formData: values
+            })
+              .then(() => {
+                this.goToGuide()
+                this.$notification.success({
+                  message: 'Завершено!',
+                  description: 'Этап завершен',
+                  duration: 30
+                })
+              })  
           }
           
         }
@@ -359,7 +369,7 @@ export default {
 
 .question-form-item {
   &__submit {
-    margin-top: 30px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
 

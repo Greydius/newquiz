@@ -24,7 +24,7 @@ const modules = [
   },
   {
     name: 'young-forest-grower',
-    title: 'Юный лесокультурник',
+    title: 'Юный защитник леса',
     description: 'Тебе предстоит доказать свои знания, ответив на вопросы',
     disabled: true,
     status: 'done',

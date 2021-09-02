@@ -1,7 +1,7 @@
 <template>
   <div class="module-video">
     <PageHeader
-      title="Юный лесокультурник"
+      title="Юный защитник леса"
       @back="goBack"
       class="module-video__header"
     />
@@ -38,9 +38,9 @@
       </a-collapse>
 
       <h1>
-        По представленным видеороликам определите 
+        По представленным видеороликам определите
         <br>
-        причину повреждения и поражения деревьев.
+        причину повреждения и поражения деревьев
       </h1>
 
       <div class="module-video__form-wrapper">
@@ -186,14 +186,20 @@ export default {
 
     handleSubmit(e) {
       e.preventDefault();
-      this.form.validateFields((err) => {
+      this.form.validateFields((err, values) => {
         if (!err) {
-          this.$router.push({ name: 'modules' })
-          this.$notification.success({
-            message: 'Завершено!',
-            description: 'Этап завершен',
-            duration: 30
+          this.setTestsResults({
+            test: this.$route.params.moduleId,
+            formData: values
           })
+            .then(() => {
+              this.$router.push({ name: 'modules' })
+              this.$notification.success({
+                message: 'Завершено!',
+                description: 'Этап завершен',
+                duration: 30
+              })
+            })
         }
       });
     },

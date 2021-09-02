@@ -64,11 +64,6 @@ export default {
           icon: 'interaction',
         },
         {
-          title: 'Тест',
-          route: 'test',
-          icon: 'interaction',
-        },
-        {
           title: 'Финиш!',
           route: 'finish',
           icon: 'flag',
