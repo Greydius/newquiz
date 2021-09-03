@@ -1,0 +1,46 @@
+[
+  {
+    "type": "MultipleAnswersSelect",
+    "content": {
+      "title": "Указать самую распространенную древесную породу на территории Калужской области, а также на территории России.",
+      "answers": [
+        "Дуб",
+        "Осина",
+        "Береза",
+        "Сосна",
+        "Лиственница"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Указать название инструмента на фотографии.",
+      "image": "/assets/images/modules/zoo/3-2.jpg"
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Определите стороны света по квартальному столбу",
+      "images": [
+        "/assets/images/modules/zoo/3-3.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Какой вид лесохозяйственных мероприятий указан на деляночном столбе?",
+      "image": "/assets/images/modules/zoo/3-4.jpg"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Что обозначено на лесоустроительном планшете и фотографии?",
+      "image": "/assets/images/modules/zoo/3-5.jpg"
+    }
+  }  
+]

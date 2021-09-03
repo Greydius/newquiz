@@ -13,7 +13,7 @@
   {
     "type": "AnswersSelect",
     "content": {
-      "title": "Выберите, в каких из указанных насаждений чаще возникают верховые пожары?",
+      "title": "Выберите, в каких из указанных насаждениях чаще возникают верховые пожары?",
       "answers": [
         "В ельниках",
         "В сосняках",
@@ -23,23 +23,22 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
-      "title": "Под соответствующими номерами фотографий впишите семена какой древесной породы изображены на фотографиях:",
+      "title": "Какой тип болезни связан с поражением проводящей системы растений и проявляется в усыхании всего растения или его части?",
       "images": [
         "/assets/images/modules/pests/1/vopros-3-1.jpg",
         "/assets/images/modules/pests/1/vopros-3-2.jpg",
         "/assets/images/modules/pests/1/vopros-3-3.jpg",
         "/assets/images/modules/pests/1/vopros-3-4.jpg"
-      ],
-      "count": 4
+      ]
     }
   },  {
     "type": "MultipleAnswers",
     "content": {
       "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
       "images": [
-        "/assets/images/modules/pests/1/vopros-1.jpg"
+        "/assets/images/modules/pests/1/vopros-4.jpg"
       ],
       "count": 11,
       "questions": [
@@ -49,7 +48,7 @@
     }
   },  
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите насекомое, имеющее неполный цикл развития: яйцо – личинка - взрослое насекомое",
       "images": [
@@ -57,8 +56,7 @@
         "/assets/images/modules/pests/1/vopros-5-2.jpg",
         "/assets/images/modules/pests/1/vopros-5-3.jpg",
         "/assets/images/modules/pests/1/vopros-5-4.jpg"
-      ],
-      "count": 4
+      ]
     }
   },
   {
@@ -85,7 +83,7 @@
     }
   },  
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите гриб, который поражает только осину, вызывая центральную белую гниль ствола?",
       "images": [
@@ -93,8 +91,7 @@
         "/assets/images/modules/pests/1/vopros-8-2.jpg",
         "/assets/images/modules/pests/1/vopros-8-3.jpg",
         "/assets/images/modules/pests/1/vopros-8-4.jpg"
-      ],
-      "count": 4
+      ]
     }
   },
   {
@@ -141,7 +138,7 @@
     }
   },  
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Какое насекомое относится к вредителям питомников и молодняков? ",
       "images": [
@@ -149,8 +146,7 @@
         "/assets/images/modules/pests/1/vopros-13-2.jpg",
         "/assets/images/modules/pests/1/vopros-13-3.jpg",
         "/assets/images/modules/pests/1/vopros-13-4.jpg"
-      ],
-      "count": 4
+      ]
     }
   },  
   {

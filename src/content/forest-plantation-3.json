@@ -19,19 +19,18 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Укажите номер фотографии, на которой изображена мерная вилка ",
       "images": [
         "/assets/images/modules/forest-plantation/3/vopros-4-1.jpg",
         "/assets/images/modules/forest-plantation/3/vopros-4-2.jpg",
         "/assets/images/modules/forest-plantation/3/vopros-4-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
-    "type": "ImagesSelect",
+    "type": "MultipleAnswers",
     "content": {
       "title": "Под соответствующими номерами рисунков впишите семена какой древесной породы изображены на фотографиях: ",
       "images": [
@@ -66,12 +65,12 @@
   {
     "type": "Question",
     "content": {
-      "title": "8.Что за вещество показано на фото и как им пользуются садоводы?",
+      "title": "Что за вещество показано на фотографии и как им пользуются садоводы?",
       "image": "/assets/images/modules/forest-plantation/3/vopros-8.jpg"
     }
   },
   {
-    "type": "AnswersSelect",
+    "type": "MultipleAnswersSelect",
     "content": {
       "title": "Что является валежником?",
       "answers": [
@@ -91,7 +90,7 @@
   {
     "type": "ImagesCompare",
     "content": {
-      "title": "Соотнеси ветку дерева (цифра) и его плод (буква):",
+      "title": "Соотнесите ветку дерева (цифра) и его плод (буква):",
       "images": [
         [
           "/assets/images/modules/forest-plantation/3/vopros-11-1.jpg",

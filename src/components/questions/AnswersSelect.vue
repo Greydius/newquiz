@@ -58,6 +58,13 @@ export default {
 
 <style lang="scss">
 .answers-select-form-item {
+  &__radio-button {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .ant-form-item-control {
+    text-align: center;
+  }
   .ant-radio-button-wrapper {
     height: auto;
   }

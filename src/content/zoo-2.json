@@ -1,0 +1,47 @@
+[
+  {
+    "type": "Question",
+    "content": {
+      "title": "Указать к каким лесам относится представленный фрагмент 28 квартала по целевому назначению",
+      "image": "/assets/images/modules/zoo/2-1.png"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Указать номера выделов в квартале 59, отнесенных защитным лесам с категорией леса, расположенные в водоохранных зонах.",
+      "image": "/assets/images/modules/zoo/2-2.jpg"
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Определите стороны света по квартальному столбу",
+      "images": [
+        "/assets/images/modules/zoo/2-3.jpg"
+      ],
+      "count": 4
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Указать название инструмента.",
+      "image": "/assets/images/modules/zoo/2-4.jpg"
+    }
+  },
+  {
+    "type": "MultipleAnswersSelect",
+    "content": {
+      "title": "Какие из нижеперечисленных пород деревьев относятся к твердолиственным?",
+      "answers": [
+        "ольха",
+        "дуб",
+        "клён",
+        "ива",
+        "ясень",
+        "липа"
+      ]
+    }
+  }
+]

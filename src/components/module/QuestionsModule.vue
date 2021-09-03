@@ -138,7 +138,9 @@ import forestFireSecurity1 from '@/content/forest-guardian-1'
 import forestFireSecurity2 from '@/content/forest-guardian-2'
 import forestFireSecurity3 from '@/content/forest-guardian-3'
 
-import zoo from '@/content/zoo'
+import zoo1 from '@/content/zoo-1'
+import zoo2 from '@/content/zoo-2'
+import zoo3 from '@/content/zoo-3'
 
 import pests1 from '@/content/diseases-pests-1'
 import pests2 from '@/content/diseases-pests-2'
@@ -176,7 +178,7 @@ export default {
       inputs: {
         'forest-plantation': [forestPlantation1, forestPlantation2, forestPlantation3],
         'forest-fire-protection': [forestFireSecurity1, forestFireSecurity2, forestFireSecurity3],
-        'forest-directions-and-zoology': [zoo, zoo, zoo],
+        'forest-directions-and-zoology': [zoo1, zoo2, zoo3],
         'forest-diseases-and-pests': [pests1, pests2, pests3],
         'testing-test': [testingTest, testingTest, testingTest]
       },

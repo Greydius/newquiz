@@ -11,15 +11,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите фотографию с изображением торфяного пожара.",
       "images": [
         "/assets/images/modules/forest-fire/1/vopros-2-1.jpg",
         "/assets/images/modules/forest-fire/1/vopros-2-2.jpg",
         "/assets/images/modules/forest-fire/1/vopros-2-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -34,15 +33,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите фотографию с изображением оборудования, которое применяется для тушения горящей кромки при травяных и низовых лесных пожарах и для контролирования проведения отжигов от опорной полосы",
       "images": [
         "/assets/images/modules/forest-fire/1/vopros-4-1.jpg",
         "/assets/images/modules/forest-fire/1/vopros-4-2.jpg",
         "/assets/images/modules/forest-fire/1/vopros-4-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -52,15 +50,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Укажите на представленных рисунках почвенный пожар",
       "images": [
         "/assets/images/modules/forest-fire/1/vopros-6-1.jpg",
         "/assets/images/modules/forest-fire/1/vopros-6-2.jpg",
         "/assets/images/modules/forest-fire/1/vopros-6-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -75,27 +72,25 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Из представленных рисунков выберите основную причину пожаров на территории Калужской области",
       "images": [
         "/assets/images/modules/forest-fire/1/vopros-8-1.jpg",
         "/assets/images/modules/forest-fire/1/vopros-8-2.jpg",
         "/assets/images/modules/forest-fire/1/vopros-8-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Укажите фотографию с изображением транспортного средства, которое может быть использовано для разведки и первичного оперативного тушения лесных пожаров",
       "images": [
         "/assets/images/modules/forest-fire/1/vopros-9-1.jpg",
         "/assets/images/modules/forest-fire/1/vopros-9-2.jpg",
         "/assets/images/modules/forest-fire/1/vopros-9-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -121,15 +116,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Из предложенных вариантов выберите специализированный пожарный шанцевый инструмент, который используется в тушении лесных пожаров",
       "images": [
         "/assets/images/modules/forest-fire/1/vopros-12-1.jpg",
         "/assets/images/modules/forest-fire/1/vopros-12-2.jpg",
         "/assets/images/modules/forest-fire/1/vopros-12-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {

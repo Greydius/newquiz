@@ -2,7 +2,7 @@
   {
     "type": "AnswersSelect",
     "content": {
-      "title": "1.Контролируемое выжигание горючего материала это:",
+      "title": "Контролируемое выжигание горючего материала это:",
       "answers": [
         "Стихийное распространение огня",
         "Управляемое распространение огня с прокладкой опорной полосы",
@@ -11,15 +11,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите фотографию с изображением низового пожара.",
       "images": [
         "/assets/images/modules/forest-fire/3/vopros-2-1.jpg",
         "/assets/images/modules/forest-fire/3/vopros-2-2.jpg",
         "/assets/images/modules/forest-fire/3/vopros-2-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -34,15 +33,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите фотографию с изображением оборудования, которое применяется преимущественно для тушения устойчивого низового пожара с применением пожарной емкости с водой",
       "images": [
         "/assets/images/modules/forest-fire/3/vopros-4-1.jpg",
         "/assets/images/modules/forest-fire/3/vopros-4-2.jpg",
         "/assets/images/modules/forest-fire/3/vopros-4-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -63,27 +61,25 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Из представленных рисунков выберите основную техногенную причину пожаров на территории Калужской области",
       "images": [
         "/assets/images/modules/forest-fire/3/vopros-7-1.jpg",
         "/assets/images/modules/forest-fire/3/vopros-7-2.jpg",
         "/assets/images/modules/forest-fire/3/vopros-7-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Укажите фотографию с изображением транспортного средства, которое может быть использовано при расчистке завалов, чтобы потом можно было   доставить силы и средства пожаротушения",
       "images": [
         "/assets/images/modules/forest-fire/3/vopros-8-1.jpg",
         "/assets/images/modules/forest-fire/3/vopros-8-2.jpg",
         "/assets/images/modules/forest-fire/3/vopros-8-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -109,15 +105,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Из предложенных вариантов выберите средство для доставки сил и средств пожаротушения",
       "images": [
         "/assets/images/modules/forest-fire/3/vopros-11-1.jpg",
         "/assets/images/modules/forest-fire/3/vopros-11-2.jpg",
         "/assets/images/modules/forest-fire/3/vopros-11-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -138,21 +133,20 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Каким средством необходимо воспользоваться для тушения следующего пожара: это лесной пожар, распространяющийся по нижним ярусам лесной растительности, лесной подстилке, опаду. В огне оказывается практически весь нижний ярус лесных территорий, который включает в себя также мох, лишайники и почвенную подстилку, огонь распространен на большой площади",
       "images": [
         "/assets/images/modules/forest-fire/3/vopros-14-1.jpg",
         "/assets/images/modules/forest-fire/3/vopros-14-2.jpg",
         "/assets/images/modules/forest-fire/3/vopros-14-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
     "type": "AnswersSelect",
     "content": {
-      "title": "Для каких целей необходимо прокладка минерализованной полосы?",
+      "title": "Для каких целей необходима прокладка минерализованной полосы?",
       "answers": [
         "для недопущения перехода пожара в лесной фонд; ",
         "для недопущения въезда техники в лесной фонд в период действия особого противопожарного режима;",

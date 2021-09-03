@@ -11,15 +11,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите фотографию с изображением верхового  пожара.",
       "images": [
         "/assets/images/modules/forest-fire/2/vopros-2-1.jpg",
         "/assets/images/modules/forest-fire/2/vopros-2-2.jpg",
         "/assets/images/modules/forest-fire/2/vopros-2-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -34,15 +33,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите фотографию с изображением оборудования, которое применяется для задержки пожара при травяных и низовых лесных пожаров. ",
       "images": [
         "/assets/images/modules/forest-fire/2/vopros-4-1.jpg",
         "/assets/images/modules/forest-fire/2/vopros-4-2.jpg",
         "/assets/images/modules/forest-fire/2/vopros-4-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -52,39 +50,36 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Выберите из представленных фотографий изображение перехода низового пожара в верховой",
       "images": [
         "/assets/images/modules/forest-fire/2/vopros-6-1.jpg",
         "/assets/images/modules/forest-fire/2/vopros-6-2.jpg",
         "/assets/images/modules/forest-fire/2/vopros-6-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Из представленных фотографий выберите изображение природного источника пожаров на территории Калужской области",
       "images": [
         "/assets/images/modules/forest-fire/2/vopros-7-1.jpg",
         "/assets/images/modules/forest-fire/2/vopros-7-2.jpg",
         "/assets/images/modules/forest-fire/2/vopros-7-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Укажите фотографию с изображением транспортного средства, которое может быть использовано при тушении лесных пожаров в труднодоступных лесах",
       "images": [
         "/assets/images/modules/forest-fire/2/vopros-8-1.jpg",
         "/assets/images/modules/forest-fire/2/vopros-8-2.jpg",
         "/assets/images/modules/forest-fire/2/vopros-8-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
@@ -110,21 +105,24 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Из предложенных вариантов, выберите специализированное пожарное средство, которое используется для доставки сил и средств на тушение лесных пожаров",
       "images": [
         "/assets/images/modules/forest-fire/2/vopros-11-1.jpg",
         "/assets/images/modules/forest-fire/2/vopros-11-2.jpg",
         "/assets/images/modules/forest-fire/2/vopros-11-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   },
   {
-    "type": "Question",
+    "type": "AnswersSelect",
     "content": {
-      "title": "Возможно ли тушение лесного пожара методом направленного взрыва  (да/нет)"
+      "title": "Возможно ли тушение лесного пожара методом направленного взрыва  (да/нет)",
+      "answers": [
+        "да",
+        "нет"
+      ]
     }
   },
   {
@@ -150,15 +148,14 @@
     }
   },
   {
-    "type": "MultipleAnswers",
+    "type": "ImagesSelect",
     "content": {
       "title": "Каким средством необходимо воспользоваться для тушения следующего пожара: это лесной пожар, распространяющийся по верхним ярусам лесной растительности, по кронам. Огнем охвачено около 100 гектаров леса, имеется угроза перехода огня в населенный пункт.",
       "images": [
         "/assets/images/modules/forest-fire/2/vopros-15-1.jpg",
         "/assets/images/modules/forest-fire/2/vopros-15-2.jpg",
         "/assets/images/modules/forest-fire/2/vopros-15-3.jpg"
-      ],
-      "count": 3
+      ]
     }
   }
 ]
