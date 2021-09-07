@@ -63,7 +63,7 @@
               placeholder="Введи названия"
               v-decorator="[
                 'answers',
-                { rules: [{ required: true, message: 'Обязательное поле!' }] },
+                { rules: [] },
               ]"
             />
           </FormItem>
@@ -78,13 +78,21 @@
             <FormItem
               class="module-gallery__form-button"
             >
-              <a-button
-                :disabled="hasErrors(form.getFieldsError())"
-                type="primary"
-                html-type="submit"
+              <a-popconfirm
+                title="Вы уверены что хотите завершить тест?"
+                ok-text="Да"
+                cancel-text="Нет"
+                @confirm="handleSubmit"
               >
-                Завершить
-              </a-button>
+                <a-button
+                  :disabled="hasErrors(form.getFieldsError())"
+                  type="primary"
+                  html-type="submit"
+                  @click.native="(e) => e.preventDefault()"
+                >
+                  Завершить
+                </a-button>
+              </a-popconfirm>
             </FormItem>  
           </div>
         </Form>
@@ -95,22 +103,17 @@
 </template>
 
 <script>
-import 'viewerjs/dist/viewer.css'
 
 import { Form, Input, Statistic, Collapse } from 'ant-design-vue'
 
 import PageHeader from '@/components/PageHeader'
 import Guide from './Guide'
 
-import Viewer from 'v-viewer'
-import Vue from 'vue'
-
 import { createNamespacedHelpers } from 'vuex'
 
 const { mapState: mapTRState, mapMutations: mapTestsResultMutations, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
 
 const { mapGetters: mapAuthGetters } = createNamespacedHelpers('auth')
-Vue.use(Viewer)
 
 const images = [
   [
@@ -166,7 +169,7 @@ export default {
       return this.testsDates[this.$route.params.moduleId]
     },
     deadline() {
-      return this.testDates.start + (30 * 60 * 1000 )
+      return this.testDates.start + (20 * 60 * 1000 )
     },
   },
 

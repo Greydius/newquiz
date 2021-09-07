@@ -16,7 +16,10 @@
         :value="i+1"
         class="images-select-form-item__radio-button"
       >
-        <img :src="image" alt="" class="images-select-form-item__image">
+        <div class="images-select-form-item__radio-wrapper">
+          <img :src="image" alt="" class="images-select-form-item__image">
+          <p v-if="content.titles && content.titles[i]">{{ content.titles[i] }}</p>  
+        </div>
         <div class="images-select-form-item__overlay">
           <a-icon class="images-select-form-item__overlay-icon" type="check-circle" />
         </div>
@@ -50,12 +53,24 @@ export default {
     display: flex;
   }
 
+  &__radio-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__radio-button {
     flex: 1;
     height: auto;
     display: flex;
     align-items: center;
     padding: 15px;
+
+   & > span:nth-child(2) {
+     height: 100%;
+   }
   }
 
   &__image {

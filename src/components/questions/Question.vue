@@ -4,7 +4,7 @@
     <p v-if="content.description" class="question-form-item__description">
       {{ content.description }}
     </p>
-    <div class="question-form-item__image-wrapper">
+    <div v-viewer.static class="question-form-item__image-wrapper">
       <img v-if="content.image" :src="content.image" alt="" class="question-form-item__image">
     </div>
     

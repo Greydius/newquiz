@@ -45,6 +45,10 @@ export default {
 
 <style lang="scss">
 .button-with-modal {
+  button {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
   + .button-with-modal {
     margin-left: 60px;
   }

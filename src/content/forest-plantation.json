@@ -27,7 +27,7 @@
   {
     "type": "MultipleAnswers",
     "content": {
-      "title": "Под соответствующими номерами фотографий впишите семена какой древесной породы изображены на фотографиях:",
+      "title": "Под соответствующими номерами ответов впишите семена какой древесной породы изображены на фотографиях:",
       "images": [
         "/assets/images/modules/forest-plantation/5-1.jpg",
         "/assets/images/modules/forest-plantation/5-2.jpg",

@@ -38,9 +38,7 @@
       </a-collapse>
 
       <h1>
-        По представленным видеороликам определите
-        <br>
-        причину повреждения и поражения деревьев
+        По представленным видеороликам определите причину повреждения и поражения деревьев
       </h1>
 
       <div class="module-video__form-wrapper">
@@ -65,7 +63,7 @@
                   placeholder="Впишите ответ"
                   v-decorator="[
                     `answer${i}`,
-                    { rules: [{ required: true, message: 'Введите текст' }] },
+                    { rules: [] },
                   ]"
                 />
               </FormItem>  
@@ -84,13 +82,21 @@
             <FormItem
               class="module-video__form-button"
             >
-              <a-button
-                :disabled="hasErrors(form.getFieldsError())"
-                type="primary"
-                html-type="submit"
+              <a-popconfirm
+                title="Вы уверены что хотите завершить тест?"
+                ok-text="Да"
+                cancel-text="Нет"
+                @confirm="handleSubmit"
               >
-                Завершить
-              </a-button>
+                <a-button
+                  :disabled="hasErrors(form.getFieldsError())"
+                  type="primary"
+                  html-type="submit"
+                  @click.native="(e) => e.preventDefault()"
+                >
+                  Завершить
+                </a-button>
+              </a-popconfirm>
             </FormItem>  
           </div>
         </Form>

@@ -102,13 +102,21 @@
           </a-form-item>
         </div>
         <a-form-item class="question-form-item question-form-item__submit">
-          <a-button
-            type="primary"
-            html-type="submit"
-            class="question-form-item__submit-button"
+          <a-popconfirm
+            title="Вы уверены что хотите завершить тест?"
+            ok-text="Да"
+            cancel-text="Нет"
+            @confirm="handleSubmit"
           >
-            Завершить тест!
-          </a-button>
+            <a-button
+              type="primary"
+              html-type="submit"
+              class="question-form-item__submit-button"
+              @click.native="(e) => e.preventDefault()"
+            >
+              Завершить тест!
+            </a-button>
+          </a-popconfirm>
         </a-form-item>
       </a-form>  
     </template>

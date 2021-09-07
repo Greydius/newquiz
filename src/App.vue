@@ -54,4 +54,10 @@ button.ant-btn-primary {
     height: auto;
     box-shadow: 1px 1px 5px rgb(26, 26, 26);
 }
+.ant-popover-buttons {
+  button {
+    height: auto;
+    font-size: 25px;
+  }
+}
 </style>
