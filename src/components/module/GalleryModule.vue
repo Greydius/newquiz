@@ -222,6 +222,7 @@ export default {
     display: flex;
     width: 100%;
     cursor: pointer;
+    object-fit: cover;
   }
 
   &__form-wrapper {
