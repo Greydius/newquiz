@@ -28,7 +28,7 @@
       >
         <a-input
           v-decorator="[
-            `question[${index}][${i}]`,
+            `question[${index}]['${i}.']`,
           ]"
           placeholder="Введите ответ..."
         >

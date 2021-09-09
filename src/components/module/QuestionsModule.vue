@@ -103,7 +103,7 @@
         </div>
         <a-form-item class="question-form-item question-form-item__submit">
           <a-popconfirm
-            title="Вы уверены что хотите завершить тест?"
+            title="Вы уверены что хотите завершить задание?"
             ok-text="Да"
             cancel-text="Нет"
             @confirm="handleSubmit"
@@ -276,6 +276,7 @@ export default {
           if(this.$route.params.moduleId === 'testing-test'){
             this.$router.push({ name: 'modules' })
           } else {
+            console.log('TESTS', values)
             this.setTestsResults({
               test: this.$route.params.moduleId,
               formData: values

@@ -26,7 +26,7 @@
         type="primary"
         @click="guideDone"
       >
-        Ага, понятно!
+        НАЧАТЬ
       </a-button>
     </div>
   </div>
