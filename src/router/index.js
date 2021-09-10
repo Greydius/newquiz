@@ -17,25 +17,7 @@ Vue.use(VueRouter)
     }
   },
   {
-    path: '/modules',
-    name: 'modules',
-    component: () => import(/* webpackChunkName: "modules" */ '../views/pages/Modules'),
-    meta: {
-      title: 'Выбор блоков тестирования',
-      requiredAuth: true,
-    },
-  },
-  {
-    path: '/modules/:moduleId',
-    name: 'module',
-    component: () => import(/* webpackChunkName: "module" */ '../views/pages/Module'),
-    meta: {
-      title: 'Выбор блоков тестирования',
-      requiredAuth: true,
-    },
-  },
-  {
-    path: '/',
+    path: '*',
     name: 'home',
     component: () => import(/* webpackChunkName: "home" */ '../views/pages/Info'),
     meta: {
@@ -50,7 +32,7 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "welcome" */ '../views/pages/info/Welcome'),
         meta: {
           title: 'Добро пожаловать!',
-          requiredAuth: true,
+          requiredAuth: false,
         },
       },
       {
@@ -127,14 +109,6 @@ Vue.use(VueRouter)
         },
       },
     ],
-  },
-  {
-    path: '*',
-    name: '404',
-    component: () => import(/* webpackChunkName: "404" */ '../views/pages/technical/404'),
-    meta: {
-      title: 'Упс, страница не найдена...',
-    },
   },
 ]
 
