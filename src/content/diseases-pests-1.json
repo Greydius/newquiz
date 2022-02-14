@@ -1,0 +1,180 @@
+[  
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Что является определяющей группой экологических факторов внешней среды, влияющих на рост и развитие растений?",
+      "answers": [
+        "Климат местности",
+        "Почвенно-грунтовые условия",
+        "Хозяйственная деятельность человека"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите, в каких из указанных насаждениях чаще возникают верховые пожары?",
+      "answers": [
+        "В ельниках",
+        "В сосняках",
+        "В тополевниках",
+        "В дубняках"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Какой тип болезни связан с поражением проводящей системы растений и проявляется в усыхании всего растения или его части?",
+      "images": [
+        "/assets/images/modules/pests/1/vopros-3-1.jpg",
+        "/assets/images/modules/pests/1/vopros-3-2.jpg",
+        "/assets/images/modules/pests/1/vopros-3-3.jpg",
+        "/assets/images/modules/pests/1/vopros-3-4.jpg"
+      ],
+      "titles": [
+        "гниль",
+        "вилт",
+        "ржавчина листьев",
+        "шютте"
+      ]
+    }
+  },  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Внешнее строение насекомых. Впишите названия частей насекомого под указанными цифрами.",
+      "images": [
+        "/assets/images/modules/pests/1/vopros-4.jpg"
+      ],
+      "count": 11,
+      "questions": [
+        "1", "3", "5", "7", "9"
+      ],
+      "single": true
+    }
+  },  
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите насекомое, имеющее неполный цикл развития: яйцо – личинка - взрослое насекомое",
+      "images": [
+        "/assets/images/modules/pests/1/vopros-5-1.jpg",
+        "/assets/images/modules/pests/1/vopros-5-2.jpg",
+        "/assets/images/modules/pests/1/vopros-5-3.jpg",
+        "/assets/images/modules/pests/1/vopros-5-4.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Что является стацией обитания большого соснового лубоеда?",
+      "answers": [
+        "Верхние части сосновых стволов с тонкой корой",
+        "Нижние части сосновых стволов",
+        "Хвоя и лесная подстилка"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "К какой группе вредных организмов относится сосновый вертун?",
+      "answers": [
+        "хвоелистогрызущие вредители",
+        "листогрызущие вредители",
+        "иные группы вредителей",
+        "болезни леса"
+      ]
+    }
+  },  
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите гриб, который поражает только осину, вызывая центральную белую гниль ствола?",
+      "images": [
+        "/assets/images/modules/pests/1/vopros-8-1.jpg",
+        "/assets/images/modules/pests/1/vopros-8-2.jpg",
+        "/assets/images/modules/pests/1/vopros-8-3.jpg",
+        "/assets/images/modules/pests/1/vopros-8-4.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Выберите фотографию, на которой изображено дерево с категорией состояния «усыхающее»",
+      "image": "/assets/images/modules/pests/1/vopros-9.jpg"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите правильный ответ. Настоящий трутовик поражает…..",
+      "answers": [
+        "хвойные породы",
+        "преимущественно хвойные, реже лиственные",
+        "различные лиственные породы",
+        "только березу"
+      ]
+    }
+  }, 
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какой дереворазрушающий гриб встречается только на живой древесине?",
+      "answers": [
+        "Березовая губка",
+        "Сосновая губка",
+        "Заборный гриб",
+        "Валежный трутовик"
+      ]
+    }
+  }, 
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберите верный ответ. Пестициды, используемые для борьбы с насекомыми, называют… ",
+      "answers": [
+        "инсектициды",
+        "акарициды",
+        "нематоциды",
+        "зооциды"
+      ]
+    }
+  },  
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Какое насекомое относится к вредителям питомников и молодняков? ",
+      "images": [
+        "/assets/images/modules/pests/1/vopros-13-1.jpg",
+        "/assets/images/modules/pests/1/vopros-13-2.jpg",
+        "/assets/images/modules/pests/1/vopros-13-3.jpg",
+        "/assets/images/modules/pests/1/vopros-13-4.jpg"
+      ]
+    }
+  },  
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Примером межвидовых отношений НЕ  является:",
+      "answers": [
+        "Хищничество",
+        "Симбиоз",
+        "Совместная атака короедами жизнеспособных деревьев"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Микозы – это болезни, вызываемые…..",
+      "answers": [
+        "Грибами",
+        "Бактериями",
+        "Вирусами"
+      ]
+    }
+  }
+]

@@ -10,9 +10,9 @@
     <Guide v-if="testDates.start === undefined">
       <template v-if="currentRoute === 'forest-plantation'">
         <p>
-          В текущем блоке Вам необходимо ответить на 25 вопросов.
+          В текущем блоке Вам необходимо ответить на 15 вопросов.
           <br>
-          Для ответов на все вопросы у Вас будет 38 минут.
+          Для ответов на все вопросы у Вас будет 20 минут.
           <br>
           Для начала выполнения заданий нажмите кнопку «Начать», для перехода к следующему вопросу нажмите кнопку «Далее», для возврата к предыдущему вопросу нажмите кнопку «Назад» либо кнопку с указанием номера вопроса.
           <br>
@@ -34,9 +34,9 @@
       </template>
       <template v-else>
         <p>
-          В текущем блоке Вам необходимо ответить на 20 вопросов.
+          В текущем блоке Вам необходимо ответить на 15 вопросов.
           <br>
-          Для ответов на все вопросы у Вас будет 30 минут.
+          Для ответов на все вопросы у Вас будет 20 минут.
           <br>
           Для начала выполнения заданий Вам нужно нажать кнопку «Начать», для перехода к следующему вопросу Вам нужно нажать кнопку «Далее», для возврата к предыдущему вопросу Вам нужно нажать кнопку «Назад» либо кнопку с указанием номера вопроса. 
           <br>
@@ -102,13 +102,21 @@
           </a-form-item>
         </div>
         <a-form-item class="question-form-item question-form-item__submit">
-          <a-button
-            type="primary"
-            html-type="submit"
-            class="question-form-item__submit-button"
+          <a-popconfirm
+            title="Вы уверены что хотите завершить задание?"
+            ok-text="Да"
+            cancel-text="Нет"
+            @confirm="handleSubmit"
           >
-            Завершить тест!
-          </a-button>
+            <a-button
+              type="primary"
+              html-type="submit"
+              class="question-form-item__submit-button"
+              @click.native="(e) => e.preventDefault()"
+            >
+              Завершить тест!
+            </a-button>
+          </a-popconfirm>
         </a-form-item>
       </a-form>  
     </template>
@@ -130,10 +138,22 @@ import Guide from './Guide'
 
 import { Form, Steps, Statistic } from 'ant-design-vue'
 
-import forestPlantation from '@/content/forest-plantation'
-import forestFireSecurity from '@/content/forest-fire-security'
-import zoo from '@/content/zoo'
-import pests from '@/content/pests'
+import forestPlantation1 from '@/content/forest-plantation-1'
+import forestPlantation2 from '@/content/forest-plantation-2'
+import forestPlantation3 from '@/content/forest-plantation-3'
+
+import forestFireSecurity1 from '@/content/forest-guardian-1'
+import forestFireSecurity2 from '@/content/forest-guardian-2'
+import forestFireSecurity3 from '@/content/forest-guardian-3'
+
+import zoo1 from '@/content/zoo-1'
+import zoo2 from '@/content/zoo-2'
+import zoo3 from '@/content/zoo-3'
+
+import pests1 from '@/content/diseases-pests-1'
+import pests2 from '@/content/diseases-pests-2'
+import pests3 from '@/content/diseases-pests-3'
+
 import testingTest from '@/content/testing-test'
 
 import modulesData from './modulesData'
@@ -141,6 +161,7 @@ import modulesData from './modulesData'
 import { createNamespacedHelpers } from 'vuex'
 
 const { mapState: mapTRState, mapMutations: mapTRMutations, mapActions: mapTestsResultActions } = createNamespacedHelpers('testsResult')
+const { mapGetters: mapAuthGetters } = createNamespacedHelpers('auth')
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -163,11 +184,11 @@ export default {
   data() {
     return {
       inputs: {
-        'forest-plantation': forestPlantation,
-        'forest-fire-protection': forestFireSecurity,
-        'forest-directions-and-zoology': zoo,
-        'forest-diseases-and-pests': pests,
-        'testing-test': testingTest
+        'forest-plantation': [forestPlantation1, forestPlantation2, forestPlantation3],
+        'forest-fire-protection': [forestFireSecurity1, forestFireSecurity2, forestFireSecurity3],
+        'forest-directions-and-zoology': [zoo1, zoo2, zoo3],
+        'forest-diseases-and-pests': [pests1, pests2, pests3],
+        'testing-test': [testingTest, testingTest, testingTest]
       },
       currentStep: 0,
       modulesData: [
@@ -189,6 +210,14 @@ export default {
   beforeMount(){
     this.setATR()
 
+    if(this.$route.params.moduleId === 'testing-test') {
+      this.setTestStart({
+        date: Date.now(),
+        test: this.$route.params.moduleId,
+        type: 'start'
+      })
+    }
+
     console.log(this.deadline, Date.now(), this.deadline <= Date.now())
     if(this.deadline <= Date.now()) {
       // this.goToGuide()
@@ -197,16 +226,19 @@ export default {
 
   computed: {
     ...mapTRState(['testsDates']),
+    ...mapAuthGetters({
+      'user': 'getUser'
+    }),
     testDates() {
       return this.testsDates[this.$route.params.moduleId]
     },
     deadline() {
       const dates = {
-        'forest-plantation': 38,
-        'forest-fire-protection': 30,
-        'forest-directions-and-zoology': 30,
-        'forest-diseases-and-pests': 30,
-        'testing-test': 10
+        'forest-plantation': 20,
+        'forest-fire-protection': 20,
+        'forest-directions-and-zoology': 20,
+        'forest-diseases-and-pests': 20,
+        'testing-test': 6
       }
       return this.testDates.start + (dates[this.$route.params.moduleId] * 60 * 1000 )
     },
@@ -217,7 +249,7 @@ export default {
     },
 
     routeInputs() {
-      return this.inputs[this.currentRoute]
+      return this.inputs[this.currentRoute][this.user.variant - 1]
     },
     routeData() {
       return this.modulesData.find(({ name }) => name === this.currentRoute)
@@ -226,7 +258,8 @@ export default {
 
   methods: {
     ...mapTRMutations({
-      setATR: 'SET_ARCHIVED_TESTS_RESULTS'
+      setATR: 'SET_ARCHIVED_TESTS_RESULTS',
+      setTestStart:'SET_TEST_START',
     }),
     ...mapTestsResultActions({
       setTestsResults: 'set',
@@ -240,14 +273,24 @@ export default {
       
       this.form.validateFields((err, values) => {
         if (!err) {
-          this.setTestsResults({
-            test: this.$route.params.moduleId,
-            formData: values
-          })
-            .then(() => {
-              this.goToGuide()
+          if(this.$route.params.moduleId === 'testing-test'){
+            this.$router.push({ name: 'modules' })
+          } else {
+            console.log('TESTS', values)
+            this.setTestsResults({
+              test: this.$route.params.moduleId,
+              formData: values
             })
-          console.log('Received values of form: ', values);
+              .then(() => {
+                this.goToGuide()
+                this.$notification.success({
+                  message: 'Завершено!',
+                  description: 'Этап завершен',
+                  duration: 30
+                })
+              })  
+          }
+          
         }
       });
     },
@@ -270,7 +313,7 @@ export default {
 
     goToGuide() {
       if(this.$route.params.moduleId === 'testing-test'){
-        this.$router.push({ name: 'guide-test' })
+        this.$router.push({ name: 'modules' })
       } else {
         this.$router.push({ name: 'module', params: { moduleId: 'testing' } })
       }
@@ -282,6 +325,7 @@ export default {
 
 <style lang="scss">
 .questions-module {
+  width: 1200px;
   h4 {
     font-size: 26px;
     text-align: center;
@@ -336,7 +380,7 @@ export default {
 
 .question-form-item {
   &__submit {
-    margin-top: 30px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
 

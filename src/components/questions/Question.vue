@@ -1,10 +1,10 @@
 <template>
   <a-form-item class="question-form-item">
-    <h4 class="question-form-item__title">{{ `${index+1}. ${content.title}` }}</h4>
+    <h4 class="question-form-item__title" v-html="`${index+1}. ${content.title}`"></h4>
     <p v-if="content.description" class="question-form-item__description">
       {{ content.description }}
     </p>
-    <div class="question-form-item__image-wrapper">
+    <div v-viewer.static class="question-form-item__image-wrapper">
       <img v-if="content.image" :src="content.image" alt="" class="question-form-item__image">
     </div>
     

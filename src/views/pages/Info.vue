@@ -21,7 +21,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  flex: 1;
+  width: 1200px;
+  margin: 0 auto;
 }
 </style>

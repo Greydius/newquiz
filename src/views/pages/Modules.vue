@@ -42,7 +42,7 @@ const modules = [
   },
   {
     name: 'young-forest-grower',
-    title: 'Юный лесокультурник',
+    title: 'Юный защитник леса',
     description: 'Посмотри видео и ответь на вопросы',
     disabled: false,
   }

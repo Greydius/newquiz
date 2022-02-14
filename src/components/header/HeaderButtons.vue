@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <HeaderButtonWithModal
       title="Обратная связь"
     >
@@ -30,7 +31,7 @@
 
       <h2>Техническое сопровождение:</h2>
 
-      <i>Ситников Сергей Александрович</i>
+      <i>Сергей</i>
       <br>
       <a href="tel:89641498797">8-903-696-81-68</a>
       <br>
@@ -42,24 +43,24 @@
         <a href="/assets/files/Технические требования к рабочему месту.docx" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Технические требования к рабочему месту</a>
       </p>
       <p>
-        <a href="/assets/files/Состав жюри.docx" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Состав жюри</a>
+        <a href="/assets/files/Состав жюри.doc" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Состав жюри</a>
       </p>
       <p>
-        <a href="/assets/files/Состав судей.docx" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Состав судей</a>
+        <a href="/assets/files/Состав судей.doc" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Состав судей</a>
       </p>
       <p>
-        <a href="/assets/files/Положение о конкурсе ШЛ 2020.pdf" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Положение о конкурсе ШЛ 2020</a>
+        <a href="/assets/files/Положение о конкурсе 2021.pdf" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Положение о конкурсе 2021</a>
       </p>
       <p>
         <a href="/assets/files/Порядок проведения тестирования.doc" target="_blank" rel="noopener noreferrer"><a-icon type="download" /> Порядок проведения тестирования</a>
       </p>
     </HeaderButtonWithModal>
-
-    <router-link :to="{ name: 'home' }" class="header-to-guide">
-      <a-button type="submit" disabled>
+<!-- 
+    <router-link :to="{ name: 'test-guide' }" class="header-to-guide">
+      <a-button type="submit">
         К инструкции
       </a-button>
-    </router-link>
+    </router-link> -->
   </div>
 </template>
 

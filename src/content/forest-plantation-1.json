@@ -1,0 +1,141 @@
+[
+  {
+    "type": "Question",
+    "content": {
+      "title": "Продолжите предложение:",
+      "description": "Лучшим сроком посадки лесных культур является ..."
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите название инструмента, изображенного на фотографии:",
+      "image": "/assets/images/modules/forest-plantation/1/vopros-2.webp"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Укажите номер записи, указывающей состав насаждения:",
+      "answers": [
+        "3Б5Ос1Лп",
+        "6Е2Ос1Б1Олч",
+        "6Ос2Лп2С1Д",
+        "6Ю2С2Е"
+      ]
+    }
+  },
+  {
+    "type": "MultipleAnswers",
+    "content": {
+      "title": "Под соответствующими номерами ответов впишите семена какой древесной породы изображены на фотографиях:",
+      "images": [
+        "/assets/images/modules/forest-plantation/1/vopros-4-1.jpg",
+        "/assets/images/modules/forest-plantation/1/vopros-4-2.jpg",
+        "/assets/images/modules/forest-plantation/1/vopros-4-3.jpg",
+        "/assets/images/modules/forest-plantation/1/vopros-4-4.jpg",
+        "/assets/images/modules/forest-plantation/1/vopros-4-5.jpg",
+        "/assets/images/modules/forest-plantation/1/vopros-4-6.jpg"
+      ],
+      "count": 6
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Напишите, в каком месяце года созревают семена березы бородавчатой?"
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию, на которой изображена мерная вилка:",
+      "images": [
+        "/assets/images/modules/forest-plantation/1/vopros-6-1.jpg",
+        "/assets/images/modules/forest-plantation/1/vopros-6-2.jpg",
+        "/assets/images/modules/forest-plantation/1/vopros-6-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Определите и напишите состав насаждения по представленному фото:",
+      "image": "/assets/images/modules/forest-plantation/1/vopros-7.jpg"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Выберете способ определения возраста дерева:",
+      "answers": [
+        "По годичным кольцам",
+        "По годичным кольцам и мутовкам",
+        "С помощью мерной вилки"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Что за вещество показано на фото и как им пользуются садоводы?",
+      "image": "/assets/images/modules/forest-plantation/1/vopros-9.jpg"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Что такое подрост?"
+    }
+  },
+  {
+    "type": "ImagesCompare",
+    "content": {
+      "title": "Соотнесите ветку дерева (цифра) и его плод (буква):",
+      "images": [
+        [
+          "/assets/images/modules/forest-plantation/1/vopros-11-1.jpg",
+          "/assets/images/modules/forest-plantation/1/vopros-11-2.jpg",
+          "/assets/images/modules/forest-plantation/1/vopros-11-3.jpg",
+          "/assets/images/modules/forest-plantation/1/vopros-11-4.jpg"
+        ],
+        [
+          "/assets/images/modules/forest-plantation/1/vopros-11-A.jpg",
+          "/assets/images/modules/forest-plantation/1/vopros-11-B.jpg",
+          "/assets/images/modules/forest-plantation/1/vopros-11-C.jpg",
+          "/assets/images/modules/forest-plantation/1/vopros-11-D.jpg"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Впишите хвойное растение, шишки которого не свисают с веток, а подняты вверх:"
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Целостная совокупность лесных древесных и иных растений, земли, животных, микроорганизмов и других природных компонентов, находящихся во взаимосвязи с внутренней и с внешней средой – это "
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Какие виды лесов существуют?"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какие растения образуют верхний ярус в лесу?",
+      "answers": [
+        "Травы",
+        "Мхи и лишайники",
+        "Кустарники",
+        "Деревья"
+      ]
+    }
+  }
+]

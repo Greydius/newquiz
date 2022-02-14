@@ -22,7 +22,11 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 0px;
+  margin-top: 64px;
   &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     flex: 1;
     padding: 0;
     background: transparent;

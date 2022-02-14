@@ -2,7 +2,7 @@
   <div class="button-with-modal">
     <a-button
       @click="handleOpen"
-      type="dashed"
+      type="primary"
     >
       {{ title }}
     </a-button>
@@ -45,6 +45,10 @@ export default {
 
 <style lang="scss">
 .button-with-modal {
+  button {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
   + .button-with-modal {
     margin-left: 60px;
   }

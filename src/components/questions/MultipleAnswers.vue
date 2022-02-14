@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div v-if="content.images && content.single" class="multiple-answers-form-item__main-image-wrapper">
+      <div v-viewer.static v-if="content.images && content.single" class="multiple-answers-form-item__main-image-wrapper">
         <img :src="content.images[0]" alt="" class="multiple-answers-form-item__image">
       </div>
       <a-form-item
@@ -28,7 +28,7 @@
       >
         <a-input
           v-decorator="[
-            `question[${index}][${i}]`,
+            `question[${index}]['${i}.']`,
           ]"
           placeholder="Введите ответ..."
         >

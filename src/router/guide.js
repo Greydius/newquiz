@@ -5,7 +5,7 @@ export default [
     component: () => import(/* webpackChunkName: "guide-intro" */ '../views/pages/info/guide/Intro'),
     meta: {
       title: 'Введение - Инструкция по прохождению',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {
@@ -14,7 +14,7 @@ export default [
     component: () => import(/* webpackChunkName: "guide-modules" */ '../views/pages/info/guide/Modules'),
     meta: {
       title: 'Этапы - Инструкция по прохождению',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {
@@ -23,7 +23,7 @@ export default [
     component: () => import(/* webpackChunkName: "guide-module" */ '../views/pages/info/guide/Module'),
     meta: {
       title: 'Первый этап - Инструкция по прохождению',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {
@@ -32,7 +32,7 @@ export default [
     component: () => import(/* webpackChunkName: "guide-modules-again" */ '../views/pages/info/guide/ModulesAgain'),
     meta: {
       title: 'Вновь этапы - Инструкция по прохождению',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {
@@ -41,7 +41,7 @@ export default [
     component: () => import(/* webpackChunkName: "guide-test" */ '../views/pages/info/guide/Test'),
     meta: {
       title: 'Проба тестов - Инструкция по прохождению',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {
@@ -50,7 +50,7 @@ export default [
     component: () => import(/* webpackChunkName: "guide-finish" */ '../views/pages/info/guide/Finish'),
     meta: {
       title: 'Финиш! - Инструкция по прохождению',
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
 ]

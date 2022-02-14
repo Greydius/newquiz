@@ -5,13 +5,16 @@ import store from './store'
 
 import App from './App.vue'
 
+import 'viewerjs/dist/viewer.css'
+import Viewer from 'v-viewer'
+
 // Ant Design Vue UI component's
 import {
   ConfigProvider,
   Layout,
   Button, Icon, Avatar,
   Result, Modal,
-  message, notification
+  message, notification, Popconfirm
 } from 'ant-design-vue';
 
 // Ant Design Vue UI component's
@@ -28,6 +31,10 @@ Vue.use(Modal);
 Vue.use(Avatar);
 Vue.use(Button);
 Vue.use(Icon);
+
+Vue.use(Popconfirm);
+
+Vue.use(Viewer);
 
 Vue.prototype.$message = message;
 Vue.prototype.$notification = notification;

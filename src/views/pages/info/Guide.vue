@@ -26,7 +26,7 @@
         type="primary"
         @click="guideDone"
       >
-        Ага, понятно!
+        НАЧАТЬ
       </a-button>
     </div>
   </div>
@@ -61,11 +61,6 @@ export default {
         {
           title: 'Этапы, снова',
           route: 'modules-again',
-          icon: 'interaction',
-        },
-        {
-          title: 'Тест',
-          route: 'test',
           icon: 'interaction',
         },
         {

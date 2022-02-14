@@ -45,4 +45,19 @@ export default {
   }
 }
 
+button.ant-btn-primary {
+  font-size: 25px;
+    color: #fdfbfb;
+    background-color: #2ba247;
+    border-radius: 0;
+    border: none;
+    height: auto;
+    box-shadow: 1px 1px 5px rgb(26, 26, 26);
+}
+.ant-popover-buttons {
+  button {
+    height: auto;
+    font-size: 25px;
+  }
+}
 </style>

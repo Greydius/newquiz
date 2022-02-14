@@ -1,0 +1,157 @@
+[
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Лесной пожар это:",
+      "answers": [
+        "Стихийное распространение огня в лесном фонде;",
+        "Управляемое распространение огня в лесном фонде;",
+        "Стихийное распространение огня в природных ландшафтах"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию с изображением торфяного пожара.",
+      "images": [
+        "/assets/images/modules/forest-fire/1/vopros-2-1.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-2-2.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-2-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Какая ширина минерализованной полосы не обеспечит надежной задержки огня при лесном пожаре.",
+      "answers": [
+        "50 см – 100 см;",
+        "300 см – 500 см",
+        "140 см – 300 см"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию с изображением оборудования, которое применяется для тушения горящей кромки при травяных и низовых лесных пожарах и для контролирования проведения отжигов от опорной полосы",
+      "images": [
+        "/assets/images/modules/forest-fire/1/vopros-4-1.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-4-2.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-4-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Расшифруйте аббревиатуру ЧС?"
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Укажите на представленных рисунках почвенный пожар",
+      "images": [
+        "/assets/images/modules/forest-fire/1/vopros-6-1.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-6-2.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-6-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Крупным лесным пожаром в зоне наземного применения сил и средств является пожар:",
+      "answers": [
+        "15 гектаров",
+        "20 гектаров;",
+        "более 25 гектаров"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Из представленных рисунков выберите основную причину пожаров на территории Калужской области",
+      "images": [
+        "/assets/images/modules/forest-fire/1/vopros-8-1.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-8-2.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-8-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Укажите фотографию с изображением транспортного средства, которое может быть использовано для разведки и первичного оперативного тушения лесных пожаров",
+      "images": [
+        "/assets/images/modules/forest-fire/1/vopros-9-1.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-9-2.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-9-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Тушение лесного пожара необходимо проводить для:",
+      "answers": [
+        "сохранения лесных экосистем и животного мира;",
+        "недопущения сгорания лесной продукции, снижения экономического ущерба, сохранения жизни и здоровья людей и инфраструктуры;",
+        "все перечисленное верно"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "В какой период реже всего возникают лесные пожары? ",
+      "answers": [
+        "апрель-май",
+        "июнь-июль",
+        "сентябрь-октябрь"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Из предложенных вариантов выберите специализированный пожарный шанцевый инструмент, который используется в тушении лесных пожаров",
+      "images": [
+        "/assets/images/modules/forest-fire/1/vopros-12-1.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-12-2.jpg",
+        "/assets/images/modules/forest-fire/1/vopros-12-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Минерализованная полоса считается:",
+      "answers": [
+        "агитационным мероприятием",
+        "противопожарной профилактикой",
+        "способом тушения пожара"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Возможно ли тушение лесного пожара методом направленного взрыва  (да/нет)"
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Для каких целей необходимо проводить установку противопожарных  аншлагов?",
+      "answers": [
+        "Недопущения перехода пожара в лесной фонд; ",
+        "Недопущения въезда техники в лесной фонд в период действия особого противопожарного режима;",
+        "Для информирования населения о недопустимости небрежного обращения с огнем, опасности пожаров для леса и указания телефонов лесопожарных служб."
+      ]
+    }
+  }
+]

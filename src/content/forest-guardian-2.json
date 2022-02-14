@@ -1,0 +1,161 @@
+[
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Ландшафтный пожар это:",
+      "answers": [
+        "Стихийное распространение огня в лесном фонде;",
+        "Управляемое распространение огня в лесном фонде;",
+        "Стихийное распространение огня в природных ландшафтах"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию с изображением верхового  пожара.",
+      "images": [
+        "/assets/images/modules/forest-fire/2/vopros-2-1.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-2-2.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-2-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Ширина минерализованной полосы должна соответствовать диапазону:",
+      "answers": [
+        "300 см – 500 см",
+        "50 см – 100 см;",
+        "140 см – 300 см"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите фотографию с изображением оборудования, которое применяется для задержки пожара при травяных и низовых лесных пожарах. ",
+      "images": [
+        "/assets/images/modules/forest-fire/2/vopros-4-1.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-4-2.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-4-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "Question",
+    "content": {
+      "title": "Расшифруйте аббревиатуру «АЦ»?"
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Выберите из представленных фотографий изображение перехода низового пожара в верховой",
+      "images": [
+        "/assets/images/modules/forest-fire/2/vopros-6-1.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-6-2.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-6-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Из представленных фотографий выберите изображение природного источника пожаров на территории Калужской области",
+      "images": [
+        "/assets/images/modules/forest-fire/2/vopros-7-1.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-7-2.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-7-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Укажите фотографию с изображением транспортного средства, которое может быть использовано при тушении лесных пожаров в труднодоступных лесах",
+      "images": [
+        "/assets/images/modules/forest-fire/2/vopros-8-1.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-8-2.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-8-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Окарауливание лесного пожара нужно для…",
+      "answers": [
+        "Для ориентировки на местности;",
+        "Для уточнения характеристик пожара и прогноза по его развитию и тушению;",
+        "Для предотвращения возможного повторного возгорания от недотушенных лесных горючих материалов"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "В какой период в Калужской области возникает второй пик возникновения лесных пожаров? ",
+      "answers": [
+        "апрель-май",
+        "июнь-июль",
+        "август-сентябрь"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Из предложенных вариантов выберите специализированное пожарное средство, которое используется для доставки сил и средств на тушение лесных пожаров",
+      "images": [
+        "/assets/images/modules/forest-fire/2/vopros-11-1.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-11-2.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-11-3.jpg"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Возможно ли тушение низового лесного пожара ветвями деревьев лиственных пород (да/нет)?",
+      "answers": [
+        "да",
+        "нет"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Почвеный пожар это … ",
+      "answers": [
+        "распространение огня по надпочвенному покрову;",
+        "распространение огня по кронам древостоя;",
+        "распространение огня по почве"
+      ]
+    }
+  },
+  {
+    "type": "AnswersSelect",
+    "content": {
+      "title": "Опасными факторами пожара являются: ",
+      "answers": [
+        "пламя, искры и тепловой поток; снижение видимости в дыму;",
+        "снижение концентрации кислорода в воздухе; повышение температуры окружающей среды; вероятный взрыв;",
+        "повышенная концентрация отравляющих продуктов горения и термического разложения; пламя, искры и тепловой поток; снижение видимости в дыму; снижение концентрации кислорода в воздухе"
+      ]
+    }
+  },
+  {
+    "type": "ImagesSelect",
+    "content": {
+      "title": "Каким средством необходимо воспользоваться для тушения следующего пожара: это лесной пожар, распространяющийся по верхним ярусам лесной растительности, по кронам. Огнем охвачено около 100 гектаров леса, имеется угроза перехода огня в населенный пункт.",
+      "images": [
+        "/assets/images/modules/forest-fire/2/vopros-15-1.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-15-2.jpg",
+        "/assets/images/modules/forest-fire/2/vopros-15-3.jpg"
+      ]
+    }
+  }
+]

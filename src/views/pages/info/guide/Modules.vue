@@ -25,7 +25,7 @@ const modules = [
   },
   {
     title: '2 Этап',
-    textContent: 'Юный лесокультурник',
+    textContent: 'Юный защитный леса',
     disabled: false,
   },
   {

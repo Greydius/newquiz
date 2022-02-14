@@ -56,6 +56,11 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &:nth-child(2) {
+      flex: 1;
+      justify-content: flex-start;
+      margin-left: 60px;
+    }
   }
 
   &__profile {
