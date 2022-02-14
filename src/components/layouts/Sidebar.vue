@@ -18,7 +18,12 @@
         </div>
       </div>
       <div class="sidebar__main-action">
-
+        <div class="sidebar__main-action-wrapper">
+          <div class="sidebar__main-action-icon-wrapper">
+            <arrowRightIcon class="sidebar__main-action-icon" />
+          </div>
+          <div class="sidebar__main-action-title">Начать</div>  
+        </div>
       </div>
       <div class="sidebar__main-sponsors">
         <div class="sidebar__main-sponsor">
@@ -37,10 +42,11 @@
 
 <script>
 import logoIcon from '../../assets/icons/logo.svg'
+import arrowRightIcon from '../../assets/icons/arrow-right.svg'
 import plusCircleIcon from '../../assets/icons/plus-circle.svg'
 export default {
   components: {
-    logoIcon, plusCircleIcon
+    logoIcon, arrowRightIcon, plusCircleIcon
   }
 }
 </script>
@@ -89,7 +95,35 @@ export default {
     }
 
     &-action {
+      &-wrapper {
+        display: flex;
+        height: 115px;
+        align-items: center;
+        cursor: pointer;
+      }
+      &-icon {
+        &-wrapper {
+          height: 100%;
+          width: 115px;
+          background: #69C566;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      &-title {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        text-transform: uppercase;
 
+        color: #FFFFFF;
+      }
     }
 
     &-sponsors {

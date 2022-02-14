@@ -24,7 +24,7 @@ export default {
   padding: 0px;
   &__wrapper {
     flex: 1;
-    padding: 30px;
+    padding: 0;
     background: transparent;
   }
 }
