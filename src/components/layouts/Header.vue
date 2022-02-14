@@ -1,30 +1,20 @@
 <template>
   <a-layout-header class="header">
     <div class="header__block">
+      <span class="header__profile-login">forest@gmail.com</span>
       <router-link
         :to="{ name: 'home' }"
-        class="logo"
+        class="header__profile"
       >
-        <img
-          src="@/assets/logo.png"
-          class="logo__img"
-          alt=""
-        >
+        <profile-icon class="header__profile-icon" />
       </router-link>
-    </div>
-
-    <HeaderButtons class="header__block" />
-
-    <div class="header__block">
-      <HeaderProfile v-if="isAuthorized" />
     </div>
   </a-layout-header>
 </template>
 
 <script>
 import { createNamespacedHelpers } from 'vuex'
-import HeaderProfile from '@/components/header/HeaderProfile'
-import HeaderButtons from '@/components/header/HeaderButtons'
+import profileIcon from '../../assets/icons/profile.svg'
 
 const { mapGetters: mapAuthGetters } = createNamespacedHelpers('auth')
 
@@ -32,8 +22,7 @@ export default {
   name: 'Header',
 
   components: {
-    HeaderProfile,
-    HeaderButtons
+    profileIcon
   },
 
   data() {
@@ -56,16 +45,12 @@ export default {
 <style lang="scss" scoped>
 .header {
   display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
+  justify-content: flex-end;
   align-items: center;
   padding-left: 50px;
-  padding-right: 50px;
-  background-image: linear-gradient(to right, #08783e 0%, rgba(8, 120, 62, 0.7) 21%, rgba(8, 120, 62, 0.69) 40%, rgba(107, 183, 123, 0.68) 50%, rgba(2, 115, 60, 0.69) 64%, rgba(2, 115, 60, 0.7) 81%, #02733c 100%);
+  padding-right: 0;
+  background-color: transparent;
+  height: auto;
 
   &__block {
     display: flex;
@@ -75,6 +60,27 @@ export default {
       flex: 1;
       justify-content: flex-start;
       margin-left: 60px;
+    }
+  }
+
+  &__profile {
+    width: 100px;
+    height: 100px;
+    background-color: $green-warm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-icon {
+      width: 40px;
+    }
+    &-login {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-right: 32px;
     }
   }
 }

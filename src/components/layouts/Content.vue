@@ -1,5 +1,6 @@
 <template>
   <a-layout-content class="layout">
+    <Header />
     <a-layout class="layout__wrapper">
       <slot />
     </a-layout>
@@ -7,8 +8,12 @@
 </template>
 
 <script>
+import Header from './Header'
 export default {
   name: 'Content',
+  components: {
+    Header
+  }
 };
 </script>
 
@@ -16,9 +21,6 @@ export default {
 .layout {
   display: flex;
   flex-direction: column;
-  background-image: url(../../assets/images/background.jpg);
-  background-size: cover;
-  background-position-y: center;
   padding: 0px;
   margin-top: 64px;
   &__wrapper {
@@ -26,8 +28,8 @@ export default {
     justify-content: center;
     flex-direction: row;
     flex: 1;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.75);
+    padding: 0;
+    background: transparent;
   }
 }
 </style>

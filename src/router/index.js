@@ -1,10 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import store from '@/store';
-
-import guideRoutes from './guide'
-
 Vue.use(VueRouter)
 
   const routes = [
@@ -19,7 +15,7 @@ Vue.use(VueRouter)
   {
     path: '*',
     name: 'home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/pages/Info'),
+    component: () => import(/* webpackChunkName: "welcome" */ '../views/pages/info/Welcome'),
     meta: {
       title: 'Главная',
       requiredAuth: true,
@@ -119,25 +115,8 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  store.dispatch('auth/refresh')
-  .then(() => {
-    const isAuthorized = store.getters['auth/isAuthorized'];
-
-    if (to.meta.requiredAuth && !isAuthorized) {
-      next({ name: 'login' });
-    } else {
-      document.title = `${to.meta.title} - Ecoforum40.ru`;
-      next();
-    }
-  })
-  .catch(() => {
-    if (to.meta.requiredAuth) {
-      next({ name: 'login' });
-    } else {
-      document.title = `${to.meta.title} - Ecoforum40.ru`;
-      next();
-    }
-  });
+  document.title = `${to.meta.title} - Ecoforum40.ru`;
+  next();
 });
 
 export default router;
